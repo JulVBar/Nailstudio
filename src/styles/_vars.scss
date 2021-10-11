@@ -1,0 +1,113 @@
+$white:#fff;
+$black:#000000;
+
+//background
+$bodybackground:#fffdf7;
+$primary: #fbdfca; //menu, uslugi active
+$secondary: #fa8b9a; //menu active, uslugi, uslugi active text
+$coral: #ff817e; //h4
+$brightpink: #f03f76; //menu active
+$darkpink: #b82f51; //buttons, footer
+
+
+
+//text
+$maintext: #555;
+$footnote: #f3d078;
+$title: #1e2528;
+
+
+$maintextsize: 14px;
+$secondtextsize: 12px;
+$h1: 49px; //lh 60
+$h2: 42px;
+$h3: 22px;
+$h4: 20px; //15
+//$h5: 18px;
+
+//gradient
+$grad1: #cf9d12;
+$grad1: #d4b35e;
+$grad1: #f3d078;
+$grad1: #eee3ac;
+// linear-gradient(-45deg, #cf9d12, #d4b35e, #f3d078, #eee3ac)
+
+.introtitle h4 {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: #ff817e;
+    //font rufina
+}
+// font-family: Roboto, sans-serif;
+
+.btn-norm {
+    //border-gradient
+    border: 2px solid transparent;
+    border-image: linear-gradient(-45deg, #cf9d12, #d4b35e, #f3d078, #eee3ac);
+    border-image-slice: 1;
+    //text-gradient
+    font-family: Roboto, Arial, sans-serif;
+    background-image: linear-gradient(-45deg, #cf9d12, #d4b35e, #f3d078, #eee3ac);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+.btn-hov{
+    background-color: linear-gradient(-45deg, #cf9d12, #d4b35e, #f3d078, #eee3ac);
+    
+    border: 2px solid transparent;
+    border-image: linear-gradient(-45deg, #cf9d12, #d4b35e, #f3d078, #eee3ac);
+    border-image-slice: 1;
+    
+    font-family: Roboto, Arial, sans-serif;
+    background-image: linear-gradient(-45deg, #cf9d12, #d4b35e, #f3d078, #eee3ac);
+    
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+
+
+.menu {
+    margin-top: 200px;
+    padding: 5px;
+    height: 600px;
+    width: 250px;
+    color: $secondary;
+    border: 2px solid $primary;
+    border-radius: 5px;
+    position: fixed;
+    left: -10px;
+    /* left: -200px; */
+
+}
+.menu_arrow {
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+.menu_wrap {
+    height: 100%;
+    background-color: $primary;
+    border-radius: 5px;
+    /* padding: 25px; */
+}
+
+//z-index
+$z-index-header:  1000;
+
+//media
+$tablet-bp: 991px;
+$mobile-bp: 575px;
+$mobile-bp-thin: 375px;
