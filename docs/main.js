@@ -42,6 +42,61 @@ eval("__webpack_require__.r(__webpack_exports__);\nfunction two() {\n  console.l
 
 /***/ }),
 
+/***/ "./images/intro.png":
+/*!**************************!*\
+  !*** ./images/intro.png ***!
+  \**************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/intro.png\");\n\n//# sourceURL=webpack:///./images/intro.png?");
+
+/***/ }),
+
+/***/ "./images/logo.jpg":
+/*!*************************!*\
+  !*** ./images/logo.jpg ***!
+  \*************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/logo.jpg\");\n\n//# sourceURL=webpack:///./images/logo.jpg?");
+
+/***/ }),
+
+/***/ "./images/pop-servants-manicure-polish.jpg":
+/*!*************************************************!*\
+  !*** ./images/pop-servants-manicure-polish.jpg ***!
+  \*************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/pop-servants-manicure-polish.jpg\");\n\n//# sourceURL=webpack:///./images/pop-servants-manicure-polish.jpg?");
+
+/***/ }),
+
+/***/ "./images/pop-servants-manicure.jpg":
+/*!******************************************!*\
+  !*** ./images/pop-servants-manicure.jpg ***!
+  \******************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/pop-servants-manicure.jpg\");\n\n//# sourceURL=webpack:///./images/pop-servants-manicure.jpg?");
+
+/***/ }),
+
+/***/ "./images/pop-servants-pedicure.jpg":
+/*!******************************************!*\
+  !*** ./images/pop-servants-pedicure.jpg ***!
+  \******************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/pop-servants-pedicure.jpg\");\n\n//# sourceURL=webpack:///./images/pop-servants-pedicure.jpg?");
+
+/***/ }),
+
 /***/ "./images/slider/slider.jpg":
 /*!**********************************!*\
   !*** ./images/slider/slider.jpg ***!
@@ -50,28 +105,6 @@ eval("__webpack_require__.r(__webpack_exports__);\nfunction two() {\n  console.l
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/slider/slider.jpg\");\n\n//# sourceURL=webpack:///./images/slider/slider.jpg?");
-
-/***/ }),
-
-/***/ "./images/test.jpg":
-/*!*************************!*\
-  !*** ./images/test.jpg ***!
-  \*************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/test.jpg\");\n\n//# sourceURL=webpack:///./images/test.jpg?");
-
-/***/ }),
-
-/***/ "./images/test.png":
-/*!*************************!*\
-  !*** ./images/test.png ***!
-  \*************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/test.png\");\n\n//# sourceURL=webpack:///./images/test.png?");
 
 /***/ }),
 
@@ -102,7 +135,7 @@ eval("var map = {\n\t\"./slider.jpg\": \"./images/slider/slider.jpg\"\n};\n\n\nf
   \**********************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./test.jpg\": \"./images/test.jpg\",\n\t\"./test.png\": \"./images/test.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/_sync_nonrecursive_\\.(png%7Cjpe?");
+eval("var map = {\n\t\"./intro.png\": \"./images/intro.png\",\n\t\"./logo.jpg\": \"./images/logo.jpg\",\n\t\"./pop-servants-manicure-polish.jpg\": \"./images/pop-servants-manicure-polish.jpg\",\n\t\"./pop-servants-manicure.jpg\": \"./images/pop-servants-manicure.jpg\",\n\t\"./pop-servants-pedicure.jpg\": \"./images/pop-servants-pedicure.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/_sync_nonrecursive_\\.(png%7Cjpe?");
 
 /***/ }),
 

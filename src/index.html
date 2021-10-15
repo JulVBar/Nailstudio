@@ -8,7 +8,9 @@
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro&family=Roboto:wght@300;400;700&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
     
     <!-- Icon font -->
     <script src="https://kit.fontawesome.com/9ca2acc967.js" crossorigin="anonymous"></script>
@@ -21,20 +23,170 @@
     <meta name="description" content=""> <!-- Need to fill -->
     <meta name="keywords" content=""> <!-- Need to fill -->
     
-    <title>Title</title>
+    <title>Nail Studio</title>
 </head>
 
-<body>
-
+<body> 
     <div class="page">
+
+
+    <header class="header">
+        <div class="header__social">
+            <a href="#" class="header__link"><img class="header__icon" src="images/icon/instagram_gold.svg" alt="instagram"></a>
+            <a href="#" class="header__link"><img class="header__icon" src="images/icon/messanger_gold.svg" alt="messanger"></a>
+        </div>
+        <div class="header__center">
+            <a href="#" class="header__link"><img class="header__icon" src="images/icon/map_gold.svg" alt="map">
+                <div class="header__text">Санкт-Петербург</div>
+                
+            </a>
+            <a href="#" class="header__link"><img class="header__logo" src="images/logo.jpg" alt="Good Vin"></a>
+
+            <a href="#" class="header__link"><img class="header__icon" src="images/icon/phone_gold.svg" alt="tel">
+                <div class="header__text">+7 (986) 555-66-77</div>
+            </a>
+        </div>
+        <div class="header__button">
+            <button class="btn__gold">Связаться с нами</button>
+        </div>
+    </header> <!--header-->
+    
+    <nav class="navigation">
+        <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link active" href="#">Главная</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Услуги и цены</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Галерея работ</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Полезная информация</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+        </ul>
+
+
+        <nav class="social-menu">
+            <input type="checkbox" name="social-menu-open" id="social-menu-open"class="social-menu-open" >
+            <label for="social-menu-open" class="social-menu-open-button">
+                <span class="button-is-open"><i class="far fa-comment"></i></span>
+                <span class="button-is-close"><i class="fas fa-times"></i></span>
+            </label>
+            
+            <a href="#" class="menu-item vkontakte" target="_blank"><i class="fab fa-vk"></i></a>
+            <a href="#" class="menu-item whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="menu-item facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#" class="menu-item instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" class="menu-item telegram" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+            <a href="#" class="menu-item odnoklassniki" target="_blank"><i class="fab fa-odnoklassniki"></i></a>
+        </nav>
+
+    </nav> <!--navigation-->
+
+    
+
+    <div class="intro">
         <div class="container">
+            <div class="intro__background">
+                <img src="images/intro.png" alt="Good Vin">
+            </div>
 
-            <h1 class="title">Nail Studio</h1>
-            <img class="img" src="images/test.png" alt="">
-            <img class="img" src="images/slider/slider.jpg" alt="">
+            <h4>Здоровье & Красота</h4>
+            <h1>Студия маникюра и педикюра</h1>
+            <div class="h1__gradient"><span>Good Vin</span></div>
 
+            <ul class="intro__list">
+                <li class="intro__list-item">
+                    <img src="images/icon/checkin.svg" alt="checkin">
+                    Маникюр без порезов
+                </li>
+                <li class="intro__list-item">
+                    <img src="images/icon/checkin.svg" alt="checkin">
+                    Покрытие без сколов
+                </li>
+                <li class="intro__list-item">
+                    <img src="images/icon/checkin.svg" alt="checkin">
+                    Медицинский/эстетический педикюр
+                </li>
+            </ul>
+
+            <button class="btn__gold">Подробнее</button>
         </div> <!--container-->
-    </div> <!--page-->
+    </div> <!--intro-->
 
+    <section class="pop__servants">
+        <div class="container">
+            <div class="section__title"><h2>Популярные Услуги</h2></div>
+
+            <div class="pop__servants__inner">
+                <figure class="pop__servants__item">
+                    <img src="images/pop-servants-manicure.jpg" alt="pop-servants-manicure"></img>
+                    
+                        <h3 class="pop__servants__title">Маникюр аппаратный с покрытием в один тон</h3>
+                        
+                        <div class="pop__servants__footer">
+                            <a href="#" class="btn__else">Подробнее<i class="else__arrow fas fa-long-arrow-alt-right"></i></a>
+                            <div class="pop__servants__price">
+                                <span>1 800</span><i class="fas fa-ruble-sign"></i>
+                            </div>
+                        </div>
+                </figure>
+
+                <figure class="pop__servants__item">
+                    <img src="images/pop-servants-manicure-polish.jpg" alt="pop-servants-manicure-polish"></img>
+                    
+                        <h3 class="pop__servants__title">Покрытие гель лаком</h3>
+                        
+                        <div class="pop__servants__footer">
+                            <a href="#" class="btn__else">Подробнее<i class="else__arrow fas fa-long-arrow-alt-right"></i></a>
+                            <div class="pop__servants__price">
+                                <span>500</span><i class="fas fa-ruble-sign"></i>
+                            </div>
+                        </div>
+                </figure>
+
+                <figure class="pop__servants__item">
+                    <img src="images/pop-servants-pedicure.jpg" alt="pop-servants-pedicure"></img>
+                    
+                        <h3 class="pop__servants__title">Педикюр медицинский</h3>
+                        
+                        <div class="pop__servants__footer">
+                            <a href="#" class="btn__else">Подробнее<i class="else__arrow fas fa-long-arrow-alt-right"></i></a>
+                            <div class="pop__servants__price">
+                                от <span>2 500</span><i class="fas fa-ruble-sign"></i>
+                            </div>
+                        </div>
+                </figure>
+
+                
+               
+                
+            </div> <!--pop__servants__inner-->
+            
+        </div>
+    </section> <!--pop__servants-->
+
+    <section class="services">
+        <div class="container">
+            <div class="section__title"><h2>Наши Услуги</h2></div>
+
+            <div class="services__categories">
+                <div class="category active">
+                    <img src="images/icon/nail.png" alt="manicure">
+                    <div class="category__name">Маникюр</div>
+                </div>
+                <div class="category">
+                    <img src="images/icon/foot.png" alt="pedicure">
+                    <div class="category__name">Педикюр</div>
+                </div>
+                <div class="category">
+                    <img src="images/icon/eyebrow.png" alt="eyebrows">
+                    <div class="category__name">Брови</div>
+                </div>
+                <div class="category">
+                    <img src="images/icon/lash.png" alt="lashes">
+                    <div class="category__name">Ресницы</div>
+                </div>
+            </div>
+
+        </div>
+    </section> <!--services-->
+
+    </div> <!--page-->
 </body>
 </html>

@@ -1,0 +1,146 @@
+.social-menu {
+    width: 80px;
+    height: 80px;
+
+    margin: 90px auto;
+    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.menu-item,
+.social-menu-open-button {
+    position: absolute;
+    /*describes the size of the circle*/
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+
+    border-radius: 100%;
+    
+    text-align: center;
+    color: $white;
+    font-size: 30px;
+
+    transform: translate3d(0, 0, 0);
+    transition: transform ease-out 200ms;
+}
+
+.social-menu-open-button {
+    background: linear-gradient(-65deg, $grad1 32%, $grad2 55%, $grad3);
+}
+.social-menu-open-button:hover {
+    background: linear-gradient(-65deg, $pink, $pink);
+}
+
+.social-menu-open {
+    display:none;
+}
+
+// Меняет иконки с чата на крестик
+
+.button-is-open {
+display: block;
+}
+
+.button-is-close {
+display: none;
+}  
+
+.social-menu-open:checked + .social-menu-open-button .button-is-open{
+display: none;
+}
+
+.social-menu-open:checked + .social-menu-open-button .button-is-close {
+display: block;
+}
+
+// Hover для кнопок
+
+.menu-item:hover { 
+    background: linear-gradient(-65deg, $grad1 32%, $grad2 55%, $grad3);
+    color: $white;
+}
+
+.social-menu-open-button {
+z-index: 2;
+    transition-duration: 400ms;
+    transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+    cursor: pointer;
+}
+
+.social-menu-open-button:hover {
+    transform: scale(1.2, 1.2) translate(0,0,0);
+}
+
+.social-menu-open:checked + .social-menu-open-button{
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+    transform: scale(0.8, 0.8) translate3d(0,0,0);
+}
+
+.social-menu-open:checked ~ .menu-item { /* the x ~ y selectors selects every y that is preceeded by an x*/
+    transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+}
+
+//   Позиции кнопочек и анимация
+
+.social-menu-open:checked ~ .menu-item:nth-child(3) { /* :nth(n) selector matches every nth child of its parent*/
+    transition-duration: 180ms;
+    transform: translate3d(0, -70px, 0);
+}
+
+.social-menu-open:checked ~ .menu-item:nth-child(4) {
+    transition-duration: 280ms;
+    transform: translate3d(70px, -35px, 0);
+}
+
+.social-menu-open:checked ~ .menu-item:nth-child(5) {
+    transition-duration: 380ms;
+    transform: translate3d(70px, 35px, 0);
+}
+
+.social-menu-open:checked ~ .menu-item:nth-child(6) {
+    transition-duration: 480ms;
+    transform: translate3d(0, 70px, 0);
+}
+
+.social-menu-open:checked ~ .menu-item:nth-child(7) {
+    transition-duration: 580ms;
+    transform: translate3d(-70px, 35px, 0);
+}
+
+.social-menu-open:checked ~ .menu-item:nth-child(8) {
+    transition-duration: 680ms;
+    transform: translate3d(-70px, -35px, 0);
+}
+
+
+//   Цвета кнопочек
+
+.vkontakte {
+    background-color: #5181b8;
+}
+
+.odnoklassniki {
+    background-color: #ee8108;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.instagram {
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+
+.telegram {
+    background-color: #25a5e4;
+}
+
+.whatsapp {
+    background-color: #29c44d;
+}
+

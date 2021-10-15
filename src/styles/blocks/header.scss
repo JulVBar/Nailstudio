@@ -1,0 +1,54 @@
+.header {
+    
+    width: 100%;
+    height: $header-height;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-index-header;
+    border-bottom: 1px solid $primary;
+    padding: 0 180px;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color:$bodybackground;
+}
+
+.header__social,
+.header__center,
+.header__button {
+    display: flex;
+    align-items: center;
+}
+
+.header__link {
+    display: flex;
+    text-decoration: none;
+
+    &:hover .header__text {
+        color: $secondary;
+    }
+}
+
+.header__logo {
+    width: 100%;
+    height: 79px;
+    object-fit: fiil;
+
+    margin: 0 40px;
+}
+
+.header__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3px;
+
+    font-size: 18px;
+    color: $title;
+
+    transition: all .2s ease;
+}
+

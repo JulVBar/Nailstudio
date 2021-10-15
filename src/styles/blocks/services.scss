@@ -1,0 +1,56 @@
+.services__categories {
+    width: 100%;
+    display: flex;
+    padding: 0 30px;
+
+    margin-bottom: 500px;
+}
+
+.category {
+    width: 25%;
+    height: 70px;
+
+    position: relative;
+    padding: 10px;
+
+    border-bottom: 2px solid #5555554f;
+
+    cursor: pointer;
+    transition: all .2s ease;
+
+    & img {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+
+        width: 50px;
+        height: 50px;
+    }
+
+    &:hover .category__name {
+        color: $brightpink;
+    }
+
+    &.active .category__name {
+        color: $brightpink;
+    }
+    &.active {
+        border-bottom: 2px solid transparent;
+        border-image: linear-gradient(90deg, $brightpink, #5555554f);
+        border-image-slice: 1;
+    }   
+}
+
+.category__name {
+    padding-left: 60px;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: 0;
+
+    @include title(25px);
+    color: #5555558a;
+
+    transition: all .2s ease;   
+}
