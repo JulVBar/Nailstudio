@@ -1,9 +1,13 @@
+.services {
+    margin-bottom: 100px;
+}
+
 .services__categories {
     width: 100%;
     display: flex;
     padding: 0 30px;
 
-    margin-bottom: 500px;
+    margin-bottom: 40px;
 }
 
 .category {
@@ -54,3 +58,104 @@
 
     transition: all .2s ease;   
 }
+
+.services__inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services__item {
+    @include border-gradient;
+    position: relative;
+    
+
+    display: flex;
+    flex-direction: column;
+
+    width: 250px;
+    height: 130px;
+    margin: 15px;
+    padding: 10px;
+
+    cursor: pointer;
+
+    &:hover .btn__else {
+        opacity: 1;
+    }
+
+    &:hover .services__frame {
+        transform: rotate(0);
+    }
+}
+
+.services__name {
+    flex: 1 0 auto;
+    
+    padding: 3px;
+    @include main-text;
+}
+
+.services__footer {
+    width: 100%;
+    padding:  5px 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+.services__price {
+    color: $pink;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+
+    & span {
+        padding: 0 7px;
+    }   
+}
+
+.services__frame {
+    @include border-gradient;
+
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 250px;
+    height: 130px;
+    transform: rotate(-3deg);
+
+    overflow: hidden;
+
+    transition: all .2s ease;
+}
+
+.ribbon {
+    width: 90px;
+    height: 20px;
+    background-color: $pink;
+    padding: 5px 0;
+
+    position: absolute;
+    top: 10px;
+    left: 180px;
+    transform: rotate(45deg);
+
+    color: $white;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.616);
+}
+
+

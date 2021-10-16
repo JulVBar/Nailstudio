@@ -22,10 +22,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
-.pop__servants__item:hover {
-    animation-play-state: paused;
+    cursor: pointer;
+
+    &:hover {
+        animation-play-state: paused;
+    }
+
+    &:hover .btn__else {
+        opacity: 1;
+    }
 }
 
 .pop__servants__item img {
@@ -91,9 +97,9 @@
 
 @keyframes wave {
     0% { 
-        transform: rotate(3deg); 
+        transform: rotate(2deg); 
     }
     100% { 
-        transform: rotate(-3deg); 
+        transform: rotate(-2deg); 
     }
 }
