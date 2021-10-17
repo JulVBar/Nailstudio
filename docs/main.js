@@ -16,7 +16,7 @@
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./styles/main.scss\");\n/* harmony import */ var _js_js1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/js1 */ \"./js/js1.js\");\n/* harmony import */ var _js_js2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/js2 */ \"./js/js2.js\");\n/* harmony import */ var _db_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./db.json */ \"./db.json\");\n\n\n\n\nconsole.log(_db_json__WEBPACK_IMPORTED_MODULE_3__);\nconsole.log('Это файл APP.JS');\nwindow.addEventListener('DOMContentLoaded', function () {\n  (0,_js_js1__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n  (0,_js_js2__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n}); // load all images\n//каждую подпапку импортируем отдельно (иконки просто копируются в конфиге)\n\nvar images = importAll(__webpack_require__(\"./images sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar slider = importAll(__webpack_require__(\"./images/slider sync \\\\.(png|jpe?g|svg|gif)$\"));\n\nfunction importAll(r) {\n  var images = {};\n  r.keys().map(function (item, index) {\n    images[item.replace('./', '')] = r(item);\n  });\n  return images;\n}\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./styles/main.scss\");\n/* harmony import */ var _js_js1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/js1 */ \"./js/js1.js\");\n/* harmony import */ var _js_js2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/js2 */ \"./js/js2.js\");\n/* harmony import */ var _db_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./db.json */ \"./db.json\");\n\n\n\n\nconsole.log(_db_json__WEBPACK_IMPORTED_MODULE_3__);\nconsole.log('Это файл APP.JS');\nwindow.addEventListener('DOMContentLoaded', function () {\n  (0,_js_js1__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n  (0,_js_js2__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n}); // load all images\n//каждую подпапку импортируем отдельно (иконки просто копируются в конфиге)\n\nvar images = importAll(__webpack_require__(\"./images sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar slider = importAll(__webpack_require__(\"./images/slider sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar galery = importAll(__webpack_require__(\"./images/galery sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar team = importAll(__webpack_require__(\"./images/team sync \\\\.(png|jpe?g|svg|gif)$\"));\n\nfunction importAll(r) {\n  var images = {};\n  r.keys().map(function (item, index) {\n    images[item.replace('./', '')] = r(item);\n  });\n  return images;\n}\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
@@ -39,6 +39,28 @@ eval("__webpack_require__.r(__webpack_exports__);\nfunction one() {\n  console.l
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\nfunction two() {\n  console.log('Это файл 2'); //много другого кода  - весь модуль\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (two);\n\n//# sourceURL=webpack:///./js/js2.js?");
+
+/***/ }),
+
+/***/ "./images/1.jpg":
+/*!**********************!*\
+  !*** ./images/1.jpg ***!
+  \**********************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/1.jpg\");\n\n//# sourceURL=webpack:///./images/1.jpg?");
+
+/***/ }),
+
+/***/ "./images/galery/test.jpg":
+/*!********************************!*\
+  !*** ./images/galery/test.jpg ***!
+  \********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/test.jpg\");\n\n//# sourceURL=webpack:///./images/galery/test.jpg?");
 
 /***/ }),
 
@@ -108,6 +130,39 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./images/team/photo1.jpg":
+/*!********************************!*\
+  !*** ./images/team/photo1.jpg ***!
+  \********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/team/photo1.jpg\");\n\n//# sourceURL=webpack:///./images/team/photo1.jpg?");
+
+/***/ }),
+
+/***/ "./images/team/photo2.jpg":
+/*!********************************!*\
+  !*** ./images/team/photo2.jpg ***!
+  \********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/team/photo2.jpg\");\n\n//# sourceURL=webpack:///./images/team/photo2.jpg?");
+
+/***/ }),
+
+/***/ "./images/team/photo3.jpg":
+/*!********************************!*\
+  !*** ./images/team/photo3.jpg ***!
+  \********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/team/photo3.jpg\");\n\n//# sourceURL=webpack:///./images/team/photo3.jpg?");
+
+/***/ }),
+
 /***/ "./styles/main.scss":
 /*!**************************!*\
   !*** ./styles/main.scss ***!
@@ -116,6 +171,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./styles/main.scss?");
+
+/***/ }),
+
+/***/ "./images/galery sync \\.(png|jpe?g|svg|gif)$":
+/*!*****************************************************************!*\
+  !*** ./images/galery/ sync nonrecursive \.(png|jpe?g|svg|gif)$ ***!
+  \*****************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+eval("var map = {\n\t\"./test.jpg\": \"./images/galery/test.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/galery sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/galery/_sync_nonrecursive_\\.(png%7Cjpe?");
 
 /***/ }),
 
@@ -129,13 +194,23 @@ eval("var map = {\n\t\"./slider.jpg\": \"./images/slider/slider.jpg\"\n};\n\n\nf
 
 /***/ }),
 
+/***/ "./images/team sync \\.(png|jpe?g|svg|gif)$":
+/*!***************************************************************!*\
+  !*** ./images/team/ sync nonrecursive \.(png|jpe?g|svg|gif)$ ***!
+  \***************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+eval("var map = {\n\t\"./photo1.jpg\": \"./images/team/photo1.jpg\",\n\t\"./photo2.jpg\": \"./images/team/photo2.jpg\",\n\t\"./photo3.jpg\": \"./images/team/photo3.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/team sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/team/_sync_nonrecursive_\\.(png%7Cjpe?");
+
+/***/ }),
+
 /***/ "./images sync \\.(png|jpe?g|svg|gif)$":
 /*!**********************************************************!*\
   !*** ./images/ sync nonrecursive \.(png|jpe?g|svg|gif)$ ***!
   \**********************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./intro.png\": \"./images/intro.png\",\n\t\"./logo.jpg\": \"./images/logo.jpg\",\n\t\"./pop-servants-manicure-polish.jpg\": \"./images/pop-servants-manicure-polish.jpg\",\n\t\"./pop-servants-manicure.jpg\": \"./images/pop-servants-manicure.jpg\",\n\t\"./pop-servants-pedicure.jpg\": \"./images/pop-servants-pedicure.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/_sync_nonrecursive_\\.(png%7Cjpe?");
+eval("var map = {\n\t\"./1.jpg\": \"./images/1.jpg\",\n\t\"./intro.png\": \"./images/intro.png\",\n\t\"./logo.jpg\": \"./images/logo.jpg\",\n\t\"./pop-servants-manicure-polish.jpg\": \"./images/pop-servants-manicure-polish.jpg\",\n\t\"./pop-servants-manicure.jpg\": \"./images/pop-servants-manicure.jpg\",\n\t\"./pop-servants-pedicure.jpg\": \"./images/pop-servants-pedicure.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/_sync_nonrecursive_\\.(png%7Cjpe?");
 
 /***/ }),
 

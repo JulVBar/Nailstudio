@@ -1,0 +1,64 @@
+.team {
+    margin-bottom: 100px;
+}
+.team__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team__item {
+    width: 300px;
+    height: 400px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+
+    cursor: pointer;
+
+    &:hover .btn__else {
+        opacity: 1;
+    }
+
+    &:hover .team__plate {
+        height: 120px;
+    }
+}
+
+.team__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team__plate {
+    width: 230px;
+    height: 100px;
+
+    position: absolute;
+    bottom: -30px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 15px;
+    text-align: center;
+
+    background: $bodybackground;
+    @include border-gradient;
+
+    transition: all 1s ease;
+}
+
+.team__name {
+    padding: 5px;
+    @include title($h4);
+}
+
+.team__prof {
+    flex: 1 0 0;
+    @include main-text;
+    padding: 3px;
+}
+

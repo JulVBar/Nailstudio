@@ -1,0 +1,39 @@
+.galery {
+    margin-bottom: 100px;
+}
+
+.rhomb {
+    margin: auto;
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1vmin;
+
+    transform: rotate(90deg);
+}
+.rhomb a {
+    grid-column: span 2;
+    z-index: 1;
+    position: relative;  
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);    
+    margin-bottom: -52%;
+    transform: scale(1);
+    transition: all .25s;
+    
+    transform: rotate(-90deg);
+
+}
+.rhomb a:nth-child(7n + 1) {
+    grid-column: 2 / span 2;
+}
+.rhomb a:hover {
+    z-index: 2;
+    transform: scale(1.2);
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
+
+    transform: rotate(-90deg);
+}
+.rhomb img {
+    max-width: 100%;
+}

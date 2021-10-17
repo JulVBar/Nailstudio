@@ -672,7 +672,7 @@ h4 {
 .section__title {
   width: 100%;
   text-align: center;
-  margin-bottom: 50px; }
+  margin-bottom: 100px; }
   .section__title h2 {
     font-family: 'Rufina', serif;
     font-size: 42px;
@@ -844,7 +844,7 @@ h4 {
   font-weight: 700;
   color: #1e2528de;
   line-height: 1.2;
-  color: #5555558a;
+  color: #5555554f;
   transition: all .2s ease; }
 
 .services__inner {
@@ -921,4 +921,92 @@ h4 {
   text-transform: uppercase;
   text-align: center;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.616); }
+
+.galery {
+  margin-bottom: 100px; }
+
+.rhomb {
+  margin: auto;
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 1vmin;
+  transform: rotate(90deg); }
+
+.rhomb a {
+  grid-column: span 2;
+  z-index: 1;
+  position: relative;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  margin-bottom: -52%;
+  transform: scale(1);
+  transition: all .25s;
+  transform: rotate(-90deg); }
+
+.rhomb a:nth-child(7n + 1) {
+  grid-column: 2 / span 2; }
+
+.rhomb a:hover {
+  z-index: 2;
+  transform: scale(1.2);
+  clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
+  transform: rotate(-90deg); }
+
+.rhomb img {
+  max-width: 100%; }
+
+.team {
+  margin-bottom: 100px; }
+
+.team__inner {
+  display: flex;
+  justify-content: space-between; }
+
+.team__item {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  cursor: pointer; }
+  .team__item:hover .btn__else {
+    opacity: 1; }
+  .team__item:hover .team__plate {
+    height: 120px; }
+
+.team__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.team__plate {
+  width: 230px;
+  height: 100px;
+  position: absolute;
+  bottom: -30px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  text-align: center;
+  background: #fff8f7;
+  border: 2px solid transparent;
+  border-image: linear-gradient(-45deg, #b58b43 32%, #d5b87a 45%, #f6e6b5);
+  border-image-slice: 1;
+  transition: all 1s ease; }
+
+.team__name {
+  padding: 5px;
+  font-family: 'Rufina', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e2528de;
+  line-height: 1.2; }
+
+.team__prof {
+  flex: 1 0 0;
+  font-size: 15px;
+  line-height: 27px;
+  color: #555555;
+  padding: 3px; }
 

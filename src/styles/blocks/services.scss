@@ -17,7 +17,7 @@
     position: relative;
     padding: 10px;
 
-    border-bottom: 2px solid #5555554f;
+    border-bottom: 2px solid $non-active;
 
     cursor: pointer;
     transition: all .2s ease;
@@ -42,7 +42,7 @@
     }
     &.active {
         border-bottom: 2px solid transparent;
-        border-image: linear-gradient(90deg, $brightpink, #5555554f);
+        border-image: linear-gradient(90deg, $brightpink, $non-active);
         border-image-slice: 1;
     }   
 }
@@ -54,7 +54,7 @@
     bottom: 0;
 
     @include title(25px);
-    color: #5555558a;
+    color: $non-active;
 
     transition: all .2s ease;   
 }
