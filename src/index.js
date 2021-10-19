@@ -23,6 +23,10 @@ const images = importAll(require.context('./images', false, /\.(png|jpe?g|svg|gi
 const slider = importAll(require.context('./images/slider', false, /\.(png|jpe?g|svg|gif)$/));
 const galery = importAll(require.context('./images/galery', false, /\.(png|jpe?g|svg|gif)$/));
 const team = importAll(require.context('./images/team', false, /\.(png|jpe?g|svg|gif)$/));
+const instagram = importAll(require.context('./images/instagram', false, /\.(png|jpe?g|svg|gif)$/));
+
+
+
 function importAll(r) {
     let images = {};
     r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });

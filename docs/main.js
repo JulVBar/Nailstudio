@@ -16,7 +16,7 @@
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./styles/main.scss\");\n/* harmony import */ var _js_js1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/js1 */ \"./js/js1.js\");\n/* harmony import */ var _js_js2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/js2 */ \"./js/js2.js\");\n/* harmony import */ var _db_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./db.json */ \"./db.json\");\n\n\n\n\nconsole.log(_db_json__WEBPACK_IMPORTED_MODULE_3__);\nconsole.log('Это файл APP.JS');\nwindow.addEventListener('DOMContentLoaded', function () {\n  (0,_js_js1__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n  (0,_js_js2__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n}); // load all images\n//каждую подпапку импортируем отдельно (иконки просто копируются в конфиге)\n\nvar images = importAll(__webpack_require__(\"./images sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar slider = importAll(__webpack_require__(\"./images/slider sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar galery = importAll(__webpack_require__(\"./images/galery sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar team = importAll(__webpack_require__(\"./images/team sync \\\\.(png|jpe?g|svg|gif)$\"));\n\nfunction importAll(r) {\n  var images = {};\n  r.keys().map(function (item, index) {\n    images[item.replace('./', '')] = r(item);\n  });\n  return images;\n}\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./styles/main.scss\");\n/* harmony import */ var _js_js1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/js1 */ \"./js/js1.js\");\n/* harmony import */ var _js_js2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/js2 */ \"./js/js2.js\");\n/* harmony import */ var _db_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./db.json */ \"./db.json\");\n\n\n\n\nconsole.log(_db_json__WEBPACK_IMPORTED_MODULE_3__);\nconsole.log('Это файл APP.JS');\nwindow.addEventListener('DOMContentLoaded', function () {\n  (0,_js_js1__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n  (0,_js_js2__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n}); // load all images\n//каждую подпапку импортируем отдельно (иконки просто копируются в конфиге)\n\nvar images = importAll(__webpack_require__(\"./images sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar slider = importAll(__webpack_require__(\"./images/slider sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar galery = importAll(__webpack_require__(\"./images/galery sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar team = importAll(__webpack_require__(\"./images/team sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar instagram = importAll(__webpack_require__(\"./images/instagram sync \\\\.(png|jpe?g|svg|gif)$\"));\n\nfunction importAll(r) {\n  var images = {};\n  r.keys().map(function (item, index) {\n    images[item.replace('./', '')] = r(item);\n  });\n  return images;\n}\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
@@ -61,6 +61,127 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/test.jpg\");\n\n//# sourceURL=webpack:///./images/galery/test.jpg?");
+
+/***/ }),
+
+/***/ "./images/instagram/insta1.jpg":
+/*!*************************************!*\
+  !*** ./images/instagram/insta1.jpg ***!
+  \*************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/instagram/insta1.jpg\");\n\n//# sourceURL=webpack:///./images/instagram/insta1.jpg?");
+
+/***/ }),
+
+/***/ "./images/instagram/insta10.jpg":
+/*!**************************************!*\
+  !*** ./images/instagram/insta10.jpg ***!
+  \**************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/instagram/insta10.jpg\");\n\n//# sourceURL=webpack:///./images/instagram/insta10.jpg?");
+
+/***/ }),
+
+/***/ "./images/instagram/insta11.jpg":
+/*!**************************************!*\
+  !*** ./images/instagram/insta11.jpg ***!
+  \**************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/instagram/insta11.jpg\");\n\n//# sourceURL=webpack:///./images/instagram/insta11.jpg?");
+
+/***/ }),
+
+/***/ "./images/instagram/insta2.jpg":
+/*!*************************************!*\
+  !*** ./images/instagram/insta2.jpg ***!
+  \*************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/instagram/insta2.jpg\");\n\n//# sourceURL=webpack:///./images/instagram/insta2.jpg?");
+
+/***/ }),
+
+/***/ "./images/instagram/insta3.jpg":
+/*!*************************************!*\
+  !*** ./images/instagram/insta3.jpg ***!
+  \*************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/instagram/insta3.jpg\");\n\n//# sourceURL=webpack:///./images/instagram/insta3.jpg?");
+
+/***/ }),
+
+/***/ "./images/instagram/insta4.jpg":
+/*!*************************************!*\
+  !*** ./images/instagram/insta4.jpg ***!
+  \*************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/instagram/insta4.jpg\");\n\n//# sourceURL=webpack:///./images/instagram/insta4.jpg?");
+
+/***/ }),
+
+/***/ "./images/instagram/insta5.jpg":
+/*!*************************************!*\
+  !*** ./images/instagram/insta5.jpg ***!
+  \*************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/instagram/insta5.jpg\");\n\n//# sourceURL=webpack:///./images/instagram/insta5.jpg?");
+
+/***/ }),
+
+/***/ "./images/instagram/insta6.jpg":
+/*!*************************************!*\
+  !*** ./images/instagram/insta6.jpg ***!
+  \*************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/instagram/insta6.jpg\");\n\n//# sourceURL=webpack:///./images/instagram/insta6.jpg?");
+
+/***/ }),
+
+/***/ "./images/instagram/insta7.jpg":
+/*!*************************************!*\
+  !*** ./images/instagram/insta7.jpg ***!
+  \*************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/instagram/insta7.jpg\");\n\n//# sourceURL=webpack:///./images/instagram/insta7.jpg?");
+
+/***/ }),
+
+/***/ "./images/instagram/insta8.jpg":
+/*!*************************************!*\
+  !*** ./images/instagram/insta8.jpg ***!
+  \*************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/instagram/insta8.jpg\");\n\n//# sourceURL=webpack:///./images/instagram/insta8.jpg?");
+
+/***/ }),
+
+/***/ "./images/instagram/insta9.jpg":
+/*!*************************************!*\
+  !*** ./images/instagram/insta9.jpg ***!
+  \*************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/instagram/insta9.jpg\");\n\n//# sourceURL=webpack:///./images/instagram/insta9.jpg?");
 
 /***/ }),
 
@@ -181,6 +302,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 eval("var map = {\n\t\"./test.jpg\": \"./images/galery/test.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/galery sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/galery/_sync_nonrecursive_\\.(png%7Cjpe?");
+
+/***/ }),
+
+/***/ "./images/instagram sync \\.(png|jpe?g|svg|gif)$":
+/*!********************************************************************!*\
+  !*** ./images/instagram/ sync nonrecursive \.(png|jpe?g|svg|gif)$ ***!
+  \********************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+eval("var map = {\n\t\"./insta1.jpg\": \"./images/instagram/insta1.jpg\",\n\t\"./insta10.jpg\": \"./images/instagram/insta10.jpg\",\n\t\"./insta11.jpg\": \"./images/instagram/insta11.jpg\",\n\t\"./insta2.jpg\": \"./images/instagram/insta2.jpg\",\n\t\"./insta3.jpg\": \"./images/instagram/insta3.jpg\",\n\t\"./insta4.jpg\": \"./images/instagram/insta4.jpg\",\n\t\"./insta5.jpg\": \"./images/instagram/insta5.jpg\",\n\t\"./insta6.jpg\": \"./images/instagram/insta6.jpg\",\n\t\"./insta7.jpg\": \"./images/instagram/insta7.jpg\",\n\t\"./insta8.jpg\": \"./images/instagram/insta8.jpg\",\n\t\"./insta9.jpg\": \"./images/instagram/insta9.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/instagram sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/instagram/_sync_nonrecursive_\\.(png%7Cjpe?");
 
 /***/ }),
 
