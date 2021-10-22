@@ -394,7 +394,7 @@ h1 {
   margin: 10px 0 30px 0; }
 
 h4 {
-  font-family: Rufina serif;
+  font-family: Lato serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 27px;
@@ -674,7 +674,7 @@ h4 {
   text-align: center;
   margin-bottom: 100px; }
   .section__title h2 {
-    font-family: 'Rufina', serif;
+    font-family: 'Lato', sans-serif;
     font-size: 42px;
     font-weight: 700;
     color: #1e2528de;
@@ -770,7 +770,7 @@ h4 {
 
 .pop__servants__title {
   flex: 1 0 auto;
-  font-family: 'Rufina', serif;
+  font-family: 'Lato', sans-serif;
   font-size: 22px;
   font-weight: 700;
   color: #1e2528de;
@@ -839,7 +839,7 @@ h4 {
   padding-bottom: 10px;
   position: absolute;
   bottom: 0;
-  font-family: 'Rufina', serif;
+  font-family: 'Lato', sans-serif;
   font-size: 25px;
   font-weight: 700;
   color: #1e2528de;
@@ -925,6 +925,53 @@ h4 {
 .galery {
   margin-bottom: 100px; }
 
+.galery__filters {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px; }
+
+.filter__item {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e2528de;
+  line-height: 1.2;
+  color: #5555554f;
+  padding: 10px 20px;
+  border: 1px solid #5555554f;
+  cursor: pointer;
+  transition: all .3s ease; }
+  .filter__item:hover {
+    color: #ff3175; }
+  .filter__item.active {
+    background-color: #ff3175;
+    color: #fff;
+    border: 1px solid #ff3175; }
+
+.galery__photo {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px; }
+
+.galery__photo__item {
+  width: 200px;
+  height: 200px;
+  margin: 3px;
+  cursor: pointer;
+  z-index: 1;
+  transform: scale(1);
+  transition: all .3s; }
+  .galery__photo__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .galery__photo__item:hover {
+    z-index: 2;
+    transform: scale(1.8); }
+
 .team {
   margin-bottom: 100px; }
 
@@ -966,7 +1013,7 @@ h4 {
 
 .team__name {
   padding: 5px;
-  font-family: 'Rufina', serif;
+  font-family: 'Lato', sans-serif;
   font-size: 20px;
   font-weight: 700;
   color: #1e2528de;
@@ -984,6 +1031,23 @@ h4 {
 
 .instagram__block__inner {
   display: flex; }
+
+.instagram__invite {
+  padding: 0 20px;
+  text-align: center; }
+  .instagram__invite h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1e2528de;
+    line-height: 1.2;
+    margin-bottom: 80px; }
+  .instagram__invite div {
+    margin-bottom: 40px; }
+    .instagram__invite div img {
+      height: 100px;
+      width: 100px;
+      object-fit: cover; }
 
 .instagram__invite,
 .instagram__pictures {
@@ -1028,4 +1092,80 @@ h4 {
 .line-4 {
   top: -220px;
   left: 370px; }
+
+.news {
+  margin-bottom: 100px; }
+
+.news__inner {
+  display: flex;
+  justify-content: center; }
+
+.news__card {
+  width: 30%;
+  position: relative;
+  padding: 10px;
+  margin: 10px 30px;
+  background-color: #fff8f7;
+  cursor: pointer; }
+  .news__card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2); }
+  .news__card:hover .news__card__else {
+    right: 10px; }
+  .news__card:hover .news__card__picture img {
+    transform: scale(1.2); }
+  .news__card:hover h5 {
+    text-decoration: underline; }
+
+.news__card__else {
+  width: 130px;
+  z-index: 2;
+  position: absolute;
+  right: -10px;
+  top: 140px;
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  transition: all .3s linear; }
+  .news__card__else span {
+    background-image: linear-gradient(-65deg, #b58b43 32%, #d5b87a 55%, #f6e6b5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    letter-spacing: 1.5px; }
+
+.news__card__top {
+  margin-bottom: 20px; }
+
+.news__card__date {
+  text-transform: uppercase;
+  color: #5555554f; }
+
+.news__card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.news__card__picture {
+  width: 300px;
+  height: 150px;
+  position: relative;
+  overflow: hidden; }
+  .news__card__picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .8s ease; }
+
+.news__card__content {
+  font-family: Lato serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #ff798e;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 0;
+  margin-bottom: 20px;
+  transition: all .3s linear; }
 

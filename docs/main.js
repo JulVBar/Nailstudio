@@ -207,6 +207,50 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./images/news-creame.jpg":
+/*!********************************!*\
+  !*** ./images/news-creame.jpg ***!
+  \********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/news-creame.jpg\");\n\n//# sourceURL=webpack:///./images/news-creame.jpg?");
+
+/***/ }),
+
+/***/ "./images/news-eyebrow.jpg":
+/*!*********************************!*\
+  !*** ./images/news-eyebrow.jpg ***!
+  \*********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/news-eyebrow.jpg\");\n\n//# sourceURL=webpack:///./images/news-eyebrow.jpg?");
+
+/***/ }),
+
+/***/ "./images/news-shoes.jpg":
+/*!*******************************!*\
+  !*** ./images/news-shoes.jpg ***!
+  \*******************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/news-shoes.jpg\");\n\n//# sourceURL=webpack:///./images/news-shoes.jpg?");
+
+/***/ }),
+
+/***/ "./images/news.jpg":
+/*!*************************!*\
+  !*** ./images/news.jpg ***!
+  \*************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/news.jpg\");\n\n//# sourceURL=webpack:///./images/news.jpg?");
+
+/***/ }),
+
 /***/ "./images/pop-servants-manicure-polish.jpg":
 /*!*************************************************!*\
   !*** ./images/pop-servants-manicure-polish.jpg ***!
@@ -341,7 +385,7 @@ eval("var map = {\n\t\"./photo1.jpg\": \"./images/team/photo1.jpg\",\n\t\"./phot
   \**********************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./1.jpg\": \"./images/1.jpg\",\n\t\"./intro.png\": \"./images/intro.png\",\n\t\"./logo.jpg\": \"./images/logo.jpg\",\n\t\"./pop-servants-manicure-polish.jpg\": \"./images/pop-servants-manicure-polish.jpg\",\n\t\"./pop-servants-manicure.jpg\": \"./images/pop-servants-manicure.jpg\",\n\t\"./pop-servants-pedicure.jpg\": \"./images/pop-servants-pedicure.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/_sync_nonrecursive_\\.(png%7Cjpe?");
+eval("var map = {\n\t\"./1.jpg\": \"./images/1.jpg\",\n\t\"./intro.png\": \"./images/intro.png\",\n\t\"./logo.jpg\": \"./images/logo.jpg\",\n\t\"./news-creame.jpg\": \"./images/news-creame.jpg\",\n\t\"./news-eyebrow.jpg\": \"./images/news-eyebrow.jpg\",\n\t\"./news-shoes.jpg\": \"./images/news-shoes.jpg\",\n\t\"./news.jpg\": \"./images/news.jpg\",\n\t\"./pop-servants-manicure-polish.jpg\": \"./images/pop-servants-manicure-polish.jpg\",\n\t\"./pop-servants-manicure.jpg\": \"./images/pop-servants-manicure.jpg\",\n\t\"./pop-servants-pedicure.jpg\": \"./images/pop-servants-pedicure.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/_sync_nonrecursive_\\.(png%7Cjpe?");
 
 /***/ }),
 
