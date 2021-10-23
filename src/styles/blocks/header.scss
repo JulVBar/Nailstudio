@@ -7,10 +7,9 @@
     left: 0;
     z-index: $z-index-header;
     border-bottom: 1px solid $primary;
-    padding: 0 180px;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     background-color:$bodybackground;
 }
@@ -19,7 +18,17 @@
 .header__center,
 .header__button {
     display: flex;
+    justify-content: center;
     align-items: center;
+}
+
+.header__social,
+.header__button {
+    width: 15%;
+}
+
+.header__center {
+    width: 50%;
 }
 
 .header__link {

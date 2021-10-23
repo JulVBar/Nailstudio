@@ -26,425 +26,504 @@
 <script defer="defer" src="vendors-node_modules_babel_polyfill_lib_index_js.js"></script><script defer="defer" src="main.js"></script><link href="main.css" rel="stylesheet"></head>
 
 <body> 
-    <div class="page">
+<div class="page">
 
 
-    <header class="header">
-        <div class="header__social">
-            <a href="#" class="header__link"><img class="header__icon" src="images/icon/instagram_gold.svg" alt="instagram"></a>
-            <a href="#" class="header__link"><img class="header__icon" src="images/icon/messanger_gold.svg" alt="messanger"></a>
-        </div>
-        <div class="header__center">
-            <a href="#" class="header__link"><img class="header__icon" src="images/icon/map_gold.svg" alt="map">
-                <div class="header__text">Санкт-Петербург</div>
-                
-            </a>
-            <a href="#" class="header__link"><img class="header__logo" src="images/logo.jpg" alt="Good Vin"></a>
+<header class="header">
+    <div class="header__social">
+        <a href="#" class="header__link"><img class="header__icon" src="images/icon/instagram_gold.svg" alt="instagram"></a>
+        <a href="#" class="header__link"><img class="header__icon" src="images/icon/messanger_gold.svg" alt="messanger"></a>
+    </div>
+    <div class="header__center">
+        <a href="#" class="header__link"><img class="header__icon" src="images/icon/map_gold.svg" alt="map">
+            <div class="header__text">Санкт-Петербург</div>
+            
+        </a>
+        <a href="#" class="header__link"><img class="header__logo" src="images/logo.jpg" alt="Good Vin"></a>
 
-            <a href="#" class="header__link"><img class="header__icon" src="images/icon/phone_gold.svg" alt="tel">
-                <div class="header__text">+7 (986) 555-66-77</div>
-            </a>
+        <a href="tel:+79052819552" class="header__link"><img class="header__icon" src="images/icon/phone_gold.svg" alt="tel">
+            <div class="header__text">8 (905) 281-95-52</div>
+        </a>
+    </div>
+    <div class="header__button">
+        <button class="btn__gold">Связаться с нами</button>
+    </div>
+</header> <!--header-->
+
+<nav class="navigation">
+    <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link active" href="#">Главная</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Услуги и цены</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Галерея работ</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Наши мастера</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Полезная информация</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+    </ul>
+
+
+    <nav class="social-menu">
+        <input type="checkbox" name="social-menu-open" id="social-menu-open" class="social-menu-open">
+        <label for="social-menu-open" class="social-menu-open-button">
+            <span class="button-is-open"><i class="far fa-comment"></i></span>
+            <span class="button-is-close"><i class="fas fa-times"></i></span>
+        </label>
+        
+        <a href="#" class="menu-item vkontakte" target="_blank"><i class="fab fa-vk"></i></a>
+        <a href="#" class="menu-item whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="menu-item facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="#" class="menu-item instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="#" class="menu-item telegram" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+        <a href="#" class="menu-item odnoklassniki" target="_blank"><i class="fab fa-odnoklassniki"></i></a>
+    </nav>
+
+</nav> <!--navigation-->
+
+<div class="intro">
+    <div class="container">
+        <div class="intro__background">
+            <img src="images/intro.png" alt="Good Vin">
         </div>
-        <div class="header__button">
-            <button class="btn__gold">Связаться с нами</button>
-        </div>
-    </header> <!--header-->
-    
-    <nav class="navigation">
-        <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link active" href="#">Главная</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Услуги и цены</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Галерея работ</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Полезная информация</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+
+        <h4>Здоровье & Красота</h4>
+        <h1>Студия маникюра и педикюра</h1>
+        <div class="h1__gradient"><span>Good Vin</span></div>
+
+        <ul class="intro__list">
+            <li class="intro__list-item">
+                <img src="images/icon/checkin.svg" alt="checkin">
+                Маникюр без порезов
+            </li>
+            <li class="intro__list-item">
+                <img src="images/icon/checkin.svg" alt="checkin">
+                Покрытие без сколов
+            </li>
+            <li class="intro__list-item">
+                <img src="images/icon/checkin.svg" alt="checkin">
+                Медицинский/эстетический педикюр
+            </li>
         </ul>
 
+        <button class="btn__gold">Подробнее</button>
+    </div> <!--container-->
+</div> <!--intro-->
 
-        <nav class="social-menu">
-            <input type="checkbox" name="social-menu-open" id="social-menu-open" class="social-menu-open">
-            <label for="social-menu-open" class="social-menu-open-button">
-                <span class="button-is-open"><i class="far fa-comment"></i></span>
-                <span class="button-is-close"><i class="fas fa-times"></i></span>
-            </label>
+<section class="pop__servants">
+    <div class="container">
+        <div class="section__title"><h2>Популярные Услуги</h2></div>
+
+        <div class="pop__servants__inner">
+            <figure class="pop__servants__item">
+                <img src="images/pop-servants-manicure.jpg" alt="pop-servants-manicure">
+                
+                    <h3 class="pop__servants__title">Маникюр аппаратный с покрытием в один тон</h3>
+                    
+                    <div class="pop__servants__footer">
+                        <a href="#" class="btn__else">Подробнее<i class="else__arrow fas fa-long-arrow-alt-right"></i></a>
+                        <div class="pop__servants__price">
+                            <span>1 800</span><i class="fas fa-ruble-sign"></i>
+                        </div>
+                    </div>
+            </figure>
+
+            <figure class="pop__servants__item">
+                <img src="images/pop-servants-manicure-polish.jpg" alt="pop-servants-manicure-polish">
+                
+                    <h3 class="pop__servants__title">Покрытие гель лаком</h3>
+                    
+                    <div class="pop__servants__footer">
+                        <a href="#" class="btn__else">Подробнее<i class="else__arrow fas fa-long-arrow-alt-right"></i></a>
+                        <div class="pop__servants__price">
+                            <span>500</span><i class="fas fa-ruble-sign"></i>
+                        </div>
+                    </div>
+            </figure>
+
+            <figure class="pop__servants__item">
+                <img src="images/pop-servants-pedicure.jpg" alt="pop-servants-pedicure">
+                
+                    <h3 class="pop__servants__title">Педикюр медицинский</h3>
+                    
+                    <div class="pop__servants__footer">
+                        <a href="#" class="btn__else">Подробнее<i class="else__arrow fas fa-long-arrow-alt-right"></i></a>
+                        <div class="pop__servants__price">
+                            от <span>2 500</span><i class="fas fa-ruble-sign"></i>
+                        </div>
+                    </div>
+            </figure>
+
             
-            <a href="#" class="menu-item vkontakte" target="_blank"><i class="fab fa-vk"></i></a>
-            <a href="#" class="menu-item whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" class="menu-item facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#" class="menu-item instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="#" class="menu-item telegram" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-            <a href="#" class="menu-item odnoklassniki" target="_blank"><i class="fab fa-odnoklassniki"></i></a>
+            
+            
+        </div> <!--pop__servants__inner-->
+        
+    </div>
+</section> <!--pop__servants-->
+
+<section class="services">
+    <div class="container">
+        <div class="section__title"><h2>Наши Услуги</h2></div>
+
+        <div class="services__categories">
+            <div class="category active">
+                <img src="images/icon/nail.png" alt="manicure">
+                <div class="category__name">Маникюр</div>
+            </div>
+            <div class="category">
+                <img src="images/icon/foot.png" alt="pedicure">
+                <div class="category__name">Педикюр</div>
+            </div>
+            <div class="category">
+                <img src="images/icon/eyebrow.png" alt="eyebrows">
+                <div class="category__name">Брови</div>
+            </div>
+            <div class="category">
+                <img src="images/icon/lash.png" alt="lashes">
+                <div class="category__name">Ресницы</div>
+            </div>
+        </div> <!--services__categories-->
+
+        <div class="services__inner">
+
+            <div class="services__item">
+                <div class="services__name">Маникюр без покрытия и сколов</div>
+                <div class="services__footer">
+                    <div class="btn__else">Подробнее<i class="else__arrow fas fa-long-arrow-alt-right"></i></div>
+                    <div class="services__price">
+                        от <span>1 800</span><i class="fas fa-ruble-sign"></i>
+                    </div>
+                </div>
+                <div class="services__frame"></div>
+            </div> <!--services__item-->
+
+            <div class="services__item">
+                
+
+                <div class="services__name">Маникюр без покрытия и сколов</div>
+                <div class="services__footer">
+                    <div class="btn__else">Подробнее<i class="else__arrow fas fa-long-arrow-alt-right"></i></div>
+                    <div class="services__price">
+                        от <span>1 800</span><i class="fas fa-ruble-sign"></i>
+                    </div>
+                </div>
+                <div class="services__frame">
+                    <div class="ribbon">хит</div>
+                </div>
+            </div> <!--services__item-->
+
+            <div class="services__item">
+                <div class="services__name">Маникюр без покрытия и сколов</div>
+                <div class="services__footer">
+                    <div class="btn__else">Подробнее<i class="else__arrow fas fa-long-arrow-alt-right"></i></div>
+                    <div class="services__price">
+                        от <span>1 800</span><i class="fas fa-ruble-sign"></i>
+                    </div>
+                </div>
+                <div class="services__frame">
+                    <div class="ribbon">хит</div>
+                </div>
+            </div> <!--services__item-->
+
+            <div class="services__item">
+                <div class="services__name">Маникюр без покрытия и сколов</div>
+                <div class="services__footer">
+                    <div class="btn__else">Подробнее<i class="else__arrow fas fa-long-arrow-alt-right"></i></div>
+                    <div class="services__price">
+                        от <span>1 800</span><i class="fas fa-ruble-sign"></i>
+                    </div>
+                </div>
+                <div class="services__frame"></div>
+            </div> <!--services__item-->
+
+            <div class="services__item">
+                <div class="services__name">Маникюр без покрытия и сколов</div>
+                <div class="services__footer">
+                    <div class="btn__else">Подробнее<i class="else__arrow fas fa-long-arrow-alt-right"></i></div>
+                    <div class="services__price">
+                        от <span>1 800</span><i class="fas fa-ruble-sign"></i>
+                    </div>
+                </div>
+                <div class="services__frame"></div>
+            </div> <!--services__item-->
+
+
+        </div> <!--services__inner-->
+
+    </div> <!--container-->
+</section> <!--services-->
+
+<section class="galery">
+    <div class="container">
+        <div class="section__title"><h2>Галерея Работ</h2></div>
+
+        <ul class="galery__filters">
+            <li class="filter__item active">Рисунок</li>
+            <li class="filter__item"># Один тон</li>
+            <li class="filter__item"># Длинные</li>
+            <li class="filter__item"># Короткие</li>
+            <li class="filter__item"># Педикюр</li>
+            <li class="filter__item"># Ресницы</li>
+            <li class="filter__item"># Брови</li>
+            
+        </ul>
+
+        <ul class="galery__photo">
+            <li class="galery__photo__item">
+                <img src="images/galery/test.jpg" alt="">
+            </li>
+            <li class="galery__photo__item">
+                <img src="images/galery/test.jpg" alt="">
+            </li>
+            <li class="galery__photo__item">
+                <img src="images/galery/test.jpg" alt="">
+            </li>
+            <li class="galery__photo__item">
+                <img src="images/galery/test.jpg" alt="">
+            </li>
+            <li class="galery__photo__item">
+                <img src="images/galery/test.jpg" alt="">
+            </li>
+            <li class="galery__photo__item">
+                <img src="images/galery/test.jpg" alt="">
+            </li>
+            <li class="galery__photo__item">
+                <img src="images/galery/test.jpg" alt="">
+            </li>
+            <li class="galery__photo__item">
+                <img src="images/galery/test.jpg" alt="">
+            </li>
+            <li class="galery__photo__item">
+                <img src="images/galery/test.jpg" alt="">
+            </li>
+            <li class="galery__photo__item">
+                <img src="images/galery/test.jpg" alt="">
+            </li>
+        </ul>
+        
+
+    </div> <!--pcontainer-->
+</section> <!--galery-->
+
+<section class="team">
+    <div class="container">
+        <div class="section__title"><h2>Наши мастера</h2></div>
+
+        <div class="team__inner">
+            <div class="team__item">
+                <img class="team__photo" src="images/team/photo1.jpg" alt="">
+                <div class="team__plate">
+                    <div class="team__name">Анна Кожарина</div>
+                    <div class="team__prof">Мастер маникюра</div>
+                    <div class="btn__else">Подробнее<i class="else__arrow fas fa-long-arrow-alt-right"></i></div>
+                </div>
+            </div>
+
+            <div class="team__item">
+                <img src="images/team/photo2.jpg" alt="" class="team__photo">
+                <div class="team__plate">
+                    <div class="team__name">Юлия Ерецкая</div>
+                    <div class="team__prof">Мастер маникюра</div>
+                    <div class="btn__else">Подробнее<i class="else__arrow fas fa-long-arrow-alt-right"></i></div>
+                </div>
+            </div>
+
+            <div class="team__item">
+                <img src="images/team/photo3.jpg" alt="" class="team__photo">
+                <div class="team__plate">
+                    <div class="team__name">Мария Гуренко</div>
+                    <div class="team__prof">Мастер маникюра</div>
+                    <div class="btn__else">Подробнее<i class="else__arrow fas fa-long-arrow-alt-right"></i></div>
+                </div>
+            </div>
+
+        </div>
+
+        
+
+    </div> <!--container-->
+</section> <!--team-->
+
+<section class="instagram__block">
+    <div class="container">
+        <div class="section__title"><h2>Мы в Instagram!</h2></div>
+
+        <div class="instagram__block__inner">
+            <div class="instagram__invite">
+                <h2>Подписывайся на наш Instagram!</h2>
+                <div><img src="images/icon/instagram_big.svg" alt="https://www.instagram.com/studio_goodvin/"></div>
+                <a class="btn__gold" href="https://www.instagram.com/studio_goodvin/" target="blank">Подписаться</a>
+
+            </div> <!--instagram__invite-->
+
+            <div class="instagram__pictures">
+                <div class="instagram__wrapper">
+
+                    <div class="intagram__line line-1">
+                        <img class="line__img" src="images/instagram/insta7.jpg" alt="">
+                        <img class="line__img" src="images/instagram/insta1.jpg" alt="">
+                        <img class="line__img" src="images/instagram/insta7.jpg" alt="">
+                    </div>
+
+                    <div class="intagram__line line-2">
+                        <img class="line__img" src="images/instagram/insta8.jpg" alt="">
+                        <img class="line__img" src="images/instagram/insta5.jpg" alt="">
+                        <img class="line__img" src="images/instagram/insta3.jpg" alt="">
+                        <img class="line__img" src="images/instagram/insta9.jpg" alt="">
+                    </div>
+
+                    <div class="intagram__line line-3">
+                        <img class="line__img" src="images/instagram/insta9.jpg" alt="">
+                        <img class="line__img" src="images/instagram/insta4.jpg" alt="">
+                        <img class="line__img" src="images/instagram/insta2.jpg" alt="">
+                        <img class="line__img" src="images/instagram/insta11.jpg" alt="">
+                    </div>
+
+                    <div class="intagram__line line-4">
+                        <img class="line__img" src="images/instagram/insta6.jpg" alt="">
+                        <img class="line__img" src="images/instagram/insta6.jpg" alt="">
+                        <img class="line__img" src="images/instagram/insta10.jpg" alt="">
+                    </div>
+                </div> <!--instagram__wrapper-->
+            </div> <!--instagram__pictures-->
+        </div> <!--instagram__block__inner-->
+    </div> <!--container-->
+</section> <!--instagram__block-->
+
+<section class="news">
+    <div class="container">
+        <div class="section__title"><h2>Интересно почитать</h2></div>
+
+        <div class="news__inner">
+            <article class="news__card">
+                <div class="news__card__else"><span>Подробнее</span></div>
+                <div class="news__card__top">
+                    <time class="news__card__date" datetime="2021-10-05">5 октября</time>
+                </div>
+                <div class="news__card__body">
+                    <div class="news__card__picture">
+                        <img src="images/news-shoes.jpg" alt="news-shoes">
+                    </div>
+
+                    <h5 class="news__card__content">Выбираем обувь вместе с GOODVIN</h5>
+                    
+                </div>
+            </article>
+
+            <article class="news__card">
+                <div class="news__card__else"><span>Подробнее</span></div>
+                <div class="news__card__top">
+                    <time class="news__card__date" datetime="2021-09-18">18 сентября</time>
+                </div>
+                <div class="news__card__body">
+                    <div class="news__card__picture">
+                        <img src="images/news-creame.jpg" alt="news-creame">
+                    </div>
+                    
+                    <h5 class="news__card__content">Крема для рук и ног</h5>
+                </div>
+            </article>
+
+            <article class="news__card">
+                <div class="news__card__else"><span>Подробнее</span></div>
+                <div class="news__card__top">
+                    <time class="news__card__date" datetime="2021-08-22">22 августа</time>
+                </div>
+                <div class="news__card__body">
+                    <div class="news__card__picture">
+                        <img src="images/news-eyebrow.jpg" alt="news-eyebrow">
+                    </div>
+                    
+                    <h5 class="news__card__content">Красивые брови - красивое лицо!</h5>
+                </div>
+            </article>
+
+        </div> <!--news__inner-->
+    </div> <!--container-->
+</section> <!--news-->
+
+<footer>
+    <div class="footer__wave">
+        <svg viewBox="0 0 120 28">
+            <defs> 
+                <mask id="xxx">
+                <circle cx="7" cy="12" r="40" fill="#fff"/>
+                </mask>
+                
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+                    <feColorMatrix in="blur" mode="matrix" values="
+                        1 0 0 0 0  
+                        0 1 0 0 0  
+                        0 0 1 0 0  
+                        0 0 0 13 -9" result="goo"/>
+                    <feBlend in="SourceGraphic" in2="goo"/>
+                </filter>
+                <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z"/>
+                </defs> 
+            
+                <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use> 
+                <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+            
+                
+                <g class="gooeff">
+                <circle class="drop drop1" cx="20" cy="2" r="1.8"/>
+                <circle class="drop drop2" cx="25" cy="2.5" r="1.5"/>
+                <circle class="drop drop3" cx="16" cy="2.8" r="1.2"/>
+                <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1"/>
+                
+                <!-- g mask="url(#xxx)">
+                <path   id="wave1"  class="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+                </g>
+                </g -->
+            
+        </g></svg>    
+    </div> <!--footer__wave-->
+    
+    <div class="footer__inner">
+        <nav class="footer__nav">
+            <h5 class="footer__title">клиентам</h5>
+            <ul class="footer__nav__list">
+                <li class="footer__nav__item"><a class="footer__nav__link" href="#">Главная</a></li>
+                <li class="footer__nav__item"><a class="footer__nav__link" href="#">Услуги и цены</a></li>
+                <li class="footer__nav__item"><a class="footer__nav__link" href="#">Галерея работ</a></li>
+                <li class="footer__nav__item"><a class="footer__nav__link" href="#">Наши мастера</a></li>
+                <li class="footer__nav__item"><a class="footer__nav__link" href="#">Полезная информация</a></li>
+            </ul>
         </nav>
 
-    </nav> <!--navigation-->
-
-    <div class="intro">
-        <div class="container">
-            <div class="intro__background">
-                <img src="images/intro.png" alt="Good Vin">
+        <div class="footer__logo">
+            <div class="footer__logo__wrapper">
+                <div class="corner-4-box">
+                    <div class="corner-4-textbox">
+                        <img src="images/logo.jpg" alt="">
+                    </div>
+                </div>
             </div>
-
-            <h4>Здоровье & Красота</h4>
-            <h1>Студия маникюра и педикюра</h1>
-            <div class="h1__gradient"><span>Good Vin</span></div>
-
-            <ul class="intro__list">
-                <li class="intro__list-item">
-                    <img src="images/icon/checkin.svg" alt="checkin">
-                    Маникюр без порезов
-                </li>
-                <li class="intro__list-item">
-                    <img src="images/icon/checkin.svg" alt="checkin">
-                    Покрытие без сколов
-                </li>
-                <li class="intro__list-item">
-                    <img src="images/icon/checkin.svg" alt="checkin">
-                    Медицинский/эстетический педикюр
-                </li>
-            </ul>
-
-            <button class="btn__gold">Подробнее</button>
-        </div> <!--container-->
-    </div> <!--intro-->
-
-    <section class="pop__servants">
-        <div class="container">
-            <div class="section__title"><h2>Популярные Услуги</h2></div>
-
-            <div class="pop__servants__inner">
-                <figure class="pop__servants__item">
-                    <img src="images/pop-servants-manicure.jpg" alt="pop-servants-manicure">
-                    
-                        <h3 class="pop__servants__title">Маникюр аппаратный с покрытием в один тон</h3>
-                        
-                        <div class="pop__servants__footer">
-                            <a href="#" class="btn__else">Подробнее<i class="else__arrow fas fa-long-arrow-alt-right"></i></a>
-                            <div class="pop__servants__price">
-                                <span>1 800</span><i class="fas fa-ruble-sign"></i>
-                            </div>
-                        </div>
-                </figure>
-
-                <figure class="pop__servants__item">
-                    <img src="images/pop-servants-manicure-polish.jpg" alt="pop-servants-manicure-polish">
-                    
-                        <h3 class="pop__servants__title">Покрытие гель лаком</h3>
-                        
-                        <div class="pop__servants__footer">
-                            <a href="#" class="btn__else">Подробнее<i class="else__arrow fas fa-long-arrow-alt-right"></i></a>
-                            <div class="pop__servants__price">
-                                <span>500</span><i class="fas fa-ruble-sign"></i>
-                            </div>
-                        </div>
-                </figure>
-
-                <figure class="pop__servants__item">
-                    <img src="images/pop-servants-pedicure.jpg" alt="pop-servants-pedicure">
-                    
-                        <h3 class="pop__servants__title">Педикюр медицинский</h3>
-                        
-                        <div class="pop__servants__footer">
-                            <a href="#" class="btn__else">Подробнее<i class="else__arrow fas fa-long-arrow-alt-right"></i></a>
-                            <div class="pop__servants__price">
-                                от <span>2 500</span><i class="fas fa-ruble-sign"></i>
-                            </div>
-                        </div>
-                </figure>
-
-                
-               
-                
-            </div> <!--pop__servants__inner-->
-            
+            <div class="footer__logo__text">Санкт-Петербург 2021</div>
         </div>
-    </section> <!--pop__servants-->
-
-    <section class="services">
-        <div class="container">
-            <div class="section__title"><h2>Наши Услуги</h2></div>
-
-            <div class="services__categories">
-                <div class="category active">
-                    <img src="images/icon/nail.png" alt="manicure">
-                    <div class="category__name">Маникюр</div>
-                </div>
-                <div class="category">
-                    <img src="images/icon/foot.png" alt="pedicure">
-                    <div class="category__name">Педикюр</div>
-                </div>
-                <div class="category">
-                    <img src="images/icon/eyebrow.png" alt="eyebrows">
-                    <div class="category__name">Брови</div>
-                </div>
-                <div class="category">
-                    <img src="images/icon/lash.png" alt="lashes">
-                    <div class="category__name">Ресницы</div>
-                </div>
-            </div> <!--services__categories-->
-
-            <div class="services__inner">
-
-                <div class="services__item">
-                    <div class="services__name">Маникюр без покрытия и сколов</div>
-                    <div class="services__footer">
-                        <div class="btn__else">Подробнее<i class="else__arrow fas fa-long-arrow-alt-right"></i></div>
-                        <div class="services__price">
-                            от <span>1 800</span><i class="fas fa-ruble-sign"></i>
-                        </div>
-                    </div>
-                    <div class="services__frame"></div>
-                </div> <!--services__item-->
-
-                <div class="services__item">
-                    
-
-                    <div class="services__name">Маникюр без покрытия и сколов</div>
-                    <div class="services__footer">
-                        <div class="btn__else">Подробнее<i class="else__arrow fas fa-long-arrow-alt-right"></i></div>
-                        <div class="services__price">
-                            от <span>1 800</span><i class="fas fa-ruble-sign"></i>
-                        </div>
-                    </div>
-                    <div class="services__frame">
-                        <div class="ribbon">хит</div>
-                    </div>
-                </div> <!--services__item-->
-
-                <div class="services__item">
-                    <div class="services__name">Маникюр без покрытия и сколов</div>
-                    <div class="services__footer">
-                        <div class="btn__else">Подробнее<i class="else__arrow fas fa-long-arrow-alt-right"></i></div>
-                        <div class="services__price">
-                            от <span>1 800</span><i class="fas fa-ruble-sign"></i>
-                        </div>
-                    </div>
-                    <div class="services__frame">
-                        <div class="ribbon">хит</div>
-                    </div>
-                </div> <!--services__item-->
-
-                <div class="services__item">
-                    <div class="services__name">Маникюр без покрытия и сколов</div>
-                    <div class="services__footer">
-                        <div class="btn__else">Подробнее<i class="else__arrow fas fa-long-arrow-alt-right"></i></div>
-                        <div class="services__price">
-                            от <span>1 800</span><i class="fas fa-ruble-sign"></i>
-                        </div>
-                    </div>
-                    <div class="services__frame"></div>
-                </div> <!--services__item-->
-
-                <div class="services__item">
-                    <div class="services__name">Маникюр без покрытия и сколов</div>
-                    <div class="services__footer">
-                        <div class="btn__else">Подробнее<i class="else__arrow fas fa-long-arrow-alt-right"></i></div>
-                        <div class="services__price">
-                            от <span>1 800</span><i class="fas fa-ruble-sign"></i>
-                        </div>
-                    </div>
-                    <div class="services__frame"></div>
-                </div> <!--services__item-->
 
 
-            </div> <!--services__inner-->
 
-        </div> <!--container-->
-    </section> <!--services-->
-
-    <section class="galery">
-        <div class="container">
-            <div class="section__title"><h2>Галерея Работ</h2></div>
-
-            <ul class="galery__filters">
-                <li class="filter__item active">Рисунок</li>
-                <li class="filter__item"># Один тон</li>
-                <li class="filter__item"># Длинные</li>
-                <li class="filter__item"># Короткие</li>
-                <li class="filter__item"># Педикюр</li>
-                <li class="filter__item"># Ресницы</li>
-                <li class="filter__item"># Брови</li>
-                
+        <div class="footer__contacts">
+            <h5 class="footer__title">Контакты</h5>
+            <ul class="footer__contacts__list">
+                <li class="footer__nav__item"><a class="footer__nav__link" href="#"><i class="contact__icon fas fa-map-marker-alt"></i>ул. Салова 61, "VALO"</a></li>
+                <li class="footer__nav__item"><a class="footer__nav__link" href="tel:+79052819552"><i class="contact__icon fas fa-mobile-alt"></i>8 (905) 281-95-52</a></li>
             </ul>
 
-            <ul class="galery__photo">
-                <li class="galery__photo__item">
-                    <img src="images/galery/test.jpg" alt="">
-                </li>
-                <li class="galery__photo__item">
-                    <img src="images/galery/test.jpg" alt="">
-                </li>
-                <li class="galery__photo__item">
-                    <img src="images/galery/test.jpg" alt="">
-                </li>
-                <li class="galery__photo__item">
-                    <img src="images/galery/test.jpg" alt="">
-                </li>
-                <li class="galery__photo__item">
-                    <img src="images/galery/test.jpg" alt="">
-                </li>
-                <li class="galery__photo__item">
-                    <img src="images/galery/test.jpg" alt="">
-                </li>
-                <li class="galery__photo__item">
-                    <img src="images/galery/test.jpg" alt="">
-                </li>
-                <li class="galery__photo__item">
-                    <img src="images/galery/test.jpg" alt="">
-                </li>
-                <li class="galery__photo__item">
-                    <img src="images/galery/test.jpg" alt="">
-                </li>
-                <li class="galery__photo__item">
-                    <img src="images/galery/test.jpg" alt="">
-                </li>
-            </ul>
-            
-
-        </div> <!--pcontainer-->
-    </section> <!--galery-->
-
-    <section class="team">
-        <div class="container">
-            <div class="section__title"><h2>Наши мастера</h2></div>
-
-            <div class="team__inner">
-                <div class="team__item">
-                    <img class="team__photo" src="images/team/photo1.jpg" alt="">
-                    <div class="team__plate">
-                        <div class="team__name">Анна Кожарина</div>
-                        <div class="team__prof">Мастер маникюра</div>
-                        <div class="btn__else">Подробнее<i class="else__arrow fas fa-long-arrow-alt-right"></i></div>
-                    </div>
-                </div>
-
-                <div class="team__item">
-                    <img src="images/team/photo2.jpg" alt="" class="team__photo">
-                    <div class="team__plate">
-                        <div class="team__name">Юлия Ерецкая</div>
-                        <div class="team__prof">Мастер маникюра</div>
-                        <div class="btn__else">Подробнее<i class="else__arrow fas fa-long-arrow-alt-right"></i></div>
-                    </div>
-                </div>
-
-                <div class="team__item">
-                    <img src="images/team/photo3.jpg" alt="" class="team__photo">
-                    <div class="team__plate">
-                        <div class="team__name">Мария Гуренко</div>
-                        <div class="team__prof">Мастер маникюра</div>
-                        <div class="btn__else">Подробнее<i class="else__arrow fas fa-long-arrow-alt-right"></i></div>
-                    </div>
-                </div>
-
+            <div class="footer__social">
+                <div class="footer__social__item"><i class="footer__social__icon fab fa-instagram"></i></div>
+                <div class="footer__social__item"><i class="footer__social__icon fab fa-whatsapp"></i></div>
+                <div class="footer__social__item"><i class="footer__social__icon fab fa-telegram-plane"></i></div>
             </div>
-
-            
-
-        </div> <!--container-->
-    </section> <!--team-->
-
-    <section class="instagram__block">
-        <div class="container">
-            <div class="section__title"><h2>Мы в Instagram!</h2></div>
-
-            <div class="instagram__block__inner">
-                <div class="instagram__invite">
-                    <h2>Подписывайся на наш Instagram!</h2>
-                    <div><img src="images/icon/instagram_big.svg" alt="https://www.instagram.com/studio_goodvin/"></div>
-                    <a class="btn__gold" href="https://www.instagram.com/studio_goodvin/" target="blank">Подписаться</a>
-
-                </div> <!--instagram__invite-->
-
-                <div class="instagram__pictures">
-                    <div class="instagram__wrapper">
-
-                        <div class="intagram__line line-1">
-                            <img class="line__img" src="images/instagram/insta7.jpg" alt="">
-                            <img class="line__img" src="images/instagram/insta1.jpg" alt="">
-                            <img class="line__img" src="images/instagram/insta7.jpg" alt="">
-                        </div>
-
-                        <div class="intagram__line line-2">
-                            <img class="line__img" src="images/instagram/insta8.jpg" alt="">
-                            <img class="line__img" src="images/instagram/insta5.jpg" alt="">
-                            <img class="line__img" src="images/instagram/insta3.jpg" alt="">
-                            <img class="line__img" src="images/instagram/insta9.jpg" alt="">
-                        </div>
-
-                        <div class="intagram__line line-3">
-                            <img class="line__img" src="images/instagram/insta9.jpg" alt="">
-                            <img class="line__img" src="images/instagram/insta4.jpg" alt="">
-                            <img class="line__img" src="images/instagram/insta2.jpg" alt="">
-                            <img class="line__img" src="images/instagram/insta11.jpg" alt="">
-                        </div>
-
-                        <div class="intagram__line line-4">
-                            <img class="line__img" src="images/instagram/insta6.jpg" alt="">
-                            <img class="line__img" src="images/instagram/insta6.jpg" alt="">
-                            <img class="line__img" src="images/instagram/insta10.jpg" alt="">
-                        </div>
-                    </div> <!--instagram__wrapper-->
-                </div> <!--instagram__pictures-->
-            </div> <!--instagram__block__inner-->
-        </div> <!--container-->
-    </section> <!--instagram__block-->
-
-    <section class="news">
-        <div class="container">
-            <div class="section__title"><h2>Интересно почитать</h2></div>
-
-            <div class="news__inner">
-                <article class="news__card">
-                    <div class="news__card__else"><span>Подробнее</span></div>
-                    <div class="news__card__top">
-                        <time class="news__card__date" datetime="2021-10-05">5 октября</time>
-                    </div>
-                    <div class="news__card__body">
-                        <div class="news__card__picture">
-                            <img src="images/news-shoes.jpg" alt="news-shoes">
-                        </div>
-
-                        <h5 class="news__card__content">Выбираем обувь вместе с GOODVIN</h5>
-                        
-                    </div>
-                </article>
-
-                <article class="news__card">
-                    <div class="news__card__else"><span>Подробнее</span></div>
-                    <div class="news__card__top">
-                        <time class="news__card__date" datetime="2021-09-18">18 сентября</time>
-                    </div>
-                    <div class="news__card__body">
-                        <div class="news__card__picture">
-                            <img src="images/news-creame.jpg" alt="news-creame">
-                        </div>
-                        
-                        <h5 class="news__card__content">Крема для рук и ног</h5>
-                    </div>
-                </article>
-
-                <article class="news__card">
-                    <div class="news__card__else"><span>Подробнее</span></div>
-                    <div class="news__card__top">
-                        <time class="news__card__date" datetime="2021-08-22">22 августа</time>
-                    </div>
-                    <div class="news__card__body">
-                        <div class="news__card__picture">
-                            <img src="images/news-eyebrow.jpg" alt="news-eyebrow">
-                        </div>
-                        
-                        <h5 class="news__card__content">Красивые брови - красивое лицо!</h5>
-                    </div>
-                </article>
-
-            </div> <!--news__inner-->
-        </div> <!--container-->
-    </section> <!--news-->
+        </div>
+    </div> <!--footer__inner-->
 
 
+</footer> <!--footer-->
 
 
+</div> <!--page-->
 
 
-
-    </div> <!--page-->
 </body>
 </html>
