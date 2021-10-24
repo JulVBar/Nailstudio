@@ -3,12 +3,12 @@
 
 
 html {
-    font-size: 15px;
+    font-size: $maintextsize;
 }
 
 body {
     background-color: $bodybackground;
-    font-family: 'Roboto', sans-serif; //'Andada Pro', serif, 'Rufina', serif;
+    font-family: $font-family-main;
     color: $maintext;
 }
 
@@ -29,12 +29,10 @@ body {
 @import "blocks/elements/button";
 @import "blocks/elements/social-menu";
 @import "blocks/elements/section-title";
-@import "blocks/elements/btn-else";
 @import "blocks/pop-servants";
 @import "blocks/services";
 @import "blocks/galery";
-@import "blocks/team";
-@import "blocks/instagram";
+@import "blocks/reviews";
 @import "blocks/news";
 @import "blocks/footer";
 @import "blocks/footer-wave";

@@ -2,160 +2,148 @@
     margin-bottom: 100px;
 }
 
-.services__categories {
-    width: 100%;
-    display: flex;
-    padding: 0 30px;
-
-    margin-bottom: 40px;
-}
-
-.category {
-    width: 25%;
-    height: 70px;
-
-    position: relative;
-    padding: 10px;
-
-    border-bottom: 2px solid $non-active;
-
-    cursor: pointer;
-    transition: all .2s ease;
-
-    & img {
-        display: block;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 0;
-
-        width: 50px;
-        height: 50px;
-    }
-
-    &:hover .category__name {
-        color: $brightpink;
-    }
-
-    &.active .category__name {
-        color: $brightpink;
-    }
-    &.active {
-        border-bottom: 2px solid transparent;
-        border-image: linear-gradient(90deg, $brightpink, $non-active);
-        border-image-slice: 1;
-    }   
-}
-
-.category__name {
-    padding-left: 60px;
-    padding-bottom: 10px;
+.services__list__background {
     position: absolute;
-    bottom: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
 
-    @include title(25px);
-    color: $non-active;
+    transition: all 8s ease;
+}
 
-    transition: all .2s ease;   
+.services {
+    &:hover .services__list__background {
+        transform: scale(1.4);
+    }
 }
 
 .services__inner {
     display: flex;
-    flex-wrap: wrap;
 }
 
-.services__item {
-    @include border-gradient;
-    position: relative;
-    
-
-    display: flex;
-    flex-direction: column;
-
-    width: 250px;
-    height: 130px;
-    margin: 15px;
-    padding: 10px;
-
-    cursor: pointer;
-
-    &:hover .btn__else {
-        opacity: 1;
-    }
-
-    &:hover .services__frame {
-        transform: rotate(0);
-    }
+.services__list {
+    width: 40%;
 }
 
-.services__name {
-    flex: 1 0 auto;
-    
-    padding: 3px;
-    @include main-text;
+.services__details {
+    width: 60%;
 }
 
-.services__footer {
-    width: 100%;
-    padding:  5px 0;
-
-    display: flex;
-    justify-content: space-between;
-
-    position: relative;
-}
-
-.services__price {
-    color: $pink;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 700;
-
+.services__list__top {
     display: flex;
     justify-content: center;
-    align-items: center;
-
-    
-
-    & span {
-        padding: 0 7px;
-    }   
+    width: 100%;
+    margin-bottom: 30px;
 }
 
-.services__frame {
-    @include border-gradient;
+.services__list__title {
+    font-size: $h4;
+    color: $non-active;
+    padding: 10px 20px;
 
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    width: 250px;
-    height: 130px;
-    transform: rotate(-3deg);
+    cursor: pointer;
+    transition: color .2s ease;
 
-    overflow: hidden;
+    &:not(:last-child) {
+        border-right: 1.5px solid $non-active;
+    }
 
+    &.active {
+        color: $pink;
+    }
+
+    &:hover {
+        color: $pink;
+    }
+    
+}
+
+.services__price__list {
+    list-style: none;
+    width: 100%;
+    padding: 20px;
+}
+
+.price__list__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 20px 0;
+    border-bottom: 1px solid $non-active;
+    
+    cursor: pointer;
+    transition: all .2s ease;
+
+    &:not(:last-child) { 
+        margin-bottom: 10px;
+    }
+
+    &:hover .price__list__name {
+        color: $pink;
+    }
+
+    &.active {
+        border-bottom: 1px solid $pink;
+        color: $pink;
+    }
+
+    &.active .price__list__name {
+        color: $pink;
+    }
+}
+
+.price__list__name {
+    @include main-text;
+    font-size: $h5;
+    padding-right: 10px;
     transition: all .2s ease;
 }
 
-.ribbon {
-    width: 90px;
-    height: 20px;
-    background-color: $pink;
-    padding: 5px 0;
+.price__list__cost {
+    font-size: $h5;
+    color: $pink;
+    font-weight: 600;
+    min-width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-    position: absolute;
-    top: 10px;
-    left: 180px;
-    transform: rotate(45deg);
+.price__list__btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
-    color: $white;
-    font-size: 10px;
-    letter-spacing: 1.5px;
+.services__details {
+    padding: 0 40px;
+}
 
-    text-transform: uppercase;
-    text-align: center;
+.services__image {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 30px;
 
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.616);
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.services__details__name {
+    font-size: $h4;
+    margin-bottom: 20px;
+}
+
+.services__details__cost {
+    max-width: 90px;
+    margin-bottom: 20px;
+    color: $maintext;
+}
+
+.services__details__descr {
+    @include main-text;
 }
 
 

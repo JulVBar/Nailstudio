@@ -13,7 +13,7 @@
 }
 
 h1 {
-    font-family: Rufina serif;
+    font-family: $font-family-title;
     font-size: $h1;
     color: $title;
     line-height: 75px;
@@ -22,7 +22,7 @@ h1 {
 }
 
 h4 {
-    font-family: Lato serif;
+    font-family: $font-family-title;
     font-size: 15px;
     font-weight: 300;
     line-height: 27px;
@@ -46,10 +46,11 @@ h4 {
 
     width: 380px;
 
-    font-family: 'Andada Pro', serif;
+    font-family: $font-family-extra;
+    font-style: italic;
 
     font-size: 80px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 1.5px;
 
     transition: ease 0.3s;

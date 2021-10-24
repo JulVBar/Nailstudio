@@ -9,5 +9,9 @@
         margin: 0 auto;
         width: 70%;
         @include border-gradient-title-pink;
+        font-family: $font-family-section;
+    
+        color: $pink;
+        font-weight: 600;
     }
 }

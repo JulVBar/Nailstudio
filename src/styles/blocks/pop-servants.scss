@@ -93,4 +93,9 @@
 .pop__servants__title {
     margin: 10px 0;
     font-size: $h4;
+    color: $maintext;
+}
+
+.pop__servants__text {
+    @include main-text;
 }

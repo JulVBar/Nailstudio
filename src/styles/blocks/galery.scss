@@ -12,24 +12,46 @@
     margin-bottom: 50px;
 }
 
-.filter__item {
-    @include title(20px);
+.services__list__title {
+    font-size: $h4;
     color: $non-active;
-
     padding: 10px 20px;
-    border: 1px solid $non-active;
 
     cursor: pointer;
-    transition: all .3s ease;
+    transition: color .2s ease;
+
+    &:not(:last-child) {
+        border-right: 1.5px solid $non-active;
+    }
+
+    &.active {
+        color: $pink;
+    }
 
     &:hover {
-        color: $brightpink;
+        color: $pink;
     }
     
+}
+
+.filter__item {
+    font-size: $h4;
+    color: $non-active;
+    padding: 10px 20px;
+
+    cursor: pointer;
+    transition: color .2s ease;
+
+    &:not(:last-child) {
+        border-right: 1.5px solid $non-active;
+    }
+
     &.active {
-        background-color: $brightpink;
-        color: $white;
-        border: 1px solid $brightpink;
+        color: $pink;
+    }
+
+    &:hover {
+        color: $pink;
     }
 }
 

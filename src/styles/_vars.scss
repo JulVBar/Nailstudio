@@ -4,7 +4,8 @@ $black:#000000;
 //background
 $bodybackground:#fff8f7;
 $primary: #fcdcd7; 
-$secondary: #ffacaf; 
+$secondary: #ffacaf;
+$secondary-opacity: #ffacafee;  
 $pink: #ff798e; 
 $brightpink: #ff3175; 
 
@@ -15,13 +16,18 @@ $non-active: #5555554f;
 $footnote: #b58b43;
 $title: #1e2528de;
 
-
+$maintextsize: 15px;
 $secondtextsize: 12px;
 $h1: 60px; //lh 60
 $h2: 42px;
 $h3: 22px;
 $h4: 20px; //15
-//$h5: 18px;
+$h5: 18px;
+
+$font-family-main: 'Roboto', sans-serif;
+$font-family-title: 'Lato', serif;
+$font-family-extra: 'Cormorant Infant', serif;
+$font-family-section: 'Bad Script', cursive;
 
 //gradient
 $grad1: #b58b43;
