@@ -24,6 +24,12 @@
     
     cursor: pointer;
     transition: box-shadow 0.3s, transform 0.3s;
+
+    &--read {
+        min-width: 120px;
+        height: 40px;
+        padding: 10px;
+    }
 }
 
 .btn__gold:hover,
