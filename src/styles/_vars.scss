@@ -3,7 +3,8 @@ $black:#000000;
 
 //background
 $bodybackground:#fff8f7;
-$primary: #fcdcd7; 
+$primary: #fcdcd7;
+$primary-opacity: #fcdcd779;
 $secondary: #ffacaf;
 $secondary-opacity: #ffacafee;  
 $pink: #ff798e; 
@@ -89,4 +90,12 @@ $mobile-bp-thin: 375px;
     border-bottom: 3px solid transparent;
     border-image: linear-gradient(90deg, transparent, $pink, transparent);
     border-image-slice: 1;
+}
+
+@mixin image-options() {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-image: linear-gradient(45deg, $pink, $bodybackground);
 }

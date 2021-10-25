@@ -16,7 +16,7 @@
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./styles/main.scss\");\n/* harmony import */ var _js_js1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/js1 */ \"./js/js1.js\");\n/* harmony import */ var _js_js2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/js2 */ \"./js/js2.js\");\n/* harmony import */ var _js_parallax__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/parallax */ \"./js/parallax.js\");\n/* harmony import */ var _db_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./db.json */ \"./db.json\");\n\n\n\n\n\nconsole.log('Это файл APP.JS');\nwindow.addEventListener('DOMContentLoaded', function () {\n  (0,_js_js1__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n  (0,_js_js2__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n  (0,_js_parallax__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n}); // load all images\n//каждую подпапку импортируем отдельно (иконки просто копируются в конфиге)\n\nvar images = importAll(__webpack_require__(\"./images sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar galery = importAll(__webpack_require__(\"./images/galery sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar reviews = importAll(__webpack_require__(\"./images/reviews sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar instagram = importAll(__webpack_require__(\"./images/instagram sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar popservants = importAll(__webpack_require__(\"./images/pop-servants sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar services = importAll(__webpack_require__(\"./images/services sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar news = importAll(__webpack_require__(\"./images/news sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar background = importAll(__webpack_require__(\"./images/background sync \\\\.(png|jpe?g|svg|gif)$\"));\n\nfunction importAll(r) {\n  var images = {};\n  r.keys().map(function (item, index) {\n    images[item.replace('./', '')] = r(item);\n  });\n  return images;\n}\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./styles/main.scss\");\n/* harmony import */ var _js_js1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/js1 */ \"./js/js1.js\");\n/* harmony import */ var _js_js2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/js2 */ \"./js/js2.js\");\n/* harmony import */ var _js_parallax__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/parallax */ \"./js/parallax.js\");\n/* harmony import */ var _db_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./db.json */ \"./db.json\");\n\n\n\n\n\nconsole.log('Это файл APP.JS');\nwindow.addEventListener('DOMContentLoaded', function () {\n  (0,_js_js1__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n  (0,_js_js2__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n  (0,_js_parallax__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n}); // load all images\n//каждую подпапку импортируем отдельно (иконки просто копируются в конфиге)\n\nvar images = importAll(__webpack_require__(\"./images sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar galery = importAll(__webpack_require__(\"./images/galery sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar reviews = importAll(__webpack_require__(\"./images/reviews sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar popservants = importAll(__webpack_require__(\"./images/pop-servants sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar services = importAll(__webpack_require__(\"./images/services sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar news = importAll(__webpack_require__(\"./images/news sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar map = importAll(__webpack_require__(\"./images/map sync \\\\.(png|jpe?g|svg|gif)$\"));\n\nfunction importAll(r) {\n  var images = {};\n  r.keys().map(function (item, index) {\n    images[item.replace('./', '')] = r(item);\n  });\n  return images;\n}\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
@@ -49,18 +49,29 @@ eval("__webpack_require__.r(__webpack_exports__);\nfunction two() {\n  console.l
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nfunction parallax() {\n  function parallaxBg(background, block) {\n    block.addEventListener('mousemove', function (e) {\n      var x = e.clientX / window.innerWidth;\n      var y = e.clientY / window.innerHeight;\n      background.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';\n    });\n  }\n\n  parallaxBg(document.querySelector('.pop__servants__background'), document.querySelector('.pop__servants__inner')); // parallaxBg(document.querySelector('.services__list__background'), document.querySelector('.services'));\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (parallax);\n\n//# sourceURL=webpack:///./js/parallax.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nfunction parallax() {\n  function parallaxBg(background, block) {\n    block.addEventListener('mousemove', function (e) {\n      var x = e.clientX / window.innerWidth;\n      var y = e.clientY / window.innerHeight;\n      background.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';\n    });\n  }\n\n  parallaxBg(document.querySelector('.pop__servants__background'), document.querySelector('.pop__servants__inner')); // parallaxBg(document.querySelector('.map_background'), document.querySelector('.map'));\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (parallax);\n\n//# sourceURL=webpack:///./js/parallax.js?");
 
 /***/ }),
 
-/***/ "./images/1.jpg":
-/*!**********************!*\
-  !*** ./images/1.jpg ***!
-  \**********************/
+/***/ "./images/galery/1.jpg":
+/*!*****************************!*\
+  !*** ./images/galery/1.jpg ***!
+  \*****************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/1.jpg\");\n\n//# sourceURL=webpack:///./images/1.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/1.jpg\");\n\n//# sourceURL=webpack:///./images/galery/1.jpg?");
+
+/***/ }),
+
+/***/ "./images/galery/2.jpg":
+/*!*****************************!*\
+  !*** ./images/galery/2.jpg ***!
+  \*****************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/2.jpg\");\n\n//# sourceURL=webpack:///./images/galery/2.jpg?");
 
 /***/ }),
 
@@ -174,135 +185,14 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
-/***/ "./images/galery/test.jpg":
-/*!********************************!*\
-  !*** ./images/galery/test.jpg ***!
-  \********************************/
+/***/ "./images/galery/insta5.jpg":
+/*!**********************************!*\
+  !*** ./images/galery/insta5.jpg ***!
+  \**********************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/test.jpg\");\n\n//# sourceURL=webpack:///./images/galery/test.jpg?");
-
-/***/ }),
-
-/***/ "./images/instagram/insta1.jpg":
-/*!*************************************!*\
-  !*** ./images/instagram/insta1.jpg ***!
-  \*************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/instagram/insta1.jpg\");\n\n//# sourceURL=webpack:///./images/instagram/insta1.jpg?");
-
-/***/ }),
-
-/***/ "./images/instagram/insta10.jpg":
-/*!**************************************!*\
-  !*** ./images/instagram/insta10.jpg ***!
-  \**************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/instagram/insta10.jpg\");\n\n//# sourceURL=webpack:///./images/instagram/insta10.jpg?");
-
-/***/ }),
-
-/***/ "./images/instagram/insta11.jpg":
-/*!**************************************!*\
-  !*** ./images/instagram/insta11.jpg ***!
-  \**************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/instagram/insta11.jpg\");\n\n//# sourceURL=webpack:///./images/instagram/insta11.jpg?");
-
-/***/ }),
-
-/***/ "./images/instagram/insta2.jpg":
-/*!*************************************!*\
-  !*** ./images/instagram/insta2.jpg ***!
-  \*************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/instagram/insta2.jpg\");\n\n//# sourceURL=webpack:///./images/instagram/insta2.jpg?");
-
-/***/ }),
-
-/***/ "./images/instagram/insta3.jpg":
-/*!*************************************!*\
-  !*** ./images/instagram/insta3.jpg ***!
-  \*************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/instagram/insta3.jpg\");\n\n//# sourceURL=webpack:///./images/instagram/insta3.jpg?");
-
-/***/ }),
-
-/***/ "./images/instagram/insta4.jpg":
-/*!*************************************!*\
-  !*** ./images/instagram/insta4.jpg ***!
-  \*************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/instagram/insta4.jpg\");\n\n//# sourceURL=webpack:///./images/instagram/insta4.jpg?");
-
-/***/ }),
-
-/***/ "./images/instagram/insta5.jpg":
-/*!*************************************!*\
-  !*** ./images/instagram/insta5.jpg ***!
-  \*************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/instagram/insta5.jpg\");\n\n//# sourceURL=webpack:///./images/instagram/insta5.jpg?");
-
-/***/ }),
-
-/***/ "./images/instagram/insta6.jpg":
-/*!*************************************!*\
-  !*** ./images/instagram/insta6.jpg ***!
-  \*************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/instagram/insta6.jpg\");\n\n//# sourceURL=webpack:///./images/instagram/insta6.jpg?");
-
-/***/ }),
-
-/***/ "./images/instagram/insta7.jpg":
-/*!*************************************!*\
-  !*** ./images/instagram/insta7.jpg ***!
-  \*************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/instagram/insta7.jpg\");\n\n//# sourceURL=webpack:///./images/instagram/insta7.jpg?");
-
-/***/ }),
-
-/***/ "./images/instagram/insta8.jpg":
-/*!*************************************!*\
-  !*** ./images/instagram/insta8.jpg ***!
-  \*************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/instagram/insta8.jpg\");\n\n//# sourceURL=webpack:///./images/instagram/insta8.jpg?");
-
-/***/ }),
-
-/***/ "./images/instagram/insta9.jpg":
-/*!*************************************!*\
-  !*** ./images/instagram/insta9.jpg ***!
-  \*************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/instagram/insta9.jpg\");\n\n//# sourceURL=webpack:///./images/instagram/insta9.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/insta5.jpg\");\n\n//# sourceURL=webpack:///./images/galery/insta5.jpg?");
 
 /***/ }),
 
@@ -325,6 +215,50 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/logo.jpg\");\n\n//# sourceURL=webpack:///./images/logo.jpg?");
+
+/***/ }),
+
+/***/ "./images/map/2.png":
+/*!**************************!*\
+  !*** ./images/map/2.png ***!
+  \**************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/map/2.png\");\n\n//# sourceURL=webpack:///./images/map/2.png?");
+
+/***/ }),
+
+/***/ "./images/map/entrance.jpg":
+/*!*********************************!*\
+  !*** ./images/map/entrance.jpg ***!
+  \*********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/map/entrance.jpg\");\n\n//# sourceURL=webpack:///./images/map/entrance.jpg?");
+
+/***/ }),
+
+/***/ "./images/map/loby.jpg":
+/*!*****************************!*\
+  !*** ./images/map/loby.jpg ***!
+  \*****************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/map/loby.jpg\");\n\n//# sourceURL=webpack:///./images/map/loby.jpg?");
+
+/***/ }),
+
+/***/ "./images/map/valo.jpg":
+/*!*****************************!*\
+  !*** ./images/map/valo.jpg ***!
+  \*****************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/map/valo.jpg\");\n\n//# sourceURL=webpack:///./images/map/valo.jpg?");
 
 /***/ }),
 
@@ -416,36 +350,80 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
-/***/ "./images/reviews/photo1.jpg":
-/*!***********************************!*\
-  !*** ./images/reviews/photo1.jpg ***!
-  \***********************************/
+/***/ "./images/reviews/reviews-bg.jpg":
+/*!***************************************!*\
+  !*** ./images/reviews/reviews-bg.jpg ***!
+  \***************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/reviews/photo1.jpg\");\n\n//# sourceURL=webpack:///./images/reviews/photo1.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/reviews/reviews-bg.jpg\");\n\n//# sourceURL=webpack:///./images/reviews/reviews-bg.jpg?");
 
 /***/ }),
 
-/***/ "./images/reviews/photo2.jpg":
-/*!***********************************!*\
-  !*** ./images/reviews/photo2.jpg ***!
-  \***********************************/
+/***/ "./images/reviews/reviews-photo1.jpg":
+/*!*******************************************!*\
+  !*** ./images/reviews/reviews-photo1.jpg ***!
+  \*******************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/reviews/photo2.jpg\");\n\n//# sourceURL=webpack:///./images/reviews/photo2.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/reviews/reviews-photo1.jpg\");\n\n//# sourceURL=webpack:///./images/reviews/reviews-photo1.jpg?");
 
 /***/ }),
 
-/***/ "./images/reviews/photo3.jpg":
-/*!***********************************!*\
-  !*** ./images/reviews/photo3.jpg ***!
-  \***********************************/
+/***/ "./images/reviews/reviews-photo2.jpg":
+/*!*******************************************!*\
+  !*** ./images/reviews/reviews-photo2.jpg ***!
+  \*******************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/reviews/photo3.jpg\");\n\n//# sourceURL=webpack:///./images/reviews/photo3.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/reviews/reviews-photo2.jpg\");\n\n//# sourceURL=webpack:///./images/reviews/reviews-photo2.jpg?");
+
+/***/ }),
+
+/***/ "./images/reviews/reviews-photo3.jpg":
+/*!*******************************************!*\
+  !*** ./images/reviews/reviews-photo3.jpg ***!
+  \*******************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/reviews/reviews-photo3.jpg\");\n\n//# sourceURL=webpack:///./images/reviews/reviews-photo3.jpg?");
+
+/***/ }),
+
+/***/ "./images/reviews/reviews-photo4.jpg":
+/*!*******************************************!*\
+  !*** ./images/reviews/reviews-photo4.jpg ***!
+  \*******************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/reviews/reviews-photo4.jpg\");\n\n//# sourceURL=webpack:///./images/reviews/reviews-photo4.jpg?");
+
+/***/ }),
+
+/***/ "./images/reviews/reviews-photo5.jpg":
+/*!*******************************************!*\
+  !*** ./images/reviews/reviews-photo5.jpg ***!
+  \*******************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/reviews/reviews-photo5.jpg\");\n\n//# sourceURL=webpack:///./images/reviews/reviews-photo5.jpg?");
+
+/***/ }),
+
+/***/ "./images/reviews/reviews-photo6.jpg":
+/*!*******************************************!*\
+  !*** ./images/reviews/reviews-photo6.jpg ***!
+  \*******************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/reviews/reviews-photo6.jpg\");\n\n//# sourceURL=webpack:///./images/reviews/reviews-photo6.jpg?");
 
 /***/ }),
 
@@ -504,33 +482,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ "./images/background sync \\.(png|jpe?g|svg|gif)$":
-/*!*********************************************************************!*\
-  !*** ./images/background/ sync nonrecursive \.(png|jpe?g|svg|gif)$ ***!
-  \*********************************************************************/
-/***/ (function(module) {
-
-eval("function webpackEmptyContext(req) {\n\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\te.code = 'MODULE_NOT_FOUND';\n\tthrow e;\n}\nwebpackEmptyContext.keys = function() { return []; };\nwebpackEmptyContext.resolve = webpackEmptyContext;\nwebpackEmptyContext.id = \"./images/background sync \\\\.(png|jpe?g|svg|gif)$\";\nmodule.exports = webpackEmptyContext;\n\n//# sourceURL=webpack:///./images/background/_sync_nonrecursive_\\.(png%7Cjpe?");
-
-/***/ }),
-
 /***/ "./images/galery sync \\.(png|jpe?g|svg|gif)$":
 /*!*****************************************************************!*\
   !*** ./images/galery/ sync nonrecursive \.(png|jpe?g|svg|gif)$ ***!
   \*****************************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./galery-photo1.jpg\": \"./images/galery/galery-photo1.jpg\",\n\t\"./galery-photo10.jpg\": \"./images/galery/galery-photo10.jpg\",\n\t\"./galery-photo2.jpg\": \"./images/galery/galery-photo2.jpg\",\n\t\"./galery-photo3.jpg\": \"./images/galery/galery-photo3.jpg\",\n\t\"./galery-photo4.jpg\": \"./images/galery/galery-photo4.jpg\",\n\t\"./galery-photo5.jpg\": \"./images/galery/galery-photo5.jpg\",\n\t\"./galery-photo6.jpg\": \"./images/galery/galery-photo6.jpg\",\n\t\"./galery-photo7.jpg\": \"./images/galery/galery-photo7.jpg\",\n\t\"./galery-photo8.jpg\": \"./images/galery/galery-photo8.jpg\",\n\t\"./galery-photo9.jpg\": \"./images/galery/galery-photo9.jpg\",\n\t\"./test.jpg\": \"./images/galery/test.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/galery sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/galery/_sync_nonrecursive_\\.(png%7Cjpe?");
+eval("var map = {\n\t\"./1.jpg\": \"./images/galery/1.jpg\",\n\t\"./2.jpg\": \"./images/galery/2.jpg\",\n\t\"./galery-photo1.jpg\": \"./images/galery/galery-photo1.jpg\",\n\t\"./galery-photo10.jpg\": \"./images/galery/galery-photo10.jpg\",\n\t\"./galery-photo2.jpg\": \"./images/galery/galery-photo2.jpg\",\n\t\"./galery-photo3.jpg\": \"./images/galery/galery-photo3.jpg\",\n\t\"./galery-photo4.jpg\": \"./images/galery/galery-photo4.jpg\",\n\t\"./galery-photo5.jpg\": \"./images/galery/galery-photo5.jpg\",\n\t\"./galery-photo6.jpg\": \"./images/galery/galery-photo6.jpg\",\n\t\"./galery-photo7.jpg\": \"./images/galery/galery-photo7.jpg\",\n\t\"./galery-photo8.jpg\": \"./images/galery/galery-photo8.jpg\",\n\t\"./galery-photo9.jpg\": \"./images/galery/galery-photo9.jpg\",\n\t\"./insta5.jpg\": \"./images/galery/insta5.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/galery sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/galery/_sync_nonrecursive_\\.(png%7Cjpe?");
 
 /***/ }),
 
-/***/ "./images/instagram sync \\.(png|jpe?g|svg|gif)$":
-/*!********************************************************************!*\
-  !*** ./images/instagram/ sync nonrecursive \.(png|jpe?g|svg|gif)$ ***!
-  \********************************************************************/
+/***/ "./images/map sync \\.(png|jpe?g|svg|gif)$":
+/*!**************************************************************!*\
+  !*** ./images/map/ sync nonrecursive \.(png|jpe?g|svg|gif)$ ***!
+  \**************************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./insta1.jpg\": \"./images/instagram/insta1.jpg\",\n\t\"./insta10.jpg\": \"./images/instagram/insta10.jpg\",\n\t\"./insta11.jpg\": \"./images/instagram/insta11.jpg\",\n\t\"./insta2.jpg\": \"./images/instagram/insta2.jpg\",\n\t\"./insta3.jpg\": \"./images/instagram/insta3.jpg\",\n\t\"./insta4.jpg\": \"./images/instagram/insta4.jpg\",\n\t\"./insta5.jpg\": \"./images/instagram/insta5.jpg\",\n\t\"./insta6.jpg\": \"./images/instagram/insta6.jpg\",\n\t\"./insta7.jpg\": \"./images/instagram/insta7.jpg\",\n\t\"./insta8.jpg\": \"./images/instagram/insta8.jpg\",\n\t\"./insta9.jpg\": \"./images/instagram/insta9.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/instagram sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/instagram/_sync_nonrecursive_\\.(png%7Cjpe?");
+eval("var map = {\n\t\"./2.png\": \"./images/map/2.png\",\n\t\"./entrance.jpg\": \"./images/map/entrance.jpg\",\n\t\"./loby.jpg\": \"./images/map/loby.jpg\",\n\t\"./valo.jpg\": \"./images/map/valo.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/map sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/map/_sync_nonrecursive_\\.(png%7Cjpe?");
 
 /***/ }),
 
@@ -560,7 +528,7 @@ eval("var map = {\n\t\"./pop-servants-background.png\": \"./images/pop-servants/
   \******************************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./photo1.jpg\": \"./images/reviews/photo1.jpg\",\n\t\"./photo2.jpg\": \"./images/reviews/photo2.jpg\",\n\t\"./photo3.jpg\": \"./images/reviews/photo3.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/reviews sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/reviews/_sync_nonrecursive_\\.(png%7Cjpe?");
+eval("var map = {\n\t\"./reviews-bg.jpg\": \"./images/reviews/reviews-bg.jpg\",\n\t\"./reviews-photo1.jpg\": \"./images/reviews/reviews-photo1.jpg\",\n\t\"./reviews-photo2.jpg\": \"./images/reviews/reviews-photo2.jpg\",\n\t\"./reviews-photo3.jpg\": \"./images/reviews/reviews-photo3.jpg\",\n\t\"./reviews-photo4.jpg\": \"./images/reviews/reviews-photo4.jpg\",\n\t\"./reviews-photo5.jpg\": \"./images/reviews/reviews-photo5.jpg\",\n\t\"./reviews-photo6.jpg\": \"./images/reviews/reviews-photo6.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/reviews sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/reviews/_sync_nonrecursive_\\.(png%7Cjpe?");
 
 /***/ }),
 
@@ -580,7 +548,7 @@ eval("var map = {\n\t\"./price1.jpg\": \"./images/services/price1.jpg\",\n\t\"./
   \**********************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./1.jpg\": \"./images/1.jpg\",\n\t\"./intro.png\": \"./images/intro.png\",\n\t\"./logo.jpg\": \"./images/logo.jpg\",\n\t\"./one.jpg\": \"./images/one.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/_sync_nonrecursive_\\.(png%7Cjpe?");
+eval("var map = {\n\t\"./intro.png\": \"./images/intro.png\",\n\t\"./logo.jpg\": \"./images/logo.jpg\",\n\t\"./one.jpg\": \"./images/one.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/_sync_nonrecursive_\\.(png%7Cjpe?");
 
 /***/ }),
 
