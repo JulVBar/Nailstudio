@@ -28,12 +28,14 @@
 <script defer="defer" src="vendors-node_modules_babel_polyfill_lib_index_js.js"></script><script defer="defer" src="main.js"></script><link href="main.css" rel="stylesheet"></head>
 
 <body> 
-<div class="page">
 
+<div class="preloader"><div class="loader"></div></div>
+
+<div class="page">
 
 <header class="header">
     <div class="header__social">
-        <a href="#" class="header__link"><img class="header__icon" src="images/icon/instagram_gold.svg" alt="instagram"></a>
+        <a href="https://www.instagram.com/kozharina_podolog/" target="blank" class="header__link"><img class="header__icon" src="images/icon/instagram_gold.svg" alt="instagram"></a>
         <a href="#" class="header__link"><img class="header__icon" src="images/icon/messanger_gold.svg" alt="messanger"></a>
     </div>
     <div class="header__center">
@@ -41,14 +43,14 @@
             <div class="header__text">Санкт-Петербург</div>
             
         </a>
-        <a href="#" class="header__link"><img class="header__logo" src="images/logo.jpg" alt="Good Vin"></a>
+        <a href="index.html" class="header__link"><img class="header__logo" src="images/logo.jpg" alt="Good Vin"></a>
 
         <a href="tel:+79052819552" class="header__link"><img class="header__icon" src="images/icon/phone_gold.svg" alt="tel">
             <div class="header__text">8 (905) 281-95-52</div>
         </a>
     </div>
     <div class="header__button">
-        <button class="btn__gold">Связаться с нами</button>
+        <button class="btn__gold" type="button">Записаться</button>
     </div>
 </header> <!--header-->
 
@@ -57,9 +59,8 @@
         <li class="nav__item"><a class="nav__link active" href="#">Главная</a></li>
         <li class="nav__item"><a class="nav__link" href="#">Услуги и цены</a></li>
         <li class="nav__item"><a class="nav__link" href="#">Галерея работ</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">Наши мастера</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">Полезная информация</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Как нас найти</a></li>
     </ul>
 
 
@@ -70,22 +71,22 @@
             <span class="button-is-close"><i class="fas fa-times"></i></span>
         </label>
         
-        <a href="#" class="menu-item vkontakte" target="_blank"><i class="fab fa-vk"></i></a>
-        <a href="#" class="menu-item whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="#" class="menu-item facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <a href="#" class="menu-item instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        <a href="#" class="menu-item telegram" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-        <a href="#" class="menu-item odnoklassniki" target="_blank"><i class="fab fa-odnoklassniki"></i></a>
+        <a href="https://vk.com/id94605060" class="menu-item vkontakte" target="_blank"><i class="fab fa-vk"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=79052819552" class="menu-item whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:moypochta@gmail.com" class="menu-item sendmail" target="_blank"><i class="far fa-envelope"></i></a>
+        <a href="https://www.instagram.com/kozharina_podolog/" class="menu-item instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://t.me/@Anna_Kozharina" class="menu-item telegram" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+        <a href="tel:+79052819552" class="menu-item make-a-call"><i class="fas fa-mobile-alt"></i></a>
     </nav>
 
 </nav> <!--navigation-->
 
 <div class="intro">
-    <div class="container">
-        <div class="intro__background">
-            <img src="images/intro.png" alt="Good Vin">
-        </div>
+    <div class="intro__background">
+        <img src="images/intro-bg.jpg" alt="Good Vin">
+    </div>
 
+    <div class="container">
         <h4>Здоровье & Красота</h4>
         <h1>Студия маникюра и педикюра</h1>
         <div class="h1__gradient"><span>Good Vin</span></div>
@@ -105,7 +106,7 @@
             </li>
         </ul>
 
-        <button class="btn__gold">Подробнее</button>
+        <a class="btn__gold" type="button">Подробнее</a>
     </div> <!--container-->
 </div> <!--intro-->
 
@@ -135,17 +136,17 @@
 
                 <div class="pop__servants__item">
                     <div class="pop__servants__button">
-                        <button class="btn__gold btn__gold--read">Подробнее</button>
+                        <button class="btn__gold btn__gold--read" type="button">Подробнее</button>
                     </div>
                     <div class="pop__servants__descr">
-                        <h3 class="pop__servants__title">Эстетический педикюр без проблем</h3>
+                        <h3 class="pop__servants__title">Эстетический педикюр</h3>
                         <p class="pop__servants__text">Обработка, очищение, полировка стоп. Подготовка к покрытию, покрытие гель-лаком.</p>
                     </div>
                 </div>
 
                 <div class="pop__servants__item">
                     <div class="pop__servants__button">
-                        <button class="btn__gold btn__gold--read">Подробнее</button>
+                        <button class="btn__gold btn__gold--read" type="button">Подробнее</button>
                     </div>
                     <div class="pop__servants__descr">
                         <h3 class="pop__servants__title">Аппаратный маникюр</h3>
@@ -155,7 +156,7 @@
 
                 <div class="pop__servants__item">
                     <div class="pop__servants__button">
-                        <button class="btn__gold btn__gold--read">Подробнее</button>
+                        <button class="btn__gold btn__gold--read" type="button">Подробнее</button>
                     </div>
                     <div class="pop__servants__descr">
                         <h3 class="pop__servants__title">Маникюр с покрытием в один тон</h3>
@@ -177,8 +178,8 @@
             <div class="services__list">
                 <img class="services__list__background" src="images/services/services-background.png" alt="smoke">
                 <div class="services__list__top">
-                    <div class="services__list__title active">Педикюр</div>
-                    <div class="services__list__title">Маникюр</div>
+                    <button class="services__list__title active" type="button">Педикюр</button>
+                    <button class="services__list__title" type="button">Маникюр</button>
                 </div>
 
                 <ul class="services__price__list price-list-pedicure">
@@ -205,7 +206,7 @@
                 </ul>
 
                 <div class="price__list__btn">
-                    <button class="btn__gold btn__gold--pricelist">Записаться</button>
+                    <button class="btn__gold btn__gold--pricelist" type="button">Записаться</button>
                 </div>
                 
             </div> <!--services__list-->
@@ -402,6 +403,47 @@
     </div> <!--container-->
 </section> <!--news-->
 
+<section class="form">
+    <div class="contact__form-bg">
+        <img src="images/form-bg.jpg" alt="bg">
+    </div>
+    
+    <div class="container">
+        <div class="section__title"><h2>Напишите нам!</h2></div>
+
+        <form class="contact__form" action="#">
+            <div class="contact__form__block">
+                <div class="form__item">
+                    <input id="formName" type="text" name="name" class="form__input _req" placeholder="Ваше имя*">
+                    <span class="form__icon"><i class="far fa-user"></i></span>
+                </div>
+                <div class="form__item">
+                    <input id="formEmail" type="text" name="email" class="form__input _req" placeholder="Ваш e-mail*">
+                    <span class="form__icon"><i class="far fa-envelope"></i></span>
+                </div>
+                <div class="form__item">
+                    <input id="formPhone" type="text" name="phone" class="form__input _req" placeholder="Ваше телефон*">
+                    <span class="form__icon"><i class="fas fa-phone-alt"></i></span>
+                </div>
+            </div> <!--contact__form__infor-->
+
+            <div class="contact__form__block">
+                <div class="form__item">
+                    <textarea name="message" id="formMessage" class="form__input form__textarea _req" placeholder="Сообщение*"></textarea>
+                    <span class="form__icon form__icon--mes"><i class="fas fa-pencil-alt"></i></span>
+                </div>
+
+                <button type="submit" class="btn__gold btn__gold--submit">Отправить</button>
+
+                <div class="form__agree">
+                    <p>Нажимая кнопку "Отправить", я даю своё согласие на обработку персональных данных в соответствии с законом ФЗ-152 О персональных данных.</p>
+                </div>
+            </div> <!--contact__form__text-->
+        </form>
+
+    </div> <!--container-->
+</section> <!--form-->
+
 <section class="map">
     
     <div class="container">
@@ -506,8 +548,8 @@
                 <li class="footer__nav__item"><a class="footer__nav__link" href="#">Главная</a></li>
                 <li class="footer__nav__item"><a class="footer__nav__link" href="#">Услуги и цены</a></li>
                 <li class="footer__nav__item"><a class="footer__nav__link" href="#">Галерея работ</a></li>
-                <li class="footer__nav__item"><a class="footer__nav__link" href="#">Наши мастера</a></li>
-                <li class="footer__nav__item"><a class="footer__nav__link" href="#">Полезная информация</a></li>
+                <li class="footer__nav__item"><a class="footer__nav__link" href="#">Отзывы</a></li>
+                <li class="footer__nav__item"><a class="footer__nav__link" href="#">Как нас найти</a></li>
             </ul>
         </nav>
 
@@ -541,6 +583,39 @@
 
 
 </footer> <!--footer-->
+
+<div class="modal-signup">
+    <div class="modal-signup__wrapper">
+
+        <span class="modal-signup__close"><img src="images/icon/close.svg" alt="close"></span>
+
+        <h4 class="modal-signup__title">Выберите, как Вам удобней с нами связаться</h4>
+
+        <div class="modal-signup__content">
+            <a href="tel:+79052819552" target="blank" class="modal-signup__item">
+                <i class="modal-signup__icon fas fa-phone-square-alt"></i>
+                <div class="modal-signup__text">Позвонить</div>
+                
+            </a>
+            <a href="https://www.instagram.com/kozharina_podolog/" target="blank" class="modal-signup__item">
+                <i class="modal-signup__icon fab fa-instagram-square"></i>
+                <div class="modal-signup__text">Instagram</div>
+            </a>
+            <a href="https://t.me/@Anna_Kozharina" target="blank" class="modal-signup__item">
+                <i class="modal-signup__icon fab fa-telegram-plane"></i>
+                <div class="modal-signup__text">Telegram</div>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=79052819552" target="blank" class="modal-signup__item rrr">
+                <i class="modal-signup__icon fab fa-whatsapp-square"></i>
+                <div class="modal-signup__text">WhatsApp</div>
+            </a>
+        </div>
+
+        
+        
+
+    </div>
+</div>
 
 
 </div> <!--page-->

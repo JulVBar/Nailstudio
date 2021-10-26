@@ -3,6 +3,7 @@ import './styles/main.scss';
 import one from './js/js1';
 import two from './js/js2';
 import parallax from './js/parallax';
+import preloader from './js/preloader';
 
 import json from './db.json';
 
@@ -17,6 +18,7 @@ window.addEventListener('DOMContentLoaded', function() {
     one();
     two();
     parallax();
+    preloader();
 });
 
 // load all images
@@ -36,6 +38,8 @@ function importAll(r) {
     r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
     return images;
 }
+
+
 
 
 

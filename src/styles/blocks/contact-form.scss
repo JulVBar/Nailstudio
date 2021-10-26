@@ -1,0 +1,96 @@
+
+.form {
+    margin-bottom: 100px;
+    padding: 50px 0;
+    position: relative;
+}
+
+.contact__form {
+    display: flex;
+}
+
+.contact__form-bg {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: -1;
+
+    img {
+        @include image-options;
+    }
+}
+
+.contact__form__block {
+    width: 50%;
+    margin: 0 10px;
+
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+}
+
+.form__item {
+    margin: 15px 20px;
+    position: relative;
+
+    width: 100%;
+    min-width: 250px;
+    max-width: 520px;
+    
+}
+
+.form__input {
+    @include main-text;
+
+    background: transparent;
+    
+    display: block;
+    width: 100%;
+    min-height: 40px;
+
+    padding: 10px 15px;
+    padding-left: 50px;
+
+    outline: none;
+    border: 2px solid $non-active;
+
+    transition: border .2s ease-in-out;
+    
+
+    &:focus {
+        @include border-gradient;
+    }
+
+    
+}
+
+.form__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+
+    &--mes {
+        top: 25px;
+    }
+}
+
+.form__textarea {
+    resize: vertical;
+    max-height: 200px;
+    min-height: 85px;
+}
+
+.form__agree {
+    text-align: center;
+    
+
+    p {
+        font-size: $secondtextsize;
+        color: $maintext;
+    }
+}

@@ -10,6 +10,12 @@ body {
     background-color: $bodybackground;
     font-family: $font-family-main;
     color: $maintext;
+
+    // overflow-y: hidden;
+
+    // &.scroll {
+    //     overflow-y: visible;
+    // }
 }
 
 *,
@@ -22,6 +28,7 @@ body {
 
 /* Blocks */
 @import "blocks/page";
+@import "blocks/preloader";
 @import "blocks/container";
 @import "blocks/header";
 @import "blocks/intro";
@@ -34,9 +41,12 @@ body {
 @import "blocks/galery";
 @import "blocks/reviews";
 @import "blocks/news";
+@import "blocks/contact-form";
 @import "blocks/map";
 @import "blocks/footer";
 @import "blocks/footer-wave";
+
+@import "blocks/modal-signup";
 
 
 

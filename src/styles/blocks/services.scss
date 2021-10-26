@@ -40,8 +40,9 @@
     font-size: $h4;
     color: $non-active;
     padding: 10px 20px;
+    border: none;
+    background-color: transparent;
 
-    cursor: pointer;
     transition: color .2s ease;
 
     &:not(:last-child) {
