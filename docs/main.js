@@ -16,7 +16,7 @@
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./styles/main.scss\");\n/* harmony import */ var _js_js1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/js1 */ \"./js/js1.js\");\n/* harmony import */ var _js_js2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/js2 */ \"./js/js2.js\");\n/* harmony import */ var _js_parallax__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/parallax */ \"./js/parallax.js\");\n/* harmony import */ var _js_preloader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/preloader */ \"./js/preloader.js\");\n/* harmony import */ var _js_preloader__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_preloader__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _db_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./db.json */ \"./db.json\");\n\n\n\n\n\n\nconsole.log('Это файл APP.JS');\nwindow.addEventListener('DOMContentLoaded', function () {\n  (0,_js_js1__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n  (0,_js_js2__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n  (0,_js_parallax__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n  _js_preloader__WEBPACK_IMPORTED_MODULE_4___default()();\n}); // load all images\n//каждую подпапку импортируем отдельно (иконки просто копируются в конфиге)\n\nvar images = importAll(__webpack_require__(\"./images sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar galery = importAll(__webpack_require__(\"./images/galery sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar reviews = importAll(__webpack_require__(\"./images/reviews sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar popservants = importAll(__webpack_require__(\"./images/pop-servants sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar services = importAll(__webpack_require__(\"./images/services sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar news = importAll(__webpack_require__(\"./images/news sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar map = importAll(__webpack_require__(\"./images/map sync \\\\.(png|jpe?g|svg|gif)$\"));\n\nfunction importAll(r) {\n  var images = {};\n  r.keys().map(function (item, index) {\n    images[item.replace('./', '')] = r(item);\n  });\n  return images;\n}\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./styles/main.scss\");\n/* harmony import */ var _js_js1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/js1 */ \"./js/js1.js\");\n/* harmony import */ var _js_js2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/js2 */ \"./js/js2.js\");\n/* harmony import */ var _js_parallax__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/parallax */ \"./js/parallax.js\");\n/* harmony import */ var _js_preloader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/preloader */ \"./js/preloader.js\");\n/* harmony import */ var _js_preloader__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_preloader__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _db_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./db.json */ \"./db.json\");\n\n\n\n\n\n\nconsole.log('Это файл APP.JS');\nwindow.addEventListener('DOMContentLoaded', function () {\n  (0,_js_js1__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n  (0,_js_js2__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n  (0,_js_parallax__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(); // preloader();\n}); // load all images\n//каждую подпапку импортируем отдельно (иконки просто копируются в конфиге)\n\nvar images = importAll(__webpack_require__(\"./images sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar galery = importAll(__webpack_require__(\"./images/galery sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar reviews = importAll(__webpack_require__(\"./images/reviews sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar popservants = importAll(__webpack_require__(\"./images/pop-servants sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar services = importAll(__webpack_require__(\"./images/services sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar news = importAll(__webpack_require__(\"./images/news sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar map = importAll(__webpack_require__(\"./images/map sync \\\\.(png|jpe?g|svg|gif)$\"));\n\nfunction importAll(r) {\n  var images = {};\n  r.keys().map(function (item, index) {\n    images[item.replace('./', '')] = r(item);\n  });\n  return images;\n} // btn to top\n\n\nfunction btnToTopShow() {\n  if (window.pageYOffset !== 0) {\n    btnTop.classList.add('active');\n  } else {\n    btnTop.classList.remove('active');\n  }\n}\n\nwindow.addEventListener('scroll', btnToTopShow);\nvar btnTop = document.querySelector('.button__to__top');\nbtnTop.addEventListener('click', function (e) {\n  e.preventDefault();\n  window.scrollTo({\n    top: 0,\n    behavior: 'smooth'\n  });\n});\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
@@ -239,17 +239,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
-/***/ "./images/map/2.png":
-/*!**************************!*\
-  !*** ./images/map/2.png ***!
-  \**************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/map/2.png\");\n\n//# sourceURL=webpack:///./images/map/2.png?");
-
-/***/ }),
-
 /***/ "./images/map/entrance.jpg":
 /*!*********************************!*\
   !*** ./images/map/entrance.jpg ***!
@@ -269,6 +258,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/map/loby.jpg\");\n\n//# sourceURL=webpack:///./images/map/loby.jpg?");
+
+/***/ }),
+
+/***/ "./images/map/map-bg.png":
+/*!*******************************!*\
+  !*** ./images/map/map-bg.png ***!
+  \*******************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/map/map-bg.png\");\n\n//# sourceURL=webpack:///./images/map/map-bg.png?");
 
 /***/ }),
 
@@ -404,39 +404,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
-/***/ "./images/reviews/reviews-photo4.jpg":
-/*!*******************************************!*\
-  !*** ./images/reviews/reviews-photo4.jpg ***!
-  \*******************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/reviews/reviews-photo4.jpg\");\n\n//# sourceURL=webpack:///./images/reviews/reviews-photo4.jpg?");
-
-/***/ }),
-
-/***/ "./images/reviews/reviews-photo5.jpg":
-/*!*******************************************!*\
-  !*** ./images/reviews/reviews-photo5.jpg ***!
-  \*******************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/reviews/reviews-photo5.jpg\");\n\n//# sourceURL=webpack:///./images/reviews/reviews-photo5.jpg?");
-
-/***/ }),
-
-/***/ "./images/reviews/reviews-photo6.jpg":
-/*!*******************************************!*\
-  !*** ./images/reviews/reviews-photo6.jpg ***!
-  \*******************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/reviews/reviews-photo6.jpg\");\n\n//# sourceURL=webpack:///./images/reviews/reviews-photo6.jpg?");
-
-/***/ }),
-
 /***/ "./images/services/price1.jpg":
 /*!************************************!*\
   !*** ./images/services/price1.jpg ***!
@@ -456,17 +423,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/services/price2.jpg\");\n\n//# sourceURL=webpack:///./images/services/price2.jpg?");
-
-/***/ }),
-
-/***/ "./images/services/price3.jpg":
-/*!************************************!*\
-  !*** ./images/services/price3.jpg ***!
-  \************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/services/price3.jpg\");\n\n//# sourceURL=webpack:///./images/services/price3.jpg?");
 
 /***/ }),
 
@@ -508,7 +464,7 @@ eval("var map = {\n\t\"./1.jpg\": \"./images/galery/1.jpg\",\n\t\"./2.jpg\": \".
   \**************************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./2.png\": \"./images/map/2.png\",\n\t\"./entrance.jpg\": \"./images/map/entrance.jpg\",\n\t\"./loby.jpg\": \"./images/map/loby.jpg\",\n\t\"./valo.jpg\": \"./images/map/valo.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/map sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/map/_sync_nonrecursive_\\.(png%7Cjpe?");
+eval("var map = {\n\t\"./entrance.jpg\": \"./images/map/entrance.jpg\",\n\t\"./loby.jpg\": \"./images/map/loby.jpg\",\n\t\"./map-bg.png\": \"./images/map/map-bg.png\",\n\t\"./valo.jpg\": \"./images/map/valo.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/map sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/map/_sync_nonrecursive_\\.(png%7Cjpe?");
 
 /***/ }),
 
@@ -538,7 +494,7 @@ eval("var map = {\n\t\"./pop-servants-background.png\": \"./images/pop-servants/
   \******************************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./reviews-bg.jpg\": \"./images/reviews/reviews-bg.jpg\",\n\t\"./reviews-photo1.jpg\": \"./images/reviews/reviews-photo1.jpg\",\n\t\"./reviews-photo2.jpg\": \"./images/reviews/reviews-photo2.jpg\",\n\t\"./reviews-photo3.jpg\": \"./images/reviews/reviews-photo3.jpg\",\n\t\"./reviews-photo4.jpg\": \"./images/reviews/reviews-photo4.jpg\",\n\t\"./reviews-photo5.jpg\": \"./images/reviews/reviews-photo5.jpg\",\n\t\"./reviews-photo6.jpg\": \"./images/reviews/reviews-photo6.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/reviews sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/reviews/_sync_nonrecursive_\\.(png%7Cjpe?");
+eval("var map = {\n\t\"./reviews-bg.jpg\": \"./images/reviews/reviews-bg.jpg\",\n\t\"./reviews-photo1.jpg\": \"./images/reviews/reviews-photo1.jpg\",\n\t\"./reviews-photo2.jpg\": \"./images/reviews/reviews-photo2.jpg\",\n\t\"./reviews-photo3.jpg\": \"./images/reviews/reviews-photo3.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/reviews sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/reviews/_sync_nonrecursive_\\.(png%7Cjpe?");
 
 /***/ }),
 
@@ -548,7 +504,7 @@ eval("var map = {\n\t\"./reviews-bg.jpg\": \"./images/reviews/reviews-bg.jpg\",\
   \*******************************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./price1.jpg\": \"./images/services/price1.jpg\",\n\t\"./price2.jpg\": \"./images/services/price2.jpg\",\n\t\"./price3.jpg\": \"./images/services/price3.jpg\",\n\t\"./services-background.png\": \"./images/services/services-background.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/services sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/services/_sync_nonrecursive_\\.(png%7Cjpe?");
+eval("var map = {\n\t\"./price1.jpg\": \"./images/services/price1.jpg\",\n\t\"./price2.jpg\": \"./images/services/price2.jpg\",\n\t\"./services-background.png\": \"./images/services/services-background.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/services sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/services/_sync_nonrecursive_\\.(png%7Cjpe?");
 
 /***/ }),
 

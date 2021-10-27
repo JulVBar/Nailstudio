@@ -803,15 +803,19 @@ h4 {
 .services {
   margin-bottom: 100px; }
 
-.services__list__background {
+.services__list__bg {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -100px;
+  left: 100px;
   z-index: -1;
-  transition: all 8s ease; }
+  transition: all 6s ease; }
+  .services__list__bg--image {
+    height: 1000px;
+    width: 100%;
+    transform: rotate(90deg); }
 
-.services:hover .services__list__background {
-  transform: scale(1.4); }
+.services:hover .services__list__bg {
+  transform: scale(1.2); }
 
 .services__inner {
   display: flex; }
@@ -1062,7 +1066,7 @@ h4 {
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  transition: all .3s ease; }
+  transition: all .8s ease; }
   .reviews__slider__arrow:hover {
     background-color: #fcdcd779; }
 
@@ -1084,8 +1088,10 @@ h4 {
   position: relative;
   padding: 10px;
   margin: 10px 30px;
+  text-decoration: none;
   background-color: #fff8f7;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all .3s ease; }
   .news__card:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2); }
   .news__card:hover .news__card__else {
@@ -1449,6 +1455,7 @@ iframe {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
   width: 45px;
   height: 45px;
   border: 2px solid #ff798e;
@@ -1514,7 +1521,31 @@ svg {
   to {
     transform: translateX(-100%); } }
 
-.modal-signup {
+.button__to__top {
+  position: fixed;
+  z-index: 100;
+  right: 8px;
+  bottom: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease; }
+  .button__to__top:hover {
+    transform: translateY(-6px); }
+  .button__to__top.active {
+    opacity: 1;
+    visibility: visible; }
+
+.btn__top {
+  border: none;
+  background: transparent;
+  cursor: pointer; }
+  .btn__top i {
+    font-size: 55px;
+    background-image: linear-gradient(-65deg, #b58b43 32%, #d5b87a 55%, #f6e6b5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+.modal {
   background-color: #fcdcd7c2;
   position: fixed;
   top: 0;
@@ -1525,11 +1556,25 @@ svg {
   opacity: 1;
   visibility: visible;
   transition: .3s ease-in-out; }
-  .modal-signup.open {
+  .modal.active {
     opacity: 0;
     visibility: hidden; }
 
-.modal-signup__wrapper {
+.modal__close {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  transition: all 1s ease; }
+  .modal__close img {
+    width: 100%;
+    height: 100%; }
+  .modal__close:hover {
+    transform: rotate(360deg); }
+
+.modal-signup {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1538,24 +1583,11 @@ svg {
   height: 300px;
   padding: 15px;
   background-color: #fff8f7;
+  box-shadow: 24px -24px 49px #ffacaf, -24px 24px 49px #ffacaf;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column; }
-
-.modal-signup__close {
-  width: 45px;
-  height: 45px;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  cursor: pointer;
-  transition: all 1s ease; }
-  .modal-signup__close img {
-    width: 100%;
-    height: 100%; }
-  .modal-signup__close:hover {
-    transform: rotate(360deg); }
 
 .modal-signup__title {
   margin-bottom: 50px; }
@@ -1591,4 +1623,25 @@ svg {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 10px; }
+
+.modal-map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .modal-map span {
+    top: -50px;
+    right: 0; }
+  .modal-map .modal-map__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-image: linear-gradient(45deg, #ff798e, #fff8f7);
+    box-shadow: 24px -24px 49px #ffacaf, -24px 24px 49px #ffacaf; }
 

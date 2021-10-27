@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', function() {
     one();
     two();
     parallax();
-    preloader();
+    // preloader();
 });
 
 // load all images
@@ -39,7 +39,31 @@ function importAll(r) {
     return images;
 }
 
+// btn to top
 
+function btnToTopShow() {
+
+    if (window.pageYOffset !== 0) {
+        btnTop.classList.add('active');
+    } else {
+        btnTop.classList.remove('active');
+    }
+}
+
+window.addEventListener('scroll', btnToTopShow);
+
+const btnTop = document.querySelector('.button__to__top');
+
+
+
+btnTop.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
 
 
 

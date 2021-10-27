@@ -2,22 +2,29 @@
     margin-bottom: 100px;
 }
 
-.services__list__background {
+.services__list__bg{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -100px;
+    left: 100px;
+    
     z-index: -1;
 
-    transition: all 8s ease;
-}
+    transition: all 6s ease;
 
-.services {
-    &:hover .services__list__background {
-        transform: scale(1.4);
+    &--image {
+        height: 1000px;
+        width: 100%;
+        transform: rotate(90deg);
     }
 }
 
-.services__inner {
+.services {
+    &:hover .services__list__bg {
+        transform: scale(1.2);
+    }
+}
+
+.services__inner { 
     display: flex;
 }
 

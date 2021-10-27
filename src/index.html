@@ -36,10 +36,10 @@
 <header class="header">
     <div class="header__social">
         <a href="https://www.instagram.com/kozharina_podolog/" target="blank" class="header__link"><img class="header__icon" src="images/icon/instagram_gold.svg" alt="instagram"></a>
-        <a href="#" class="header__link"><img class="header__icon" src="images/icon/messanger_gold.svg" alt="messanger"></a>
+        <a href="https://api.whatsapp.com/send?phone=79052819552" target="blank" class="header__link"><img class="header__icon" src="images/icon/messanger_gold.svg" alt="messanger"></a>
     </div>
     <div class="header__center">
-        <a href="#" class="header__link"><img class="header__icon" src="images/icon/map_gold.svg" alt="map">
+        <a href="#map" class="header__link"><img class="header__icon" src="images/icon/map_gold.svg" alt="map">
             <div class="header__text">Санкт-Петербург</div>
             
         </a>
@@ -56,11 +56,11 @@
 
 <nav class="navigation">
     <ul class="nav__list">
-        <li class="nav__item"><a class="nav__link active" href="#">Главная</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">Услуги и цены</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">Галерея работ</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">Как нас найти</a></li>
+        <li class="nav__item"><a class="nav__link active" href="#intro">Главная</a></li>
+        <li class="nav__item"><a class="nav__link" href="#services">Услуги и цены</a></li>
+        <li class="nav__item"><a class="nav__link" href="#galery">Галерея работ</a></li>
+        <li class="nav__item"><a class="nav__link" href="#reviews">Отзывы</a></li>
+        <li class="nav__item"><a class="nav__link" href="#map">Как нас найти</a></li>
     </ul>
 
 
@@ -81,7 +81,7 @@
 
 </nav> <!--navigation-->
 
-<div class="intro">
+<div id="intro" class="intro">
     <div class="intro__background">
         <img src="images/intro-bg.jpg" alt="Good Vin">
     </div>
@@ -106,11 +106,11 @@
             </li>
         </ul>
 
-        <a class="btn__gold" type="button">Подробнее</a>
+        <a href="#pop__servants" class="btn__gold" type="button">Подробнее</a>
     </div> <!--container-->
 </div> <!--intro-->
 
-<section class="pop__servants">
+<section id="pop__servants" class="pop__servants">
     <div class="container">
         <div class="section__title"><h2>Популярные Услуги</h2></div>
 
@@ -169,14 +169,18 @@
     </div> <!--container-->
 </section> <!--pop__servants-->
 
-<section class="services">
+<section id="services" class="services">
     <div class="container">
         <div class="section__title"><h2>Услуги</h2></div>
 
         <div class="services__inner">
 
             <div class="services__list">
-                <img class="services__list__background" src="images/services/services-background.png" alt="smoke">
+                <div class="services__list__bg">
+                    <img class="services__list__bg--image" src="images/services/services-background.png" alt="smoke">
+                </div>
+                
+
                 <div class="services__list__top">
                     <button class="services__list__title active" type="button">Педикюр</button>
                     <button class="services__list__title" type="button">Маникюр</button>
@@ -238,7 +242,7 @@
     </div> <!--container-->
 </section> <!--services-->
 
-<section class="galery">
+<section id="galery" class="galery">
     <div class="container">
         <div class="section__title"><h2>Галерея</h2></div>
 
@@ -287,7 +291,7 @@
     </div> <!--pcontainer-->
 </section> <!--galery-->
 
-<section class="reviews">
+<section id="reviews" class="reviews">
     <div class="container">
         <div class="section__title"><h2>Отзывы</h2></div>
 
@@ -350,13 +354,12 @@
 
 </section> <!--reviews-->
 
-
 <section class="news">
     <div class="container">
         <div class="section__title"><h2>Наш блог</h2></div>
 
         <div class="news__inner">
-            <article class="news__card">
+            <a href="https://www.instagram.com/p/CNHfhXGBotQ/" target="blank" class="news__card">
                 <div class="news__card__else"><span>Подробнее</span></div>
                 <div class="news__card__top">
                     <time class="news__card__date" datetime="2021-10-05">5 октября</time>
@@ -369,9 +372,9 @@
                     <h5 class="news__card__content">Выбираем обувь вместе с GOODVIN</h5>
                     
                 </div>
-            </article>
+            </a>
 
-            <article class="news__card">
+            <a href="https://www.instagram.com/p/B7jm9PqIfxF/" target="blank" class="news__card">
                 <div class="news__card__else"><span>Подробнее</span></div>
                 <div class="news__card__top">
                     <time class="news__card__date" datetime="2021-09-18">18 сентября</time>
@@ -383,9 +386,9 @@
                     
                     <h5 class="news__card__content">Крема для рук и ног</h5>
                 </div>
-            </article>
+            </a>
 
-            <article class="news__card">
+            <a href="https://www.instagram.com/p/B79QqfKns2q/" target="blank" class="news__card">
                 <div class="news__card__else"><span>Подробнее</span></div>
                 <div class="news__card__top">
                     <time class="news__card__date" datetime="2021-08-22">22 августа</time>
@@ -397,7 +400,7 @@
                     
                     <h5 class="news__card__content">Красивые брови - красивое лицо!</h5>
                 </div>
-            </article>
+            </a>
 
         </div> <!--news__inner-->
     </div> <!--container-->
@@ -444,14 +447,14 @@
     </div> <!--container-->
 </section> <!--form-->
 
-<section class="map">
+<section id="map" class="map">
     
     <div class="container">
         <div class="section__title"><h2>Как нас найти</h2></div>
 
         <div class="map__wrapper">
             <div class="map_background">
-                <img class="rot" src="images/map/2.png" alt="bg">
+                <img class="rot" src="images/map/map-bg.png" alt="bg">
             </div>
         
         <div class="map__wrapper__top">
@@ -545,11 +548,11 @@
         <nav class="footer__nav">
             <h5 class="footer__title">клиентам</h5>
             <ul class="footer__nav__list">
-                <li class="footer__nav__item"><a class="footer__nav__link" href="#">Главная</a></li>
-                <li class="footer__nav__item"><a class="footer__nav__link" href="#">Услуги и цены</a></li>
-                <li class="footer__nav__item"><a class="footer__nav__link" href="#">Галерея работ</a></li>
-                <li class="footer__nav__item"><a class="footer__nav__link" href="#">Отзывы</a></li>
-                <li class="footer__nav__item"><a class="footer__nav__link" href="#">Как нас найти</a></li>
+                <li class="footer__nav__item"><a class="footer__nav__link" href="#intro">Главная</a></li>
+                <li class="footer__nav__item"><a class="footer__nav__link" href="#services">Услуги и цены</a></li>
+                <li class="footer__nav__item"><a class="footer__nav__link" href="#galery">Галерея работ</a></li>
+                <li class="footer__nav__item"><a class="footer__nav__link" href="#reviews">Отзывы</a></li>
+                <li class="footer__nav__item"><a class="footer__nav__link" href="#map">Как нас найти</a></li>
             </ul>
         </nav>
 
@@ -569,14 +572,14 @@
         <div class="footer__contacts">
             <h5 class="footer__title">Контакты</h5>
             <ul class="footer__contacts__list">
-                <li class="footer__nav__item"><a class="footer__nav__link" href="#"><i class="contact__icon fas fa-map-marker-alt"></i>ул. Салова 61, "VALO"</a></li>
+                <li class="footer__nav__item"><a class="footer__nav__link" href="#map"><i class="contact__icon fas fa-map-marker-alt"></i>ул. Салова 61, "VALO"</a></li>
                 <li class="footer__nav__item"><a class="footer__nav__link" href="tel:+79052819552"><i class="contact__icon fas fa-mobile-alt"></i>8 (905) 281-95-52</a></li>
             </ul>
 
             <div class="footer__social">
-                <div class="footer__social__item"><i class="footer__social__icon fab fa-instagram"></i></div>
-                <div class="footer__social__item"><i class="footer__social__icon fab fa-whatsapp"></i></div>
-                <div class="footer__social__item"><i class="footer__social__icon fab fa-telegram-plane"></i></div>
+                <a href="https://www.instagram.com/kozharina_podolog/" target="blank" class="footer__social__item"><i class="footer__social__icon fab fa-instagram"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=79052819552" target="blank" class="footer__social__item"><i class="footer__social__icon fab fa-whatsapp"></i></a>
+                <a href="https://t.me/@Anna_Kozharina" target="blank" class="footer__social__item"><i class="footer__social__icon fab fa-telegram-plane"></i></a>
             </div>
         </div>
     </div> <!--footer__inner-->
@@ -584,10 +587,10 @@
 
 </footer> <!--footer-->
 
-<div class="modal-signup">
-    <div class="modal-signup__wrapper">
+<!-- <div class="modal">
+    <div class="modal-signup">
 
-        <span class="modal-signup__close"><img src="images/icon/close.svg" alt="close"></span>
+        <span class="modal-close"><img src="images/icon/close.svg" alt="close"></span>
 
         <h4 class="modal-signup__title">Выберите, как Вам удобней с нами связаться</h4>
 
@@ -610,11 +613,30 @@
                 <div class="modal-signup__text">WhatsApp</div>
             </a>
         </div>
-
-        
-        
-
     </div>
+</div> -->
+
+<!-- <div class="modal">
+    <div class="modal-map">
+        <span class="modal__close"><img src="images/icon/close.svg" alt="close"></span>
+        <img class="modal-map__image" src="images/map/valo.jpg" alt="valo">
+    </div>
+</div>
+<div class="modal">
+    <div class="modal-map">
+        <span class="modal__close"><img src="images/icon/close.svg" alt="close"></span>
+        <img class="modal-map__image" src="images/map/entrance.jpg" alt="entrance">
+    </div>
+</div>
+<div class="modal">
+    <div class="modal-map">
+        <span class="modal__close"><img src="images/icon/close.svg" alt="close"></span>
+        <img class="modal-map__image" src="images/map/loby.jpg" alt="loby">
+    </div>
+</div> -->
+
+<div class="button__to__top">
+    <button type="button" class="btn__top"><i class="far fa-caret-square-up"></i></button>
 </div>
 
 
