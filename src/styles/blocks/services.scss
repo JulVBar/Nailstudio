@@ -46,6 +46,7 @@
 .services__list__title {
     font-size: $h4;
     color: $non-active;
+    text-decoration: none;
     padding: 10px 20px;
     border: none;
     background-color: transparent;
@@ -63,7 +64,6 @@
     &:hover {
         color: $pink;
     }
-    
 }
 
 .services__price__list {

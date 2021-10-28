@@ -64,8 +64,6 @@
     &:focus {
         @include border-gradient;
     }
-
-    
 }
 
 .form__icon {
@@ -73,6 +71,7 @@
     top: 50%;
     transform: translateY(-50%);
     left: 20px;
+    color: $pink;
 
     &--mes {
         top: 25px;

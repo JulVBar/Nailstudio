@@ -16,7 +16,6 @@
 
     text-decoration: none;
     
-    background-color: $bodybackground;
     cursor: pointer;
     transition: all .3s ease;
 
@@ -88,13 +87,7 @@
 }
 
 .news__card__content {
-    font-family: $font-family-title;
-    font-size: $maintextsize;
-    font-weight: 300;
-    line-height: 20px;
-    color: $pink;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
+    @include title-pink($h5);
     padding: 0;
     margin-bottom: 20px;
 

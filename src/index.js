@@ -4,6 +4,7 @@ import one from './js/js1';
 import two from './js/js2';
 import parallax from './js/parallax';
 import preloader from './js/preloader';
+import navigation from './js/navigation';
 
 import json from './db.json';
 
@@ -18,6 +19,7 @@ window.addEventListener('DOMContentLoaded', function() {
     one();
     two();
     parallax();
+    navigation();
     // preloader();
 });
 
@@ -30,6 +32,7 @@ const popservants = importAll(require.context('./images/pop-servants', false, /\
 const services = importAll(require.context('./images/services', false, /\.(png|jpe?g|svg|gif)$/));
 const news = importAll(require.context('./images/news', false, /\.(png|jpe?g|svg|gif)$/));
 const map = importAll(require.context('./images/map', false, /\.(png|jpe?g|svg|gif)$/));
+const blog = importAll(require.context('./images/blog', false, /\.(png|jpe?g|svg|gif)$/));
 
 
 
@@ -39,31 +42,7 @@ function importAll(r) {
     return images;
 }
 
-// btn to top
 
-function btnToTopShow() {
-
-    if (window.pageYOffset !== 0) {
-        btnTop.classList.add('active');
-    } else {
-        btnTop.classList.remove('active');
-    }
-}
-
-window.addEventListener('scroll', btnToTopShow);
-
-const btnTop = document.querySelector('.button__to__top');
-
-
-
-btnTop.addEventListener('click', function (e) {
-    e.preventDefault();
-
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
 
 
 

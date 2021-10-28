@@ -42,11 +42,20 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({    //подключаем плагин всегда через new
+                filename: 'index.html',    
                 template: './index.html', //используем шаблон
                 minify: {
                     collapseWhitespace: isProd, //минифицирует html в production, по умолчанию true
                     removeComments: isProd //удаляет комменты
                 }
+        }),
+        new HTMLWebpackPlugin({    // Подключаем каждую страницу отдельно, обязательно указываем filename
+            filename: 'blog.html',
+            template: './blog.html', 
+            minify: {
+                collapseWhitespace: isProd, 
+                removeComments: isProd 
+            }
         }),
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin({

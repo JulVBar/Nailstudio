@@ -16,7 +16,7 @@
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./styles/main.scss\");\n/* harmony import */ var _js_js1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/js1 */ \"./js/js1.js\");\n/* harmony import */ var _js_js2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/js2 */ \"./js/js2.js\");\n/* harmony import */ var _js_parallax__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/parallax */ \"./js/parallax.js\");\n/* harmony import */ var _js_preloader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/preloader */ \"./js/preloader.js\");\n/* harmony import */ var _js_preloader__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_preloader__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _db_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./db.json */ \"./db.json\");\n\n\n\n\n\n\nconsole.log('Это файл APP.JS');\nwindow.addEventListener('DOMContentLoaded', function () {\n  (0,_js_js1__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n  (0,_js_js2__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n  (0,_js_parallax__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(); // preloader();\n}); // load all images\n//каждую подпапку импортируем отдельно (иконки просто копируются в конфиге)\n\nvar images = importAll(__webpack_require__(\"./images sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar galery = importAll(__webpack_require__(\"./images/galery sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar reviews = importAll(__webpack_require__(\"./images/reviews sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar popservants = importAll(__webpack_require__(\"./images/pop-servants sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar services = importAll(__webpack_require__(\"./images/services sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar news = importAll(__webpack_require__(\"./images/news sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar map = importAll(__webpack_require__(\"./images/map sync \\\\.(png|jpe?g|svg|gif)$\"));\n\nfunction importAll(r) {\n  var images = {};\n  r.keys().map(function (item, index) {\n    images[item.replace('./', '')] = r(item);\n  });\n  return images;\n} // btn to top\n\n\nfunction btnToTopShow() {\n  if (window.pageYOffset !== 0) {\n    btnTop.classList.add('active');\n  } else {\n    btnTop.classList.remove('active');\n  }\n}\n\nwindow.addEventListener('scroll', btnToTopShow);\nvar btnTop = document.querySelector('.button__to__top');\nbtnTop.addEventListener('click', function (e) {\n  e.preventDefault();\n  window.scrollTo({\n    top: 0,\n    behavior: 'smooth'\n  });\n});\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./styles/main.scss\");\n/* harmony import */ var _js_js1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/js1 */ \"./js/js1.js\");\n/* harmony import */ var _js_js2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/js2 */ \"./js/js2.js\");\n/* harmony import */ var _js_parallax__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/parallax */ \"./js/parallax.js\");\n/* harmony import */ var _js_preloader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/preloader */ \"./js/preloader.js\");\n/* harmony import */ var _js_preloader__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_preloader__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _js_navigation__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/navigation */ \"./js/navigation.js\");\n/* harmony import */ var _db_json__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./db.json */ \"./db.json\");\n\n\n\n\n\n\n\nconsole.log('Это файл APP.JS');\nwindow.addEventListener('DOMContentLoaded', function () {\n  (0,_js_js1__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n  (0,_js_js2__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n  (0,_js_parallax__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n  (0,_js_navigation__WEBPACK_IMPORTED_MODULE_5__[\"default\"])(); // preloader();\n}); // load all images\n//каждую подпапку импортируем отдельно (иконки просто копируются в конфиге)\n\nvar images = importAll(__webpack_require__(\"./images sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar galery = importAll(__webpack_require__(\"./images/galery sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar reviews = importAll(__webpack_require__(\"./images/reviews sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar popservants = importAll(__webpack_require__(\"./images/pop-servants sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar services = importAll(__webpack_require__(\"./images/services sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar news = importAll(__webpack_require__(\"./images/news sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar map = importAll(__webpack_require__(\"./images/map sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar blog = importAll(__webpack_require__(\"./images/blog sync \\\\.(png|jpe?g|svg|gif)$\"));\n\nfunction importAll(r) {\n  var images = {};\n  r.keys().map(function (item, index) {\n    images[item.replace('./', '')] = r(item);\n  });\n  return images;\n}\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
@@ -42,6 +42,17 @@ eval("__webpack_require__.r(__webpack_exports__);\nfunction two() {\n  console.l
 
 /***/ }),
 
+/***/ "./js/navigation.js":
+/*!**************************!*\
+  !*** ./js/navigation.js ***!
+  \**************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nfunction navigation() {\n  // Navigation\n  document.querySelectorAll('a[href^=\"#\"').forEach(function (link) {\n    link.addEventListener('click', function (e) {\n      e.preventDefault();\n      var href = this.getAttribute('href').substring(1);\n      console.log(href);\n      var scrollTarget = document.getElementById(href);\n      var topOffset = document.querySelector('.header').offsetHeight; // const topOffset = 0; // если не нужен отступ сверху \n\n      var elementPosition = scrollTarget.getBoundingClientRect().top;\n      var offsetPosition = elementPosition - topOffset;\n      window.scrollBy({\n        top: offsetPosition,\n        behavior: 'smooth'\n      });\n    });\n  }); // btn to top\n\n  function btnToTopShow() {\n    if (window.pageYOffset !== 0) {\n      btnTop.classList.add('active');\n    } else {\n      btnTop.classList.remove('active');\n    }\n  }\n\n  window.addEventListener('scroll', btnToTopShow);\n  var btnTop = document.querySelector('.button__to__top');\n  btnTop.addEventListener('click', function (e) {\n    e.preventDefault();\n    window.scrollTo({\n      top: 0,\n      behavior: 'smooth'\n    });\n  });\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (navigation);\n\n//# sourceURL=webpack:///./js/navigation.js?");
+
+/***/ }),
+
 /***/ "./js/parallax.js":
 /*!************************!*\
   !*** ./js/parallax.js ***!
@@ -60,6 +71,28 @@ eval("__webpack_require__.r(__webpack_exports__);\nfunction parallax() {\n  func
 /***/ (function() {
 
 eval("// function preloader() {\n//     document.body.onload = function() {\n//         setTimeout(function() {\n//             let preloader = document.querySelector('.preloader');\n//             if (!preloader.classList.contains('done')) {\n//                 preloader.classList.add('done');\n//             }\n//             document.body.classList.add('scroll');\n//         }, 1000);\n//     };\n// }\n// export default preloader;\n\n//# sourceURL=webpack:///./js/preloader.js?");
+
+/***/ }),
+
+/***/ "./images/blog/blog-bg.jpg":
+/*!*********************************!*\
+  !*** ./images/blog/blog-bg.jpg ***!
+  \*********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/blog/blog-bg.jpg\");\n\n//# sourceURL=webpack:///./images/blog/blog-bg.jpg?");
+
+/***/ }),
+
+/***/ "./images/blog/post__image1.jpg":
+/*!**************************************!*\
+  !*** ./images/blog/post__image1.jpg ***!
+  \**************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/blog/post__image1.jpg\");\n\n//# sourceURL=webpack:///./images/blog/post__image1.jpg?");
 
 /***/ }),
 
@@ -445,6 +478,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./styles/main.scss?");
+
+/***/ }),
+
+/***/ "./images/blog sync \\.(png|jpe?g|svg|gif)$":
+/*!***************************************************************!*\
+  !*** ./images/blog/ sync nonrecursive \.(png|jpe?g|svg|gif)$ ***!
+  \***************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+eval("var map = {\n\t\"./blog-bg.jpg\": \"./images/blog/blog-bg.jpg\",\n\t\"./post__image1.jpg\": \"./images/blog/post__image1.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/blog sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/blog/_sync_nonrecursive_\\.(png%7Cjpe?");
 
 /***/ }),
 

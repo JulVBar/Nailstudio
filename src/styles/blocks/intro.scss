@@ -32,13 +32,7 @@ h1 {
 }
 
 h4 {
-    font-family: $font-family-title;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 27px;
-    color: $pink;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
+    @include title-pink($maintext);
     padding: 0;
     margin-bottom: 20px;
 }

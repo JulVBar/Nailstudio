@@ -60,6 +60,16 @@ $mobile-bp-thin: 375px;
     line-height: 1.2;
 }
 
+@mixin title-pink($fontsize) {
+    font-family: $font-family-title;
+    font-size: $fontsize;
+    font-weight: 300;
+    line-height: 27px;
+    color: $pink;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
 @mixin title-gradient() {
     background-image: linear-gradient(to top, $grad1 22%, $grad2 55%, $grad3);
     -webkit-background-clip: text;
