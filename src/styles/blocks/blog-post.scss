@@ -51,3 +51,75 @@
     font-size: $h5;
     margin-bottom: 40px;
 }
+
+.post__social {
+    display: flex;
+}
+
+.post__share {
+    width: 50%;
+    display: flex;
+    margin: 10px;
+
+    p {
+        margin: 0;
+        height: 30px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.post__share__list {
+    display: flex;
+    padding-left: 20px;
+}
+
+
+.post__share__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 50%;
+    background: $primary;
+
+    margin: 0 5px;
+    padding: 10px 15px;
+    width: 30px;
+    height: 30px;
+
+    text-decoration: none;
+    color: $pink;
+
+    transition: all .3s ease;
+
+    &:hover {
+        background: $pink;
+        color: $primary;
+    }
+}
+
+.post__share__icon {
+    text-decoration: none;
+}
+
+.post__tags__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.post__tags__item {
+    margin: 5px;
+    padding: 5px;
+    background-color: $secondary;
+    color: $primary;
+    text-transform: lowercase;
+}
+    
+.post__tags__icon {
+    margin-right: 5px;
+}

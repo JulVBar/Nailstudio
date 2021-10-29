@@ -55,28 +55,6 @@
     }
 }
 
-.content__item__tags {
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        list-style: none;
-        padding: 0;
-        margin: 10px 0;
-
-        li {
-            margin: 5px;
-            padding: 5px;
-            background-color: $secondary;
-            color: $primary;
-            text-transform: lowercase;
-
-            i {
-                margin-right: 5px;
-            }
-        }
-    }
-}
-
 
 .content__item__categories {
     ul {
