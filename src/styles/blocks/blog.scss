@@ -50,7 +50,7 @@
 
 .blog__inner {
     display: flex;
-    margin-bottom: 500px;
+    margin-bottom: 50px;
 }
 
 .blog__title {
@@ -113,4 +113,62 @@
 }
 
 
+// Pagination
 
+.blog__pagination {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 50px;
+}
+
+.pagination__list {
+    list-style: none;
+    padding: 0;
+    margin: 0 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.pagination__list__item {
+    border: 1px solid $non-active;
+
+    padding: 10px 15px;
+    margin: 5px;
+
+    @include main-text;
+
+    cursor: pointer;
+    transition: all .3s ease;
+
+    &:hover {
+        color: $bodybackground;
+        background: $secondary;
+        border: 1px solid $secondary;
+    }
+
+    &.active {
+        color: $bodybackground;
+        background: $secondary;
+        border: 1px solid $secondary;
+    }
+}
+
+.pagination__btn {
+    border: 1px solid $non-active;
+    background: transparent;
+    min-width: 85px;
+
+    padding: 10px 15px;
+    margin: 5px;
+
+    cursor: pointer;
+    transition: all .3s ease;
+
+    &:hover {
+        color: $bodybackground;
+        background: $secondary;
+        border: 1px solid $secondary;
+    }
+}

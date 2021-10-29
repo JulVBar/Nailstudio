@@ -49,7 +49,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nfunction two() {\n  console.l
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nfunction navigation() {\n  // Navigation\n  document.querySelectorAll('a[href^=\"#\"').forEach(function (link) {\n    link.addEventListener('click', function (e) {\n      e.preventDefault();\n      var href = this.getAttribute('href').substring(1);\n      console.log(href);\n      var scrollTarget = document.getElementById(href);\n      var topOffset = document.querySelector('.header').offsetHeight; // const topOffset = 0; // если не нужен отступ сверху \n\n      var elementPosition = scrollTarget.getBoundingClientRect().top;\n      var offsetPosition = elementPosition - topOffset;\n      window.scrollBy({\n        top: offsetPosition,\n        behavior: 'smooth'\n      });\n    });\n  }); // btn to top\n\n  function btnToTopShow() {\n    if (window.pageYOffset !== 0) {\n      btnTop.classList.add('active');\n    } else {\n      btnTop.classList.remove('active');\n    }\n  }\n\n  window.addEventListener('scroll', btnToTopShow);\n  var btnTop = document.querySelector('.button__to__top');\n  btnTop.addEventListener('click', function (e) {\n    e.preventDefault();\n    window.scrollTo({\n      top: 0,\n      behavior: 'smooth'\n    });\n  });\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (navigation);\n\n//# sourceURL=webpack:///./js/navigation.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nfunction navigation() {\n  // Navigation\n  document.querySelectorAll('a[href^=\"#\"').forEach(function (link) {\n    link.addEventListener('click', function (e) {\n      e.preventDefault();\n      var href = this.getAttribute('href').substring(1);\n      console.log(href);\n      var scrollTarget = document.getElementById(href);\n      var topOffset = document.querySelector('.header').offsetHeight; // const topOffset = 0; // если не нужен отступ сверху \n\n      var elementPosition = scrollTarget.getBoundingClientRect().top;\n      var offsetPosition = elementPosition - topOffset;\n      window.scrollBy({\n        top: offsetPosition,\n        behavior: 'smooth'\n      });\n    });\n  }); // btn to top\n\n  function btnToTopShow() {\n    if (window.pageYOffset !== 0) {\n      btnTop.forEach(function (elem) {\n        elem.classList.add('active');\n      });\n    } else {\n      btnTop.forEach(function (elem) {\n        elem.classList.remove('active');\n      });\n    }\n  }\n\n  window.addEventListener('scroll', btnToTopShow);\n  var btnTop = document.querySelectorAll('.button__to__top');\n  btnTop.forEach(function (elem) {\n    elem.addEventListener('click', function (e) {\n      e.preventDefault();\n      window.scrollTo({\n        top: 0,\n        behavior: 'smooth'\n      });\n    });\n  });\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (navigation);\n\n//# sourceURL=webpack:///./js/navigation.js?");
 
 /***/ }),
 
@@ -60,7 +60,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nfunction navigation() {\n  //
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nfunction parallax() {\n  function parallaxBg(background, block) {\n    block.addEventListener('mousemove', function (e) {\n      var x = e.clientX / window.innerWidth;\n      var y = e.clientY / window.innerHeight;\n      background.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';\n    });\n  }\n\n  parallaxBg(document.querySelector('.pop__servants__background'), document.querySelector('.pop__servants__inner')); // parallaxBg(document.querySelector('.map_background'), document.querySelector('.map'));\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (parallax);\n\n//# sourceURL=webpack:///./js/parallax.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nfunction parallax() {\n  function parallaxBg(background, block) {\n    block.addEventListener('mousemove', function (e) {\n      var x = e.clientX / window.innerWidth;\n      var y = e.clientY / window.innerHeight;\n      background.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';\n    });\n  }\n\n  if (document.querySelector('#homepage')) {\n    parallaxBg(document.querySelector('.pop__servants__background'), document.querySelector('.pop__servants__inner'));\n  }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (parallax);\n\n//# sourceURL=webpack:///./js/parallax.js?");
 
 /***/ }),
 
@@ -93,6 +93,28 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/blog/post__image1.jpg\");\n\n//# sourceURL=webpack:///./images/blog/post__image1.jpg?");
+
+/***/ }),
+
+/***/ "./images/blog/post__image2.jpg":
+/*!**************************************!*\
+  !*** ./images/blog/post__image2.jpg ***!
+  \**************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/blog/post__image2.jpg\");\n\n//# sourceURL=webpack:///./images/blog/post__image2.jpg?");
+
+/***/ }),
+
+/***/ "./images/blog/post__image3.jpg":
+/*!**************************************!*\
+  !*** ./images/blog/post__image3.jpg ***!
+  \**************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/blog/post__image3.jpg\");\n\n//# sourceURL=webpack:///./images/blog/post__image3.jpg?");
 
 /***/ }),
 
@@ -487,7 +509,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \***************************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./blog-bg.jpg\": \"./images/blog/blog-bg.jpg\",\n\t\"./post__image1.jpg\": \"./images/blog/post__image1.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/blog sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/blog/_sync_nonrecursive_\\.(png%7Cjpe?");
+eval("var map = {\n\t\"./blog-bg.jpg\": \"./images/blog/blog-bg.jpg\",\n\t\"./post__image1.jpg\": \"./images/blog/post__image1.jpg\",\n\t\"./post__image2.jpg\": \"./images/blog/post__image2.jpg\",\n\t\"./post__image3.jpg\": \"./images/blog/post__image3.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/blog sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/blog/_sync_nonrecursive_\\.(png%7Cjpe?");
 
 /***/ }),
 

@@ -11,7 +11,7 @@
 .blog__content__item {
     display: flex;
     margin-bottom: 40px;
-    
+
     cursor: pointer;
     transition: all .3s ease;
 
@@ -58,6 +58,7 @@
 .content__item__tags {
     ul {
         display: flex;
+        flex-wrap: wrap;
         list-style: none;
         padding: 0;
         margin: 10px 0;
@@ -80,6 +81,7 @@
 .content__item__categories {
     ul {
         display: flex;
+        flex-wrap: wrap;
         justify-content: right;
         list-style: none;
         padding: 0;

@@ -8,9 +8,13 @@ function parallax() {
         });
     }
 
+    if (document.querySelector('#homepage')) {
 
-    parallaxBg(document.querySelector('.pop__servants__background'), document.querySelector('.pop__servants__inner'));
-    // parallaxBg(document.querySelector('.map_background'), document.querySelector('.map'));
+        parallaxBg(document.querySelector('.pop__servants__background'), document.querySelector('.pop__servants__inner'));
+
+    }
+
+    
     
     
 
