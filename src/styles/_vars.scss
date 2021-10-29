@@ -3,19 +3,19 @@ $black:#000000;
 
 //background
 $bodybackground:#fff8f7;
+$primary-header: #fee5e9d8;
+// $primary-header: #fee5e9;
 $primary: #fcdcd7;
 $primary-opacity: #fcdcd779;
 $primary-modal: #fcdcd7c2;
 $secondary: #ffacaf;
 $secondary-opacity: #ffacafee;  
 $pink: #ff798e; 
-$brightpink: #ff3175; 
 
 
 //text
 $maintext: #555555;
 $non-active: #5555554f;
-$footnote: #b58b43;
 $title: #1e2528de;
 
 $maintextsize: 15px;
@@ -42,8 +42,8 @@ $header-height: 80px;
 $nav-width: 250px;
 
 //media
-$tablet-bp: 991px;
-$mobile-bp: 575px;
+$tablet-bp: 990px;
+$mobile-bp: 770px;
 $mobile-bp-thin: 375px;
 
 @mixin main-text() {
@@ -81,6 +81,7 @@ $mobile-bp-thin: 375px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+//для наведения
 @mixin text-gradient-pink() {
     background-image: linear-gradient(-65deg, $pink, $pink);
     -webkit-background-clip: text;
@@ -109,4 +110,10 @@ $mobile-bp-thin: 375px;
     height: 100%;
     object-fit: cover;
     background-image: linear-gradient(45deg, $pink, $bodybackground);
+}
+
+@mixin breakpoint($bp) {
+    @media (max-width: $bp) {
+        @content;
+    }
 }

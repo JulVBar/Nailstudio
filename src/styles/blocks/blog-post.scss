@@ -39,7 +39,7 @@
 .post__image {
     width: 100%;
     height: 500px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
     img {
         @include image-options;
@@ -52,8 +52,11 @@
     margin-bottom: 40px;
 }
 
+// Share
+
 .post__social {
     display: flex;
+    margin-bottom: 100px;
 }
 
 .post__share {
@@ -104,6 +107,8 @@
     text-decoration: none;
 }
 
+// Hashtags
+
 .post__tags__list {
     display: flex;
     flex-wrap: wrap;
@@ -123,3 +128,89 @@
 .post__tags__icon {
     margin-right: 5px;
 }
+
+// About author
+
+.post__author {
+    padding: 30px 10px;
+    display: flex;
+    border-top: 1px solid  $non-active;
+    border-bottom: 1px solid  $non-active;
+
+    margin-bottom: 100px;
+}
+
+.post__author__info {
+    width: 40%;
+    margin-right: 15px;
+}
+
+.post__author__avatar {
+    width: 150px;
+    height: 150px;
+
+    margin-bottom: 10px;
+
+    img {
+        @include image-options;
+        border-radius: 50%;
+    }
+}
+
+.post__author__name {
+    @include title($h5);
+    text-align: center;
+    color: $maintext;
+}
+
+.post__author__descr {
+    @include main-text;
+}
+
+.post__time {
+    @include main-text;
+    font-style: italic;
+    color: $non-active;
+}
+
+.post__sign {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    time {
+        padding: 3px;
+        padding-right: 10px;
+        border-right: 1.5px solid $non-active;
+    }
+}
+
+.post__sign__name {
+    @include main-text;
+    font-style: italic;
+    color: $non-active;
+    padding: 3px;
+    padding-left: 10px;
+
+    span {
+        color: $maintext;
+    }
+}
+
+.post__statistics {
+    display: flex;
+}
+
+.statistics__item {
+    margin: 5px;
+}
+
+.statistics__icon {
+    @include main-text;
+    color: $secondary;
+}
+
+.statistics__number {
+    @include main-text;
+}
+

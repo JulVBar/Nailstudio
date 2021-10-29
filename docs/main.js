@@ -74,6 +74,28 @@ eval("// function preloader() {\n//     document.body.onload = function() {\n// 
 
 /***/ }),
 
+/***/ "./images/blog/avatar-comment.jpg":
+/*!****************************************!*\
+  !*** ./images/blog/avatar-comment.jpg ***!
+  \****************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/blog/avatar-comment.jpg\");\n\n//# sourceURL=webpack:///./images/blog/avatar-comment.jpg?");
+
+/***/ }),
+
+/***/ "./images/blog/avatar.jpg":
+/*!********************************!*\
+  !*** ./images/blog/avatar.jpg ***!
+  \********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/blog/avatar.jpg\");\n\n//# sourceURL=webpack:///./images/blog/avatar.jpg?");
+
+/***/ }),
+
 /***/ "./images/blog/blog-bg.jpg":
 /*!*********************************!*\
   !*** ./images/blog/blog-bg.jpg ***!
@@ -470,17 +492,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
-/***/ "./images/services/price2.jpg":
-/*!************************************!*\
-  !*** ./images/services/price2.jpg ***!
-  \************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/services/price2.jpg\");\n\n//# sourceURL=webpack:///./images/services/price2.jpg?");
-
-/***/ }),
-
 /***/ "./images/services/services-background.png":
 /*!*************************************************!*\
   !*** ./images/services/services-background.png ***!
@@ -489,6 +500,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/services/services-background.png\");\n\n//# sourceURL=webpack:///./images/services/services-background.png?");
+
+/***/ }),
+
+/***/ "./images/Безымянный.jpg":
+/*!*******************************!*\
+  !*** ./images/Безымянный.jpg ***!
+  \*******************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/Безымянный.jpg\");\n\n//# sourceURL=webpack:///./images/%D0%91%D0%B5%D0%B7%D1%8B%D0%BC%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9.jpg?");
 
 /***/ }),
 
@@ -509,7 +531,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \***************************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./blog-bg.jpg\": \"./images/blog/blog-bg.jpg\",\n\t\"./post__image1.jpg\": \"./images/blog/post__image1.jpg\",\n\t\"./post__image2.jpg\": \"./images/blog/post__image2.jpg\",\n\t\"./post__image3.jpg\": \"./images/blog/post__image3.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/blog sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/blog/_sync_nonrecursive_\\.(png%7Cjpe?");
+eval("var map = {\n\t\"./avatar-comment.jpg\": \"./images/blog/avatar-comment.jpg\",\n\t\"./avatar.jpg\": \"./images/blog/avatar.jpg\",\n\t\"./blog-bg.jpg\": \"./images/blog/blog-bg.jpg\",\n\t\"./post__image1.jpg\": \"./images/blog/post__image1.jpg\",\n\t\"./post__image2.jpg\": \"./images/blog/post__image2.jpg\",\n\t\"./post__image3.jpg\": \"./images/blog/post__image3.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/blog sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/blog/_sync_nonrecursive_\\.(png%7Cjpe?");
 
 /***/ }),
 
@@ -569,7 +591,7 @@ eval("var map = {\n\t\"./reviews-bg.jpg\": \"./images/reviews/reviews-bg.jpg\",\
   \*******************************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./price1.jpg\": \"./images/services/price1.jpg\",\n\t\"./price2.jpg\": \"./images/services/price2.jpg\",\n\t\"./services-background.png\": \"./images/services/services-background.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/services sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/services/_sync_nonrecursive_\\.(png%7Cjpe?");
+eval("var map = {\n\t\"./price1.jpg\": \"./images/services/price1.jpg\",\n\t\"./services-background.png\": \"./images/services/services-background.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/services sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/services/_sync_nonrecursive_\\.(png%7Cjpe?");
 
 /***/ }),
 
@@ -579,7 +601,7 @@ eval("var map = {\n\t\"./price1.jpg\": \"./images/services/price1.jpg\",\n\t\"./
   \**********************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./form-bg.jpg\": \"./images/form-bg.jpg\",\n\t\"./intro-bg.jpg\": \"./images/intro-bg.jpg\",\n\t\"./logo.jpg\": \"./images/logo.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/_sync_nonrecursive_\\.(png%7Cjpe?");
+eval("var map = {\n\t\"./form-bg.jpg\": \"./images/form-bg.jpg\",\n\t\"./intro-bg.jpg\": \"./images/intro-bg.jpg\",\n\t\"./logo.jpg\": \"./images/logo.jpg\",\n\t\"./Безымянный.jpg\": \"./images/Безымянный.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/_sync_nonrecursive_\\.(png%7Cjpe?");
 
 /***/ }),
 

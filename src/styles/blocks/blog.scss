@@ -65,52 +65,7 @@
     margin-top: 0;
 }
 
-.post__time {
-    @include main-text;
-    font-style: italic;
-    color: $non-active;
-}
 
-.post__sign {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-
-    time {
-        padding: 3px;
-        padding-right: 10px;
-        border-right: 1.5px solid $non-active;
-    }
-}
-
-.post__sign__name {
-    @include main-text;
-    font-style: italic;
-    color: $non-active;
-    padding: 3px;
-    padding-left: 10px;
-
-    span {
-        color: $maintext;
-    }
-}
-
-.post__statistics {
-    display: flex;
-}
-
-.statistics__item {
-    margin: 5px;
-}
-
-.statistics__icon {
-    @include main-text;
-    color: $secondary;
-}
-
-.statistics__number {
-    @include main-text;
-}
 
 
 // Pagination

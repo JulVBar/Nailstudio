@@ -1,63 +1,99 @@
 .header {
-    
     width: 100%;
     height: $header-height;
     position: fixed;
     top: 0;
     left: 0;
     z-index: $z-index-header;
-    border-bottom: 1px solid $primary;
 
-    display: flex;
-    justify-content: center;
-
-    background-color:$bodybackground;
-}
-
-.header__social,
-.header__center,
-.header__button {
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-.header__social,
-.header__button {
-    width: 15%;
-}
+    background-color: $primary-header;
 
-.header__center {
-    width: 50%;
-}
+    &__item {
+        margin: 0 20px;
+    }
 
-.header__link {
-    display: flex;
-    text-decoration: none;
+    &__link {
+        display: flex;
+        text-decoration: none;
+    }
 
-    &:hover .header__text {
-        color: $secondary;
+    &__logo {
+        @include title-gradient;
+        font-family: $font-family-extra;
+        font-style: italic;
+        font-size: 60px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__button {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 
-.header__logo {
+
+
+.header__burger {
+    display: none;
+    // display: block;
+    position: relative;
+    width: 40px;
+    height: 30px;
+    z-index: 3;
+
+    cursor: pointer;
+
+    span {
+        position: absolute;
+    background: $grad2;
     width: 100%;
-    height: 79px;
-    object-fit: fiil;
+    height: 4px;
+    top: 14px;
+    transition: .2s linear;
+    }
 
-    margin: 0 40px;
+    &.active span {
+        transform: scale(0);
+    }
 }
 
-.header__text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 3px;
-
-    font-size: 18px;
-    color: $title;
-
-    transition: all .2s ease;
+.header__burger:before,
+.header__burger:after {
+    content: "";
+    position: absolute;
+    background-color: $grad2;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    transition: .2s linear;
 }
 
+.header__burger:before {
+    top: 1px;
+}
+
+.header__burger:after {
+    bottom: 0;
+}
+
+.header__burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+}
+
+.header__burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 17px;
+}
