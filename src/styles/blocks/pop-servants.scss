@@ -1,5 +1,9 @@
 .pop__servants {
     margin-bottom: 100px;
+
+    @include breakpoint($tablet-bp) {
+        margin-bottom: 30px;
+    }
 }
 
 .pop__servants__inner {
@@ -11,6 +15,10 @@
     align-items: center;
 
     height: 550px;
+
+    @include breakpoint(1500px) {
+        height: auto;
+    }
 }
 
 .pop__servants__picture,
@@ -21,6 +29,19 @@
 
 .pop__servants__picture {
     position: relative;
+
+    @include breakpoint(1500px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+.pop__servants__content {
+    @include breakpoint(1500px) {
+        width: 85%;
+    }
 }
 
 .pop__servants__background {
@@ -67,6 +88,7 @@
 .pop__servants__item {
     display: flex;
     align-items: center;
+    background-color: $primary-header;
     
     padding: 10px;
 
@@ -75,6 +97,12 @@
     &:not(:last-child) {
         margin-bottom: 30px;
     }
+
+    @include breakpoint($mobile-bp-small) {
+        position: relative;
+        padding-bottom: 80px;
+        height: 230px;
+    }
 }
 
 .pop__servants__button {
@@ -82,6 +110,14 @@
     padding: 15px 0;
 
     border-right: 1.5px solid $non-active;
+
+    @include breakpoint($mobile-bp-small) {
+        position: absolute;
+        bottom: -140px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: none;
+    }
 }
 
 .pop__servants__descr {
@@ -92,8 +128,19 @@
     margin: 10px 0;
     font-size: $h4;
     color: $maintext;
+
+    @include breakpoint($mobile-bp-small) {
+        font-size: 15px;
+        line-height: 20px;
+    }
 }
+
 
 .pop__servants__text {
     @include main-text;
+
+    @include breakpoint($mobile-bp-small) {
+        font-size: 13px;
+        line-height: 20px;
+    }
 }

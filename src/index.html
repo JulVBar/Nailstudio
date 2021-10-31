@@ -34,34 +34,55 @@
 
 <header class="header">
     
-    <a href="index.html" class="header__logo"><span>Good Vin</span></a>
+    <a href="index.html" class="header__logo"><span>Good Vin</span><span class="header__logo__sign">маникюр и педикюр</span></a>
     
     <div class="header__item">
-        <div class="header__burger active"><span></span></div>
+        <a href="https://www.instagram.com/kozharina_podolog/" target="blank" class="header__link"><img class="header__icon" src="images/icon/instagram_gold.svg" alt="instagram"><span class="header__text header__text--right">Наш Instagram</span></a>
     </div>
-    <div class="header__item">
-        <a href="tel:+79052819552" class="header__link"><img class="header__icon" src="images/icon/phone_gold.svg" alt="tel"></a>
-    </div>
-    <div class="header__item">
-        <a href="#map" class="header__link"><img class="header__icon" src="images/icon/map_gold.svg" alt="map"></a>
-    </div>
-    <div class="header__item">
-        <a href="https://www.instagram.com/kozharina_podolog/" target="blank" class="header__link"><img class="header__icon" src="images/icon/instagram_gold.svg" alt="instagram"></a>
-    </div>
-    <div class="header__item">
+    <!-- <div class="header__item">
         <a href="https://api.whatsapp.com/send?phone=79052819552" target="blank" class="header__link"><img class="header__icon" src="images/icon/messanger_gold.svg" alt="messanger"></a>
+    </div> -->
+    <div class="header__item">
+        <a href="tel:+79052819552" class="header__link"><img class="header__icon" src="images/icon/phone_gold.svg" alt="tel">
+            <span class="header__text header__text--center">8 (905) 281-95-52</span></a>
+    </div>
+    <div class="header__item">
+        <a href="#map" class="header__link"><img class="header__icon" src="images/icon/map_gold.svg" alt="map">
+            <span class="header__text header__text--right">ул. Салова 61</span></a>
     </div>
 
     <div class="header__button">
         <button class="btn__gold" type="button">Записаться</button>
     </div>
-    
-    
-        
 
-   
+    <div class="header__burger"><span></span></div>
 
 </header> <!--header-->
+
+<div class="burger__menu">
+
+    <img class="burger__menu__bg" src="images/burger-menu-bg.jpg" alt="bg">
+
+    <div class="burger__menu__item">
+        <div class="burger__link__list">
+            <a href="https://www.instagram.com/kozharina_podolog/" target="blank" class="burger__menu__link"><img src="images/icon/instagram_gold.svg" alt="instagram"><span>Наш Instagram</span></a>
+                
+            <a href="tel:+79052819552" class="burger__menu__link"><img src="images/icon/phone_gold.svg" alt="tel"><span>8 (905) 281-95-52</span></a>
+        </div>
+    </div>
+
+    <nav class="burger__menu__item">
+        <ul class="burger__nav__list">
+            <li class="burger__nav__item"><a class="burger__nav__link" href="index.html">Главная</a></li>
+            <li class="burger__nav__item"><a class="burger__nav__link" href="#services">Услуги и цены</a></li>
+            <li class="burger__nav__item"><a class="burger__nav__link" href="#galery">Галерея работ</a></li>
+            <li class="burger__nav__item"><a class="burger__nav__link" href="#reviews">Отзывы</a></li>
+            <li class="burger__nav__item"><a class="burger__nav__link" href="blog.html">Блог</a></li>
+            <li class="burger__nav__item"><a class="burger__nav__link" href="#map">Как нас найти</a></li>
+        </ul>
+    </nav> <!--burger__menu__item-->
+</div> <!--burger__menu-->
+
 
 <nav class="navigation">
     <ul class="nav__list">
@@ -88,7 +109,6 @@
         <a href="https://t.me/@Anna_Kozharina" class="menu-item telegram" target="_blank"><i class="fab fa-telegram-plane"></i></a>
         <a href="tel:+79052819552" class="menu-item make-a-call"><i class="fas fa-mobile-alt"></i></a>
     </nav>
-
 </nav> <!--navigation-->
 
 <div id="intro" class="intro">
@@ -116,7 +136,10 @@
             </li>
         </ul>
 
-        <a href="#pop__servants" class="btn__gold" type="button">Подробнее</a>
+        <div class="intro__btn">
+            <a class="btn__gold intro__btn" href="#pop__servants"  type="button">Подробнее</a>
+        </div>
+        
     </div> <!--container-->
 </div> <!--intro-->
 
@@ -311,7 +334,7 @@
             </div>
     
             <div class="reviews__title">Мы очень рады, что Вы делитесь с нами Вашим мнением!</div>
-        </div> <!--revies__inner-->
+        </div> <!--reviews__inner-->
     </div> <!--container-->
 
     <div class="reviews__slider">
@@ -475,7 +498,7 @@
                 <div class="map__block__image">
                     <img src="images/map/valo.jpg" alt="valo" loading="lazy">
                 </div>
-                <div class="map__block__content">
+                <div class="map__block__content map__block__content--valo">
                     <h5><i class="fab fa-monero"></i>Метро "Бухаресткая"</h5>
                     <h5>ул. Салова 61, Аппрат-отель "VALO"</h5>
                     
@@ -484,7 +507,7 @@
         </div>
         <div class="map__wrapper__down">
             <div class="map__block">
-                <div class="map__block__content">
+                <div class="map__block__content map__block__content--entrance">
                     <h5><i class="fas fa-door-open"></i>Вход в главный лобби с флагами</h5>
                 </div>
                 <div class="map__block__image">
@@ -554,7 +577,10 @@
         </svg>    
     </div> <!--footer__wave-->
     
+    <div class="footer__wrap">
+    <div class="container">
     <div class="footer__inner">
+        
         <nav class="footer__nav">
             <h5 class="footer__title">клиентам</h5>
             <ul class="footer__nav__list">
@@ -577,23 +603,26 @@
             <div class="footer__logo__text">Санкт-Петербург 2021</div>
         </div>
 
-
-
         <div class="footer__contacts">
+            
             <h5 class="footer__title">Контакты</h5>
-            <ul class="footer__contacts__list">
-                <li class="footer__nav__item"><a class="footer__nav__link" href="#map"><i class="contact__icon fas fa-map-marker-alt"></i>ул. Салова 61, "VALO"</a></li>
-                <li class="footer__nav__item"><a class="footer__nav__link" href="tel:+79052819552"><i class="contact__icon fas fa-mobile-alt"></i>8 (905) 281-95-52</a></li>
-            </ul>
 
-            <div class="footer__social">
-                <a href="https://www.instagram.com/kozharina_podolog/" target="blank" class="footer__social__item"><i class="footer__social__icon fab fa-instagram"></i></a>
-                <a href="https://api.whatsapp.com/send?phone=79052819552" target="blank" class="footer__social__item"><i class="footer__social__icon fab fa-whatsapp"></i></a>
-                <a href="https://t.me/@Anna_Kozharina" target="blank" class="footer__social__item"><i class="footer__social__icon fab fa-telegram-plane"></i></a>
+            <div class="footer__contacts__wrap">
+                <ul class="footer__contacts__list">
+                    <li class="footer__nav__item"><a class="footer__nav__link" href="#map"><i class="contact__icon fas fa-map-marker-alt"></i>ул. Салова 61, "VALO"</a></li>
+                    <li class="footer__nav__item"><a class="footer__nav__link" href="tel:+79052819552"><i class="contact__icon fas fa-mobile-alt"></i>8 (905) 281-95-52</a></li>
+                </ul>
+
+                <div class="footer__social">
+                    <a href="https://www.instagram.com/kozharina_podolog/" target="blank" class="footer__social__item"><i class="footer__social__icon fab fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=79052819552" target="blank" class="footer__social__item"><i class="footer__social__icon fab fa-whatsapp"></i></a>
+                    <a href="https://t.me/@Anna_Kozharina" target="blank" class="footer__social__item"><i class="footer__social__icon fab fa-telegram-plane"></i></a>
+                </div>
             </div>
         </div>
     </div> <!--footer__inner-->
-
+    </div> <!--container-->
+    </div>
 
 </footer> <!--footer-->
 

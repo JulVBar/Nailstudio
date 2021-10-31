@@ -3,6 +3,26 @@
     bottom:0px;
 
     height: 300px;
+
+    @include breakpoint(1300px) {
+        height: 200px;
+    }
+
+    @include breakpoint($tablet-bp) {
+        height: 150px;
+    }
+
+    @include breakpoint($mobile-bp) {
+        height: 120px;
+    }
+
+    @include breakpoint($mobile-bp-small) {
+        height: 100px;
+    }
+
+    @include breakpoint(410px) {
+        height: 70px;
+    }
 }
 
 svg {

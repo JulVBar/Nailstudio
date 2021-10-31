@@ -3,6 +3,15 @@
     position: relative;
     margin-bottom: 50px;
     min-height: 100vh;
+
+    @include breakpoint($tablet-bp) {
+        padding-top: calc(#{$header-height} + 40px);
+        margin-bottom: 30px;
+    }
+
+    @include breakpoint($mobile-bp) {
+        padding-top: calc(#{$header-height} + 15px);
+    }
 }
 
 .intro__background {
@@ -14,8 +23,6 @@
     top: 0;
     right: 0;
 
-    
-
     img {
         @include image-options;
         opacity: .7;
@@ -23,18 +30,46 @@
 }
 
 h1 {
-    font-family: $font-family-title;
+    font-family: $font-family-section;
     font-size: $h1;
-    color: $title;
+    color: $maintext;
     line-height: 75px;
     font-weight: 700;
     margin: 10px 0 30px 0;
+
+    @include breakpoint($tablet-bp) {
+        font-size: $h2;
+    }
+    @include breakpoint($mobile-bp) {
+        font-size: $h2-mobile;
+        line-height: 50px;
+        margin: 10px 0 15px 0;
+    }
+    @include breakpoint($mobile-bp-thin) {
+        font-size: $h3;
+    }
+
+    @include breakpointHeight($mobile-bp-H) {
+        margin: 10px 0 10px 0;
+        font-size: $h3;
+        line-height: 30px;
+    }
 }
 
 h4 {
     @include title-pink($maintext);
     padding: 0;
-    margin-bottom: 20px;
+    margin: 20px 0;
+
+    @include breakpoint($mobile-bp) {
+        font-size: $secondtextsize;
+        margin: 10px 0;
+    }
+
+    @include breakpointHeight($mobile-bp-H) {
+        font-size: $secondtextsize;
+        margin: 5px 0;
+    }
 }
 
 .h1__gradient {
@@ -48,7 +83,7 @@ h4 {
     position: relative;
     overflow: hidden;
 
-    width: 380px;
+    width: 300px;
 
     font-family: $font-family-extra;
     font-style: italic;
@@ -58,6 +93,20 @@ h4 {
     letter-spacing: 1.5px;
 
     transition: ease 0.3s;
+
+    @include breakpoint($mobile-bp) {
+        font-size: 50px;
+        width: 190px;
+    }
+    @include breakpoint($mobile-bp-thin) {
+        font-size: 40px;
+        width: 160px;
+    }
+
+    @include breakpointHeight($mobile-bp-H) {
+        font-size: 37px;
+        width: 140px;
+    }
 }
 
 .h1__gradient:before {
@@ -107,6 +156,14 @@ h4 {
     list-style: none;
     padding: 10px 0;
     margin: 50px 0;
+
+    @include breakpoint($mobile-bp-thin) {
+        margin: 20px 0;
+    }
+
+    @include breakpointHeight($mobile-bp-H) {
+        margin: 10px 0;
+    }
 }
 
 .intro__list-item {
@@ -120,8 +177,30 @@ h4 {
 
     & img {
         padding-right: 5px;
-
         width: 30px;
         height: 28px;
+
+        @include breakpointHeight($mobile-bp-H) {
+            width: 25px;
+            height: 20px;
+        }
+    }
+
+    @include breakpointHeight($mobile-bp-H) {
+        font-size: $secondtextsize;
+        line-height: 12px;
+        padding: 0px;
+    }
+}
+
+@include breakpointHeight($mobile-bp-H) {
+    .contsiner {
+        position: relative;
+    }
+
+    .intro__btn {
+        position: absolute;
+        bottom: 0px;
+        right: 0;
     }
 }

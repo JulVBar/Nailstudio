@@ -27,7 +27,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nfunction one() {\n  console.log('Это файл 1'); //много другого кода  - весь модуль\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (one);\n\n//# sourceURL=webpack:///./js/js1.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nfunction one() {\n  console.log('Это файл 1'); //много другого кода  - весь модуль\n\n  var burger = document.querySelector('.header__burger'),\n      burgerMenu = document.querySelector('.burger__menu');\n  burger.addEventListener('click', function (e) {\n    burgerMenu.classList.toggle('active');\n    burger.classList.toggle('active');\n  });\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (one);\n\n//# sourceURL=webpack:///./js/js1.js?");
 
 /***/ }),
 
@@ -137,6 +137,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/blog/post__image3.jpg\");\n\n//# sourceURL=webpack:///./images/blog/post__image3.jpg?");
+
+/***/ }),
+
+/***/ "./images/burger-menu-bg.jpg":
+/*!***********************************!*\
+  !*** ./images/burger-menu-bg.jpg ***!
+  \***********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/burger-menu-bg.jpg\");\n\n//# sourceURL=webpack:///./images/burger-menu-bg.jpg?");
 
 /***/ }),
 
@@ -503,17 +514,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
-/***/ "./images/Безымянный.jpg":
-/*!*******************************!*\
-  !*** ./images/Безымянный.jpg ***!
-  \*******************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/Безымянный.jpg\");\n\n//# sourceURL=webpack:///./images/%D0%91%D0%B5%D0%B7%D1%8B%D0%BC%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9.jpg?");
-
-/***/ }),
-
 /***/ "./styles/main.scss":
 /*!**************************!*\
   !*** ./styles/main.scss ***!
@@ -601,7 +601,7 @@ eval("var map = {\n\t\"./price1.jpg\": \"./images/services/price1.jpg\",\n\t\"./
   \**********************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./form-bg.jpg\": \"./images/form-bg.jpg\",\n\t\"./intro-bg.jpg\": \"./images/intro-bg.jpg\",\n\t\"./logo.jpg\": \"./images/logo.jpg\",\n\t\"./Безымянный.jpg\": \"./images/Безымянный.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/_sync_nonrecursive_\\.(png%7Cjpe?");
+eval("var map = {\n\t\"./burger-menu-bg.jpg\": \"./images/burger-menu-bg.jpg\",\n\t\"./form-bg.jpg\": \"./images/form-bg.jpg\",\n\t\"./intro-bg.jpg\": \"./images/intro-bg.jpg\",\n\t\"./logo.jpg\": \"./images/logo.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/_sync_nonrecursive_\\.(png%7Cjpe?");
 
 /***/ }),
 

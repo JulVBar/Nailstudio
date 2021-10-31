@@ -13,87 +13,86 @@
     background-color: $primary-header;
 
     &__item {
-        margin: 0 20px;
+        margin: 0 25px;
+        
+        @include breakpoint($tablet-bp) {
+            display: none;
+        }
     }
 
     &__link {
         display: flex;
+        justify-content: center;
+        align-items: center;
+
         text-decoration: none;
+        @include title-gradient;
+        font-size: 20px;
+
+        transition: all .3s ease;
+
+        span {
+            padding-left: 10px;
+        }
+
+        &:hover {
+            @include text-gradient-pink;
+        }
     }
 
     &__logo {
         @include title-gradient;
         font-family: $font-family-extra;
         font-style: italic;
-        font-size: 60px;
+        font-size: 45px;
         font-weight: 600;
         letter-spacing: 1.5px;
 
         position: absolute;
-        left: 20px;
+        left: 40px;
         top: 50%;
         transform: translateY(-50%);
+
+        display: flex;
+        flex-direction: column;
+
+        &__sign {
+            font-size: 18px;
+            padding-left: 40px;
+
+            @include breakpoint($mobile-bp) {
+                font-size: 15px;
+                padding-left: 20px;
+            }
+        }
+
+        @include breakpoint($mobile-bp) {
+            font-size: 35px;
+            left: 20px;
+        }
     }
 
     &__button {
         position: absolute;
-        right: 20px;
+        right: 40px;
         top: 50%;
         transform: translateY(-50%);
+
+        @include breakpoint($mobile-bp) {
+            display: none;
+        }
+    }
+
+    &__text--right {
+        @include breakpoint($laptop-bp) {
+            display: none;
+        } 
+    }
+
+    @include breakpoint($mobile-bp) {
+        justify-content: right;
     }
 }
 
 
 
-.header__burger {
-    display: none;
-    // display: block;
-    position: relative;
-    width: 40px;
-    height: 30px;
-    z-index: 3;
-
-    cursor: pointer;
-
-    span {
-        position: absolute;
-    background: $grad2;
-    width: 100%;
-    height: 4px;
-    top: 14px;
-    transition: .2s linear;
-    }
-
-    &.active span {
-        transform: scale(0);
-    }
-}
-
-.header__burger:before,
-.header__burger:after {
-    content: "";
-    position: absolute;
-    background-color: $grad2;
-    width: 100%;
-    height: 3px;
-    left: 0;
-    transition: .2s linear;
-}
-
-.header__burger:before {
-    top: 1px;
-}
-
-.header__burger:after {
-    bottom: 0;
-}
-
-.header__burger.active:before {
-    transform: rotate(45deg);
-    top: 9px;
-}
-
-.header__burger.active:after {
-    transform: rotate(-45deg);
-    bottom: 17px;
-}

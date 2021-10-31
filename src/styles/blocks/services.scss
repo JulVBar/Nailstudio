@@ -1,5 +1,9 @@
 .services {
     margin-bottom: 100px;
+
+    @include breakpoint($mobile-bp) {
+        margin-bottom: 30px;
+    }
 }
 
 .services__list__bg{
@@ -16,6 +20,10 @@
         width: 100%;
         transform: rotate(90deg);
     }
+
+    @include breakpoint($mobile-bp-small) {
+        display: none;
+    }
 }
 
 .services {
@@ -26,14 +34,26 @@
 
 .services__inner { 
     display: flex;
+
+    @include breakpoint($mobile-bp) {
+        flex-direction: column;
+    }
 }
 
 .services__list {
     width: 40%;
+
+    @include breakpoint($mobile-bp) {
+        width: 100%;
+    }
 }
 
 .services__details {
     width: 60%;
+
+    @include breakpoint($mobile-bp) {
+        width: 100%;
+    }
 }
 
 .services__list__top {
@@ -70,6 +90,10 @@
     list-style: none;
     width: 100%;
     padding: 20px;
+
+    @include breakpoint($mobile-bp) {
+        padding: 7px;
+    }
 }
 
 .price__list__item {
@@ -98,6 +122,10 @@
     &.active .price__list__name {
         color: $pink;
     }
+
+    @include breakpoint($mobile-bp) {
+        padding: 10px 0;
+    }
 }
 
 .price__list__name {
@@ -121,10 +149,18 @@
     width: 100%;
     display: flex;
     justify-content: center;
+
+    @include breakpoint($mobile-bp) {
+        margin-bottom: 30px;
+    }
 }
 
 .services__details {
     padding: 0 40px;
+
+    @include breakpoint($mobile-bp) {
+        padding: 0 7px;
+    }
 }
 
 .services__image {
@@ -134,6 +170,10 @@
 
     img {
         @include image-options;
+    }
+
+    @include breakpoint($mobile-bp) {
+        height: 250px;
     }
 }
 

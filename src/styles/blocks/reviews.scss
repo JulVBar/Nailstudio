@@ -19,6 +19,22 @@
     img {
         @include image-options;
     }
+
+    @include breakpoint(1250px) {
+        width: 80%;
+    }
+
+    @include breakpoint($mobile-bp) {
+        width: 100%;
+    }
+
+    @include breakpoint(450px) {
+        height: 550px;
+    }
+
+    @include breakpointHeight(450px) {
+        height: 450px;
+    }
 }
 
 .reviews__title {
@@ -28,26 +44,90 @@
     padding-top: 15px;
     font-size: 32px;
     line-height: 45px;
+
+    @include breakpoint(1250px) {
+        font-size: 25px;
+        line-height: 25px;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    @include breakpoint($mobile-bp) {
+        font-size: 20px;
+        position: absolute;
+        right: 0;
+    }
+
+    @include breakpoint(450px) {
+        width: 70%;
+    }
+
+    @include breakpointHeight(450px) {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .reviews__slider {
     position: absolute;
     top: 300px;
     right: 0;
-
     display: flex;
+
+    width: 1350px;
+    overflow: hidden;
 
     &:hover .slider__arrow {
         opacity: .8;
+    }
+
+    @include breakpoint(1600px) {
+        width: 900px;
+    }
+
+    @include breakpoint(1250px) {
+        width: 450px;
+    }
+
+    @include breakpoint($tablet-bp) {
+        width: 900px;
+    }
+
+    @include breakpoint(900px) {
+        width: 450px;
+    }
+
+    @include breakpoint($mobile-bp) {
+        top: 220px;
+    }
+
+    @include breakpoint(450px) {
+        width: 100%;
+    }
+
+    @include breakpointHeight(450px) {
+        top: 170px;
     }
 }
 
 .reviews__slider__item {
     background: $secondary-opacity;
-    width: 450px;
-    height: 380px;
+    min-width: 450px;
+    height: 375px;
     padding: 50px;
     padding-right: 100px;
+
+    @include breakpoint(450px) {
+        min-width: 100%;
+        padding: 20px;
+        padding-right: 80px;
+    }
+
+    @include breakpointHeight(450px) {
+        height: 290px;
+        padding: 5px 15px;
+        padding-right: 80px;
+    }
 }
 
 .reviews__header {
@@ -61,6 +141,11 @@
     letter-spacing: 2px;
 
     padding: 15px 0;
+
+    @include breakpointHeight(450px) {
+        font-size: $maintextsize;
+        padding: 10px 0;
+    }
 }
 
 .reviews__prof {
@@ -75,7 +160,13 @@
     img {
         @include image-options;
     }
+
+    @include breakpointHeight(450px) {
+        width: 70px;
+        height: 70px;
+    }
 }
+
 
 .reviews__text {
     font-size: 15px;

@@ -1,5 +1,4 @@
 
-
 .modal-signup {
     position: absolute;
     top: 50%;
@@ -17,12 +16,22 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    @include breakpoint($mobile-bp-small) {
+        height: auto;
+        width: 100%;
+    }
 }
 
 
 
 .modal-signup__title {
     margin-bottom: 50px;
+
+    @include breakpoint($mobile-bp-small) {
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
 
 .modal-signup__content {
@@ -31,6 +40,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include breakpoint($mobile-bp-small) {
+        flex-direction: column;
+    }
+
+    @include breakpointHeight($mobile-bp-thin) {
+        flex-direction: row;
+    }
 }
 
 .modal-signup__item {

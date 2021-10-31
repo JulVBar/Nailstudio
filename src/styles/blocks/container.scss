@@ -6,11 +6,24 @@
     position: relative;
 }
 
+
 @media(max-width: 1800px) {
     .container {
         margin-left: $nav-width;
         padding-left: 85px;
-    }
 
+        @include breakpoint($tablet-bp) {
+            margin-left: 0;
+            padding: 0px 40px;
+        }
+
+        @include breakpoint($mobile-bp) {
+            padding: 0px 20px;
+        }
+
+        @include breakpoint($mobile-bp-thin) {
+            padding: 0px 10px;
+        }
+    }
 }
 
