@@ -1,6 +1,10 @@
 .post__comments {
     margin-bottom: 100px;
     border-bottom: 1px solid  $non-active;
+
+    @include breakpoint($mobile-bp-small) {
+        margin-bottom: 20px;
+    }
 }
 
 .comments {
@@ -21,6 +25,10 @@
     img {
         @include image-options;
         border-radius: 50%;
+    }
+
+    @include breakpoint($mobile-bp-small) {
+        display: none;
     }
 }
 
@@ -49,7 +57,11 @@
 .comment__text {
     p {
         @include main-text;
-    margin: 15px 0;
+        margin: 15px 0;
+
+        @include breakpoint($mobile-bp-small) {
+            margin: 5px 0;
+        }
     }
 }
 

@@ -24,8 +24,12 @@
 
     &--page {
         position: absolute;
-        left: -10px;
+        left: -20px;
         top: -40px;
+
+        @include breakpoint($mobile-bp) { 
+            top: -50px;
+        }
     }
 }
 
@@ -44,6 +48,10 @@
     img {
         @include image-options;
     }
+
+    @include breakpoint($mobile-bp-small) {
+        height: 200px;
+    }
 }
 
 .post__text {
@@ -57,6 +65,11 @@
 .post__social {
     display: flex;
     margin-bottom: 100px;
+
+    @include breakpoint($mobile-bp) {
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+    }
 }
 
 .post__share {
@@ -123,6 +136,10 @@
     background-color: $secondary;
     color: $primary;
     text-transform: lowercase;
+
+    @include breakpoint($mobile-bp-small) {
+        font-size: $secondtextsize;
+    }
 }
     
 .post__tags__icon {
@@ -138,11 +155,22 @@
     border-bottom: 1px solid  $non-active;
 
     margin-bottom: 100px;
+
+    @include breakpoint($mobile-bp) {
+        margin-bottom: 50px;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 .post__author__info {
     width: 40%;
     margin-right: 15px;
+
+    @include breakpoint($mobile-bp-small) {
+        width: 100%;
+        margin-bottom: 15px;
+    }
 }
 
 .post__author__avatar {
@@ -155,6 +183,11 @@
         @include image-options;
         border-radius: 50%;
     }
+
+    @include breakpoint($mobile-bp-small) {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
 }
 
 .post__author__name {
@@ -165,6 +198,10 @@
 
 .post__author__descr {
     @include main-text;
+
+    @include breakpoint($mobile-bp-small) {
+        text-align: center;
+    }
 }
 
 .post__time {

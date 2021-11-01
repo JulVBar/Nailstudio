@@ -6,6 +6,39 @@
 
     margin-right: 20px;
     padding: 5px;
+
+    @include breakpoint($tablet-bp) {
+        display: flex;
+        align-items: center;
+        overflow-y: auto;
+
+        width: 0%;
+        height: 100%;
+        margin-right: 0;
+        padding-bottom: 20px;
+        padding-top: calc(#{$header-height});
+
+        position: fixed;
+        top: 0;
+        left: -10px;
+        z-index: 900;
+
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+        background-color: $secondary-header;
+        transition: all .4s ease;
+
+        &.active {
+            width: 48%;
+            left: 0;
+        }
+    }
+
+    @include breakpoint($mobile-bp) {
+        &.active {
+            width: 100%;
+            padding-left: 20px;
+        }
+    }  
 }
 
 .blog__menu__item {
@@ -19,6 +52,28 @@
     &:not(:first-child) {
         padding-top: 20px;
     }
+    &::last-child {
+        padding-bottom: 20px;
+    }
+
+    @include breakpoint($tablet-bp) {
+        width: 310px;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+            padding-bottom: 30px;
+        }
+        &:not(:first-child) {
+            padding-top: 10px;
+        }
+    }
+
+    @include breakpoint($mobile-bp) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 }
 
 .search__form__wrapper {
@@ -30,6 +85,10 @@
 
 .menu__item__wrapper {
     display: flex;
+
+    @include breakpoint($mobile-bp) {
+        width: 100%;
+    }
 }
 
 .menu__categories,

@@ -1,7 +1,13 @@
 .blog__intro {
     padding-top: calc(#{$header-height} + 90px);
+    margin-top: calc(#{$header-height});
     position: relative;
     margin-bottom: 130px;
+
+    @include breakpoint($tablet-bp) {
+        padding-top: 30px;
+        margin-bottom: 50px;
+    }
 }
 
 .blog__intro__bg {
@@ -15,6 +21,10 @@
 
     img {
         @include image-options;
+    }
+
+    @include breakpoint($tablet-bp) {
+        height: 100px;
     }
 }
 
@@ -58,6 +68,10 @@
     color: $maintext;
     margin-top: 0;
     margin-bottom: 35px;
+
+    @include breakpoint($tablet-bp) {
+        margin-bottom: 15px;
+    }
 }
 
 .blog__text {

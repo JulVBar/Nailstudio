@@ -6,6 +6,10 @@
     flex-direction: column;
 
     padding: 5px;
+
+    @include breakpoint($tablet-bp) {
+        width: 100%;
+    }
 }
 
 .blog__content__item {
@@ -22,11 +26,19 @@
     &:hover .content__item__image img {
         transform: scale(1.2);
     }
+
+    @include breakpoint($mobile-bp) {
+        display: block;
+    }
 }
 
 .content__item__picture,
 .content__item__text {
     width: 50%;
+
+    @include breakpoint($mobile-bp) {
+        width: 100%;
+    }
 }
 
 .content__item__text {
@@ -35,6 +47,10 @@
     h3 {
         margin-top: 10px;
     }
+
+    @include breakpoint($mobile-bp) {
+        padding-left: 15px;
+    }
 }
 
 .content__item__picture {
@@ -42,6 +58,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @include breakpoint($mobile-bp) {
+        margin-bottom: 10px;
+    }
 }
 
 .content__item__image {
@@ -53,8 +73,11 @@
         @include image-options;
         transition: all .8s ease;
     }
-}
 
+    @include breakpoint($mobile-bp-small) {
+        height: 200px;
+    }
+}
 
 .content__item__categories {
     ul {
@@ -70,6 +93,17 @@
             padding: 5px;
             color: $secondary;
             text-transform: uppercase;
+        }
+    }
+
+    @include breakpoint($mobile-bp) {
+        ul {
+            justify-content: left;
+
+            li {
+                padding-left: 0px;
+                margin-left: 0;
+            }
         }
     }
 }

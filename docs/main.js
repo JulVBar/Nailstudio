@@ -27,7 +27,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nfunction one() {\n  console.log('Это файл 1'); //много другого кода  - весь модуль\n\n  var burger = document.querySelector('.header__burger'),\n      burgerMenu = document.querySelector('.burger__menu');\n  burger.addEventListener('click', function (e) {\n    burgerMenu.classList.toggle('active');\n    burger.classList.toggle('active');\n  });\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (one);\n\n//# sourceURL=webpack:///./js/js1.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nfunction one() {\n  console.log('Это файл 1'); //много другого кода  - весь модуль\n\n  var burger = document.querySelector('.header__burger'),\n      burgerMenu = document.querySelector('.burger__menu'),\n      blogMenu = document.querySelector('.blog__menu');\n\n  if (document.querySelector('#homepage')) {\n    burger.addEventListener('click', function (e) {\n      burgerMenu.classList.toggle('active');\n      burger.classList.toggle('active');\n    });\n  }\n\n  if (document.querySelector('.blogpage')) {\n    burger.addEventListener('click', function (e) {\n      blogMenu.classList.toggle('active');\n      burger.classList.toggle('active');\n    });\n  }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (one);\n\n//# sourceURL=webpack:///./js/js1.js?");
 
 /***/ }),
 
