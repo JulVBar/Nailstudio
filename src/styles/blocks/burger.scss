@@ -64,7 +64,7 @@
     overflow-y: auto;
 
     width: 100%;
-    height: 100%;
+    height: 0%;
 
     position: fixed;
     top: $header-height;
@@ -72,14 +72,13 @@
     z-index: 1000;
 
     background-color: $header-color;
-    transition: all 1s ease;
+    transition: all .7s ease;
 
-    opacity: 0;
     visibility: hidden;
 
     &.active {
-        opacity: 1;
         visibility: visible;
+        height: 100%;
     }
 
     &__bg {
@@ -146,16 +145,3 @@
         @include text-gradient-pink;
     }
 }
-
-
-
-
-// .header__burger.active:before {
-//     transform: rotate(45deg);
-//     top: 9px;
-// }
-
-// .header__burger.active:after {
-//     transform: rotate(-45deg);
-//     bottom: 17px;
-// }

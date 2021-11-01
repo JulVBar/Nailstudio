@@ -635,7 +635,7 @@ h4 {
   padding: 15px 20px;
   width: 100%;
   height: 100%;
-  transition: all .2s ease; }
+  transition: all .3s ease; }
   .nav__link:hover {
     background-image: linear-gradient(-65deg, #ff798e, #ff798e);
     -webkit-background-clip: text;
@@ -1926,18 +1926,17 @@ svg {
   display: block;
   overflow-y: auto;
   width: 100%;
-  height: 100%;
+  height: 0%;
   position: fixed;
   top: 80px;
   left: 0;
   z-index: 1000;
   background-color: #fee5e9;
-  transition: all 1s ease;
-  opacity: 0;
+  transition: all .7s ease;
   visibility: hidden; }
   .burger__menu.active {
-    opacity: 1;
-    visibility: visible; }
+    visibility: visible;
+    height: 100%; }
   .burger__menu__bg {
     position: fixed;
     top: 80px;
