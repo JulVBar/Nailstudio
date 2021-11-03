@@ -7,13 +7,14 @@
     height: 100%;
     z-index: 1100;
 
-    opacity: 1;
-    visibility: visible;
-    transition: .3s ease-in-out;
+    // opacity: 0;
+    visibility: hidden;
+    // visibility: visible;
+    // transition: .3s ease-in-out;
 
     &.active {
-        opacity: 0;
-        visibility: hidden;
+        // opacity: 1;
+        visibility: visible;
     }
 }
 
@@ -26,7 +27,7 @@
     right: 15px;
 
     cursor: pointer;
-    transition: all 1s ease;
+    transition: transform 1s ease;
 
     img {
         width: 100%;

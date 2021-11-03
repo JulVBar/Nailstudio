@@ -11,11 +11,11 @@ body {
     font-family: $font-family-main;
     color: $maintext;
 
-    // overflow-y: hidden;
+    overflow-y: hidden;
 
-    // &.scroll {
-    //     overflow-y: visible;
-    // }
+    &.scroll {
+        overflow-y: visible;
+    }
 }
 
 *,

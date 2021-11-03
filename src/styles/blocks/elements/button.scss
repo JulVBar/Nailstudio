@@ -2,6 +2,8 @@
 // Блеск будет некрасиво ховериться на тёмном фоне.
 
 .btn__gold {
+    outline: none;
+    
     @include border-gradient;
     @include text-gradient;
 
@@ -44,8 +46,7 @@
 
 
 
-.btn__gold:hover,
-.btn__gold:focus {
+.btn__gold:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
 }

@@ -2,9 +2,9 @@
 import './styles/main.scss';
 import one from './js/js1';
 import two from './js/js2';
-import parallax from './js/parallax';
 import preloader from './js/preloader';
 import navigation from './js/navigation';
+import modal from './js/modal';
 
 import json from './db.json';
 
@@ -18,9 +18,9 @@ console.log('Это файл APP.JS');
 window.addEventListener('DOMContentLoaded', function() {
     one();
     two();
-    parallax();
     navigation();
-    // preloader();
+    modal();
+    preloader();
 });
 
 // load all images

@@ -51,7 +51,7 @@
             <span class="header__text header__text--right">ул. Салова 61</span></a>
     </div>
 
-    <div class="header__button">
+    <div class="header__button" data-modal="book-in">
         <button class="btn__gold" type="button">Записаться</button>
     </div>
 
@@ -242,7 +242,7 @@
                     </li>
                 </ul>
 
-                <div class="price__list__btn">
+                <div class="price__list__btn" data-modal="book-in">
                     <button class="btn__gold btn__gold--pricelist" type="button">Записаться</button>
                 </div>
                 
@@ -495,7 +495,7 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2001.8391511664677!2d30.36584331600375!3d59.88501968185669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696301f73b3c0ef%3A0xd7b91aed8e4f2bc3!2z0YPQuy4g0KHQsNC70L7QstCwLCA2MSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MjEwMg!5e0!3m2!1sru!2sru!4v1635174441975!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="map__block">
-                <div class="map__block__image">
+                <div class="map__block__image" data-modal="valo">
                     <img src="images/map/valo.jpg" alt="valo" loading="lazy">
                 </div>
                 <div class="map__block__content map__block__content--valo">
@@ -510,7 +510,7 @@
                 <div class="map__block__content map__block__content--entrance">
                     <h5><i class="fas fa-door-open"></i>Вход в главный лобби с флагами</h5>
                 </div>
-                <div class="map__block__image">
+                <div class="map__block__image" data-modal="entrance">
                     <img src="images/map/entrance.jpg" alt="valo" loading="lazy">
                 </div>
                 
@@ -526,8 +526,8 @@
                         <li><span>Номер аппартамента 4-0511</span></li>
                     </ul>
                 </div>
-                <div class="map__block__image">
-                    <img src="images/map/loby.jpg" alt="valo" loading="lazy">
+                <div class="map__block__image" data-modal="loby">
+                    <img src="images/map/loby.jpg" alt="loby" loading="lazy">
                 </div>
                 
             </div>
@@ -626,10 +626,10 @@
 
 </footer> <!--footer-->
 
-<!-- <div class="modal">
+<div class="modal" id="book-in">
     <div class="modal-signup">
 
-        <span class="modal-close"><img src="images/icon/close.svg" alt="close"></span>
+        <span class="modal__close"><img data-close src="images/icon/close.svg" alt="close"></span>
 
         <h4 class="modal-signup__title">Выберите, как Вам удобней с нами связаться</h4>
 
@@ -653,26 +653,26 @@
             </a>
         </div>
     </div>
-</div> -->
+</div>
 
-<!-- <div class="modal">
+<div class="modal" id="valo">
     <div class="modal-map">
-        <span class="modal__close"><img src="images/icon/close.svg" alt="close"></span>
+        <span class="modal__close"><img data-close src="images/icon/close.svg" alt="close"></span>
         <img class="modal-map__image" src="images/map/valo.jpg" alt="valo">
     </div>
 </div>
-<div class="modal">
+<div class="modal" id="entrance">
     <div class="modal-map">
-        <span class="modal__close"><img src="images/icon/close.svg" alt="close"></span>
+        <span class="modal__close"><img data-close src="images/icon/close.svg" alt="close"></span>
         <img class="modal-map__image" src="images/map/entrance.jpg" alt="entrance">
     </div>
 </div>
-<div class="modal">
+<div class="modal" id="loby">
     <div class="modal-map">
-        <span class="modal__close"><img src="images/icon/close.svg" alt="close"></span>
+        <span class="modal__close"><img data-close src="images/icon/close.svg" alt="close"></span>
         <img class="modal-map__image" src="images/map/loby.jpg" alt="loby">
     </div>
-</div> -->
+</div>
 
 <div class="button__to__top">
     <button type="button" class="btn__top"><i class="far fa-caret-square-up"></i></button>
