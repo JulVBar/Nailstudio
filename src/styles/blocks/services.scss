@@ -42,6 +42,7 @@
 
 .services__list {
     width: 40%;
+    height: auto;
 
     @include breakpoint($mobile-bp) {
         width: 100%;
@@ -71,6 +72,7 @@
     border: none;
     background-color: transparent;
 
+    cursor: pointer;
     transition: color .2s ease;
 
     &:not(:last-child) {

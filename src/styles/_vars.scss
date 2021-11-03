@@ -2,22 +2,23 @@ $white:#fff;
 $black:#000000;
 
 //background
-$bodybackground:#fff8f7;
-$header-color: #fee5e9;
-$primary-header: #fee5e9cc; // 25% opacity
-$secondary-header: #fee5e9ef; // 10% opacity
-$primary: #fcdcd7;
-$primary-opacity: #fcdcd779; // 50% opacity
-$primary-modal: #fcdcd7c2; // 30% opacity
-$secondary: #ffacaf;
-$secondary-opacity: #ffacafee;  // 15% opacity
-$pink: #ff798e; 
+$bodybackground:rgb(255, 248, 247);
+$header-color: rgba(254, 229, 233, 0.85);
+
+$primary: rgb(255, 193, 204);
+$primary-opacity: rgba(255, 193, 204, 0.5); 
+$primary-modal: rgba(255, 193, 204, 0.7); 
+
+$secondary: rgb(255, 174, 191);
+$secondary-opacity: rgba(255, 174, 191, 0.7);  
+
+$pink: rgb(254, 114, 150); 
 
 
 //text
-$maintext: #555555;
-$non-active: #5555554f; // 70% opacity
-$title: #1e2528de;
+$maintext: rgb(85, 85, 85);
+$non-active: rgba(85, 85, 85, 0.5); 
+$title: rgba(30, 37, 40, 0.15);
 
 $maintextsize: 15px;
 $secondtextsize: 12px;

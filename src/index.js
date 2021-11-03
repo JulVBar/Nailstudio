@@ -5,6 +5,7 @@ import two from './js/js2';
 import preloader from './js/preloader';
 import navigation from './js/navigation';
 import modal from './js/modal';
+import priceTabs from './js/price-tabs';
 
 import json from './db.json';
 
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', function() {
     navigation();
     modal();
     preloader();
+    priceTabs();
 });
 
 // load all images

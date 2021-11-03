@@ -7,13 +7,12 @@
     height: 100%;
     z-index: 1100;
 
-    // opacity: 0;
+    opacity: 0;
     visibility: hidden;
-    // visibility: visible;
-    // transition: .3s ease-in-out;
+    transition: opacity .5s ease-in-out;
 
     &.active {
-        // opacity: 1;
+        opacity: 1;
         visibility: visible;
     }
 }

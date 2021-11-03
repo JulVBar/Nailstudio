@@ -1,8 +1,22 @@
 function modal() {
     
+const bookinModal = document.querySelector('#book-in');
 
 
-bindModal('[data-modal]', '.modal');
+function openModal(modalWindow) {
+    modalWindow.classList.add('active');
+    document.body.classList.remove('scroll');
+
+    clearInterval(modalTimerId); // если пользователь сам открыл !любое! модальное окно, оно не будет появлятся само
+    //если он открыл другое, это позволит не наложить одно окно на другое
+}
+
+
+function closeModal(modalWindow) {
+    modalWindow.classList.remove('active');
+    document.body.classList.add('scroll');
+}
+
 
 function bindModal(triggerSelector, modalWindowsSelector) {
     const trigger = document.querySelectorAll(triggerSelector),
@@ -20,44 +34,46 @@ function bindModal(triggerSelector, modalWindowsSelector) {
                 let modalId = modal.getAttribute('id');
 
                 if (modalId === elemId) {
-                    modal.classList.add('active');
-                    document.body.classList.remove('scroll');
+                    openModal(modal);
                 }
-
-                modal.addEventListener('click', (e) => {
-
-                    if (e.target === modal || e.target.getAttribute('data-close') == "") {
-                        
-                        modal.classList.remove('active');
-                        document.body.classList.add('scroll');
-                    }
-                });
-
-                document.addEventListener('keydown', (e) => {
-                    if (e.code === "Escape" && modal.classList.contains('active')) { 
-                        modal.classList.remove('active');
-                        document.body.classList.add('scroll');
-                    }
-                });
             });
         });
     });
+
+    modalWindows.forEach(modal => {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal || e.target.getAttribute('data-close') == "") {
+                closeModal(modal);
+            }
+        });
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.code === "Escape" && modal.classList.contains('active')) { 
+            closeModal(modal);
+        }
+    });
 }
 
+// В конце страницы при скролле
+
+function showModalByScroll() {
+    if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight) {
+        openModal(bookinModal);
+        window.removeEventListener('scroll', showModalByScroll);
+    }
+}
+
+// Открывается через время
+
+// const modalTimerId = setTimeout(() => {
+//     openModal(bookinModal);
+// }, 90000);
+    
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+bindModal('[data-modal]', '.modal');
+window.addEventListener('scroll', showModalByScroll);
 }
 
 export default modal;
