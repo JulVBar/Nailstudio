@@ -6,8 +6,10 @@ const bookinModal = document.querySelector('#book-in');
 function openModal(modalWindow) {
     modalWindow.classList.add('active');
     document.body.classList.remove('scroll');
-
-    clearInterval(modalTimerId); // если пользователь сам открыл !любое! модальное окно, оно не будет появлятся само
+    modalWindow.classList.remove('fadeOut');
+    modalWindow.firstElementChild.classList.remove('slideOutUp');
+    modalWindow.firstElementChild.classList.add('slideInDown');
+    //clearInterval(modalTimerId); // если пользователь сам открыл !любое! модальное окно, оно не будет появлятся само
     //если он открыл другое, это позволит не наложить одно окно на другое
 }
 
@@ -15,6 +17,9 @@ function openModal(modalWindow) {
 function closeModal(modalWindow) {
     modalWindow.classList.remove('active');
     document.body.classList.add('scroll');
+    modalWindow.classList.add('fadeOut');
+    modalWindow.firstElementChild.classList.remove('slideInDown');
+    modalWindow.firstElementChild.classList.add('slideOutUp');
 }
 
 

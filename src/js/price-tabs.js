@@ -12,7 +12,7 @@ function priceTabs() {
         function hideTabContent() { //скрывает вкладку
             content.forEach(item => { // скрываем отображение вкладки
                 item.classList.add('hide');
-                item.classList.remove('show', 'fade');
+                item.classList.remove('show', 'fadeIn');
             });
     
             tabs.forEach(item => { // убираем подсветку активного выбора меню
@@ -21,7 +21,7 @@ function priceTabs() {
         }
 
         function showTabContent(i = 0) {
-            content[i].classList.add('show', 'fade'); // показывает определенную вкладку и анимацию
+            content[i].classList.add('show', 'fadeIn'); // показывает определенную вкладку и анимацию
             content[i].classList.remove('hide');
             tabs[i].classList.add('active'); // делаем айтем менюшки активным(жирным)
         }

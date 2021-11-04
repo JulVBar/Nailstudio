@@ -34,6 +34,7 @@
 
 .services__inner { 
     display: flex;
+    overflow: hidden;
 
     @include breakpoint($mobile-bp) {
         flex-direction: column;
