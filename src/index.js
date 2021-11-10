@@ -12,6 +12,13 @@ import json from './db.json';
 
 
 
+console.log(json);
+console.log(json.menu[0].title);
+
+
+const zagolovokGradient = document.querySelector('.h1__gradient');
+
+zagolovokGradient.innerHTML = `${json.menu[0].title}`;
 
 
 console.log('Это файл APP.JS');
