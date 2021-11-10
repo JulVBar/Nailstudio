@@ -16,7 +16,18 @@
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./styles/main.scss\");\n/* harmony import */ var _js_js1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/js1 */ \"./js/js1.js\");\n/* harmony import */ var _js_js2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/js2 */ \"./js/js2.js\");\n/* harmony import */ var _js_preloader__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/preloader */ \"./js/preloader.js\");\n/* harmony import */ var _js_navigation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/navigation */ \"./js/navigation.js\");\n/* harmony import */ var _js_modal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/modal */ \"./js/modal.js\");\n/* harmony import */ var _js_price_tabs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/price-tabs */ \"./js/price-tabs.js\");\n\n\n\n\n\n\n\nwindow.addEventListener('DOMContentLoaded', function () {\n  (0,_js_js1__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n  (0,_js_js2__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n  (0,_js_navigation__WEBPACK_IMPORTED_MODULE_4__[\"default\"])();\n  (0,_js_modal__WEBPACK_IMPORTED_MODULE_5__[\"default\"])();\n  (0,_js_preloader__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n  (0,_js_price_tabs__WEBPACK_IMPORTED_MODULE_6__[\"default\"])();\n}); // load all images\n//каждую подпапку импортируем отдельно (иконки просто копируются в конфиге)\n\nvar images = importAll(__webpack_require__(\"./images sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar galery = importAll(__webpack_require__(\"./images/galery sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar reviews = importAll(__webpack_require__(\"./images/reviews sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar popservants = importAll(__webpack_require__(\"./images/pop-servants sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar services = importAll(__webpack_require__(\"./images/services sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar news = importAll(__webpack_require__(\"./images/news sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar map = importAll(__webpack_require__(\"./images/map sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar blog = importAll(__webpack_require__(\"./images/blog sync \\\\.(png|jpe?g|svg|gif)$\"));\n\nfunction importAll(r) {\n  var images = {};\n  r.keys().map(function (item, index) {\n    images[item.replace('./', '')] = r(item);\n  });\n  return images;\n}\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"galery\": function() { return /* binding */ galery; }\n/* harmony export */ });\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./styles/main.scss\");\n/* harmony import */ var _js_js1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/js1 */ \"./js/js1.js\");\n/* harmony import */ var _js_js2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/js2 */ \"./js/js2.js\");\n/* harmony import */ var _js_preloader__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/preloader */ \"./js/preloader.js\");\n/* harmony import */ var _js_navigation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/navigation */ \"./js/navigation.js\");\n/* harmony import */ var _js_modal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/modal */ \"./js/modal.js\");\n/* harmony import */ var _js_price_tabs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/price-tabs */ \"./js/price-tabs.js\");\n/* harmony import */ var _js_galery_filters__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./js/galery-filters */ \"./js/galery-filters.js\");\n\n\n\n\n\n\n\n\nwindow.addEventListener('DOMContentLoaded', function () {\n  (0,_js_js1__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n  (0,_js_js2__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n  (0,_js_navigation__WEBPACK_IMPORTED_MODULE_4__[\"default\"])();\n  (0,_js_modal__WEBPACK_IMPORTED_MODULE_5__[\"default\"])();\n  (0,_js_preloader__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n  (0,_js_price_tabs__WEBPACK_IMPORTED_MODULE_6__[\"default\"])();\n  (0,_js_galery_filters__WEBPACK_IMPORTED_MODULE_7__[\"default\"])();\n}); // load all images\n//каждую подпапку импортируем отдельно (иконки просто копируются в конфиге)\n\nvar galery = importAll(__webpack_require__(\"./images/galery sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar images = importAll(__webpack_require__(\"./images sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar reviews = importAll(__webpack_require__(\"./images/reviews sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar popservants = importAll(__webpack_require__(\"./images/pop-servants sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar services = importAll(__webpack_require__(\"./images/services sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar news = importAll(__webpack_require__(\"./images/news sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar map = importAll(__webpack_require__(\"./images/map sync \\\\.(png|jpe?g|svg|gif)$\"));\nvar blog = importAll(__webpack_require__(\"./images/blog sync \\\\.(png|jpe?g|svg|gif)$\"));\n\nfunction importAll(r) {\n  var images = {};\n  r.keys().map(function (item, index) {\n    images[item.replace('./', '')] = r(item);\n  });\n  return images;\n}\n\n//# sourceURL=webpack:///./index.js?");
+
+/***/ }),
+
+/***/ "./js/galery-filters.js":
+/*!******************************!*\
+  !*** ./js/galery-filters.js ***!
+  \******************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index.js */ \"./index.js\");\n\n\nfunction galeryFilters() {\n  var galeryList = document.querySelector('.galery__photo');\n  var filters = document.querySelectorAll('.filter__item');\n\n  function createGaleryList(photo) {\n    var element = document.createElement('li');\n    element.classList.add('galery__photo__item');\n    element.innerHTML = \"<img class=\\\"fadeIn\\\" src=\\\"images/galery/\".concat(photo, \"\\\" alt=\\\"\").concat(photo, \"\\\" loading=\\\"lazy\\\">\");\n    galeryList.append(element);\n  }\n\n  function filterGalery(filter) {\n    Object.entries(_index_js__WEBPACK_IMPORTED_MODULE_0__.galery).forEach(function (arr) {\n      if (arr[0].includes(filter)) {\n        createGaleryList(arr[0]);\n      }\n    });\n  }\n\n  if (document.querySelector('#homepage')) {\n    filterGalery('ris');\n    document.querySelector('#ris').classList.add('active');\n    filters.forEach(function (filter) {\n      filter.addEventListener('click', function (e) {\n        e.preventDefault();\n        var filterId = filter.getAttribute('id');\n        galeryList.innerHTML = '';\n        filters.forEach(function (item) {\n          item.classList.remove('active');\n        });\n        filter.classList.add('active');\n        filterGalery(filterId);\n      });\n    });\n  }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (galeryFilters);\n\n//# sourceURL=webpack:///./js/galery-filters.js?");
 
 /***/ }),
 
@@ -82,7 +93,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nfunction preloader() {\n  doc
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _price_list_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../price-list.json */ \"./price-list.json\");\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\n\n\nfunction priceTabs() {\n  var priceListItemsArr = [];\n  var priceItemsClassArr = [];\n\n  var PriceItem = /*#__PURE__*/function () {\n    function PriceItem(title, price, description, src, alt, parentSelector) {\n      _classCallCheck(this, PriceItem);\n\n      this.src = src;\n      this.alt = alt;\n      this.title = title;\n      this.description = description;\n      this.price = price;\n      this.parent = document.querySelector(parentSelector);\n      priceItemsClassArr.push(this); //помещает в массив созданный класс\n    }\n\n    _createClass(PriceItem, [{\n      key: \"renderPriceList\",\n      value: function renderPriceList() {\n        var _this = this;\n\n        var element = document.createElement('li');\n        element.classList.add('price__list__item');\n        element.innerHTML = \"\\n                <div class=\\\"price__list__name\\\">\".concat(this.title, \"</div>\\n                <div class=\\\"price__list__cost\\\">\\u043E\\u0442<span>\").concat(this.price, \"</span><i class=\\\"fas fa-ruble-sign\\\"></i></div>\");\n        this.parent.append(element);\n        priceListItemsArr.push(element);\n        element.addEventListener('click', function (e) {\n          if (e.target) {\n            priceListItemsArr.forEach(function (item) {\n              item.classList.remove('active');\n            });\n            element.classList.add('active');\n            showDetails(_this);\n          }\n        });\n      }\n    }]);\n\n    return PriceItem;\n  }();\n\n  function showDetails(object) {\n    var details = document.querySelector('.services__details');\n    details.innerHTML = \"\";\n    details.innerHTML = \"\\n            <div class=\\\"services__image\\\"><img src=\".concat(object.src, \" alt=\").concat(object.alt, \" loading=\\\"lazy\\\"></div>\\n            <div class=\\\"price__list__name services__details__name\\\">\").concat(object.title, \"</div>\\n            <div class=\\\"price__list__cost services__details__cost\\\">\\u043E\\u0442 <span>\").concat(object.price, \"</span> <i class=\\\"fas fa-ruble-sign\\\"></i></div>\\n            <div class=\\\"services__details__descr\\\">\").concat(object.description, \".</div>\");\n  }\n\n  function createPriceList(array, parentSelector) {\n    array.forEach(function (_ref) {\n      var title = _ref.title,\n          price = _ref.price,\n          description = _ref.description,\n          src = _ref.src,\n          alt = _ref.alt;\n      new PriceItem(title, price, description, src, alt, parentSelector).renderPriceList();\n    });\n  }\n\n  function bindTabs(barSelector, tabSelector, contentSelector) {\n    var bar = document.querySelector(barSelector),\n        //плашка\n    tabs = document.querySelectorAll(tabSelector),\n        //пункт меню\n    content = document.querySelectorAll(contentSelector); //контент меню (таб)\n\n    function hideTabContent() {\n      //скрывает вкладку\n      content.forEach(function (item) {\n        // скрываем отображение вкладки\n        item.classList.add('hide');\n        item.classList.remove('show', 'fadeIn');\n      });\n      tabs.forEach(function (item) {\n        // убираем подсветку активного выбора меню\n        item.classList.remove('active');\n      });\n    }\n\n    function showTabContent() {\n      var i = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;\n      content[i].classList.add('show', 'fadeIn'); // показывает определенную вкладку и анимацию\n\n      content[i].classList.remove('hide');\n      tabs[i].classList.add('active'); // делаем айтем менюшки активным(жирным)\n    }\n\n    hideTabContent();\n    showTabContent();\n    bar.addEventListener('click', function (event) {\n      var target = event.target; // создаем для простоты записи\n\n      if (target && target.classList.contains(tabSelector.replace(/\\./, \"\"))) {\n        // делигируем события(событие на все кнопки в блоке)\n        tabs.forEach(function (item, i) {\n          // перебираем все табы, и когда кликнутый таб совпадет с табом из массива показываем\n          if (target == item) {\n            hideTabContent();\n            showTabContent(i);\n          }\n        });\n      }\n    });\n  }\n\n  if (document.querySelector('#homepage')) {\n    if (JSON.stringify(_price_list_json__WEBPACK_IMPORTED_MODULE_0__) !== '{}') {\n      // проверить объект на пустоту, можно еще через перебор own property\n      bindTabs('.services__list__top', '.services__list__title', '.services__price__list');\n      createPriceList(_price_list_json__WEBPACK_IMPORTED_MODULE_0__.pedicure, \"#pedicure\");\n      createPriceList(_price_list_json__WEBPACK_IMPORTED_MODULE_0__.manicure, \"#manicure\");\n      priceListItemsArr[0].classList.add('active');\n      showDetails(priceItemsClassArr[0]);\n    } else {\n      document.querySelector('#services').style.display = 'none';\n    }\n  }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (priceTabs);\n\n//# sourceURL=webpack:///./js/price-tabs.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _price_list_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../price-list.json */ \"./price-list.json\");\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\n\n\nfunction priceTabs() {\n  var priceListItemsArr = [];\n  var priceItemsClassArr = [];\n\n  var PriceItem = /*#__PURE__*/function () {\n    function PriceItem(title, price, description, src, alt, parentSelector) {\n      _classCallCheck(this, PriceItem);\n\n      this.src = src;\n      this.alt = alt;\n      this.title = title;\n      this.description = description;\n      this.price = price;\n      this.parent = document.querySelector(parentSelector);\n      priceItemsClassArr.push(this); //помещает в массив созданный класс\n    }\n\n    _createClass(PriceItem, [{\n      key: \"renderPriceList\",\n      value: function renderPriceList() {\n        var _this = this;\n\n        var element = document.createElement('li');\n        element.classList.add('price__list__item');\n        element.innerHTML = \"\\n                <div class=\\\"price__list__name\\\">\".concat(this.title, \"</div>\\n                <div class=\\\"price__list__cost\\\">\\u043E\\u0442<span>\").concat(this.price, \"</span><i class=\\\"fas fa-ruble-sign\\\"></i></div>\");\n        this.parent.append(element);\n        priceListItemsArr.push(element);\n        element.addEventListener('click', function (e) {\n          if (e.target) {\n            priceListItemsArr.forEach(function (item) {\n              item.classList.remove('active');\n            });\n            element.classList.add('active');\n            showDetails(_this);\n          }\n        });\n      }\n    }]);\n\n    return PriceItem;\n  }();\n\n  function showDetails(object) {\n    var details = document.querySelector('.services__details');\n    details.innerHTML = \"\";\n    details.innerHTML = \"\\n            <div class=\\\"services__image fadeIn\\\"><img src=\".concat(object.src, \" alt=\").concat(object.alt, \" loading=\\\"lazy\\\"></div>\\n            <div class=\\\"price__list__name services__details__name fadeIn\\\">\").concat(object.title, \"</div>\\n            <div class=\\\"price__list__cost services__details__cost fadeIn\\\">\\u043E\\u0442 <span>\").concat(object.price, \"</span> <i class=\\\"fas fa-ruble-sign\\\"></i></div>\\n            <div class=\\\"services__details__descr fadeIn\\\">\").concat(object.description, \".</div>\");\n  }\n\n  function createPriceList(array, parentSelector) {\n    array.forEach(function (_ref) {\n      var title = _ref.title,\n          price = _ref.price,\n          description = _ref.description,\n          src = _ref.src,\n          alt = _ref.alt;\n      new PriceItem(title, price, description, src, alt, parentSelector).renderPriceList();\n    });\n  }\n\n  function bindTabs(barSelector, tabSelector, contentSelector) {\n    var bar = document.querySelector(barSelector),\n        //плашка\n    tabs = document.querySelectorAll(tabSelector),\n        //пункт меню\n    content = document.querySelectorAll(contentSelector); //контент меню (таб)\n\n    function hideTabContent() {\n      //скрывает вкладку\n      content.forEach(function (item) {\n        // скрываем отображение вкладки\n        item.classList.add('hide');\n        item.classList.remove('show', 'fadeIn');\n      });\n      tabs.forEach(function (item) {\n        // убираем подсветку активного выбора меню\n        item.classList.remove('active');\n      });\n    }\n\n    function showTabContent() {\n      var i = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;\n      content[i].classList.add('show', 'fadeIn'); // показывает определенную вкладку и анимацию\n\n      content[i].classList.remove('hide');\n      tabs[i].classList.add('active'); // делаем айтем менюшки активным(жирным)\n    }\n\n    hideTabContent();\n    showTabContent();\n    bar.addEventListener('click', function (event) {\n      var target = event.target; // создаем для простоты записи\n\n      if (target && target.classList.contains(tabSelector.replace(/\\./, \"\"))) {\n        // делигируем события(событие на все кнопки в блоке)\n        tabs.forEach(function (item, i) {\n          // перебираем все табы, и когда кликнутый таб совпадет с табом из массива показываем\n          if (target == item) {\n            hideTabContent();\n            showTabContent(i);\n          }\n        });\n      }\n    });\n  }\n\n  if (document.querySelector('#homepage')) {\n    if (JSON.stringify(_price_list_json__WEBPACK_IMPORTED_MODULE_0__) !== '{}') {\n      // проверить объект на пустоту, можно еще через перебор own property\n      bindTabs('.services__list__top', '.services__list__title', '.services__price__list');\n      createPriceList(_price_list_json__WEBPACK_IMPORTED_MODULE_0__.pedicure, \"#pedicure\");\n      createPriceList(_price_list_json__WEBPACK_IMPORTED_MODULE_0__.manicure, \"#manicure\");\n      priceListItemsArr[0].classList.add('active');\n      showDetails(priceItemsClassArr[0]);\n      document.querySelectorAll('.btn__gold--read').forEach(function (btn) {\n        btn.addEventListener('click', function () {\n          window.scrollBy({\n            top: document.querySelector('#services').getBoundingClientRect().top - document.querySelector('.header').offsetHeight,\n            behavior: 'smooth'\n          });\n        });\n      });\n    } else {\n      document.querySelector('#services').style.display = 'none';\n      document.querySelectorAll('[href=\"#services\"]').forEach(function (item) {\n        item.style.display = 'none';\n      });\n    }\n  }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (priceTabs);\n\n//# sourceURL=webpack:///./js/price-tabs.js?");
 
 /***/ }),
 
@@ -174,146 +185,245 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
-/***/ "./images/galery/1.jpg":
-/*!*****************************!*\
-  !*** ./images/galery/1.jpg ***!
-  \*****************************/
+/***/ "./images/galery/belii_blesk_ris.jpg":
+/*!*******************************************!*\
+  !*** ./images/galery/belii_blesk_ris.jpg ***!
+  \*******************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/1.jpg\");\n\n//# sourceURL=webpack:///./images/galery/1.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/belii_blesk_ris.jpg\");\n\n//# sourceURL=webpack:///./images/galery/belii_blesk_ris.jpg?");
 
 /***/ }),
 
-/***/ "./images/galery/2.jpg":
-/*!*****************************!*\
-  !*** ./images/galery/2.jpg ***!
-  \*****************************/
+/***/ "./images/galery/blesk_linii_ris_korot.jpg":
+/*!*************************************************!*\
+  !*** ./images/galery/blesk_linii_ris_korot.jpg ***!
+  \*************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/2.jpg\");\n\n//# sourceURL=webpack:///./images/galery/2.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/blesk_linii_ris_korot.jpg\");\n\n//# sourceURL=webpack:///./images/galery/blesk_linii_ris_korot.jpg?");
 
 /***/ }),
 
-/***/ "./images/galery/galery-photo1.jpg":
-/*!*****************************************!*\
-  !*** ./images/galery/galery-photo1.jpg ***!
-  \*****************************************/
+/***/ "./images/galery/chern_ton_korot.jpg":
+/*!*******************************************!*\
+  !*** ./images/galery/chern_ton_korot.jpg ***!
+  \*******************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/galery-photo1.jpg\");\n\n//# sourceURL=webpack:///./images/galery/galery-photo1.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/chern_ton_korot.jpg\");\n\n//# sourceURL=webpack:///./images/galery/chern_ton_korot.jpg?");
 
 /***/ }),
 
-/***/ "./images/galery/galery-photo10.jpg":
+/***/ "./images/galery/colorfull_ris_korot.jpg":
+/*!***********************************************!*\
+  !*** ./images/galery/colorfull_ris_korot.jpg ***!
+  \***********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/colorfull_ris_korot.jpg\");\n\n//# sourceURL=webpack:///./images/galery/colorfull_ris_korot.jpg?");
+
+/***/ }),
+
+/***/ "./images/galery/fiolet_ton_korot.jpg":
+/*!********************************************!*\
+  !*** ./images/galery/fiolet_ton_korot.jpg ***!
+  \********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/fiolet_ton_korot.jpg\");\n\n//# sourceURL=webpack:///./images/galery/fiolet_ton_korot.jpg?");
+
+/***/ }),
+
+/***/ "./images/galery/krasn_list_ris_korot.jpg":
+/*!************************************************!*\
+  !*** ./images/galery/krasn_list_ris_korot.jpg ***!
+  \************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/krasn_list_ris_korot.jpg\");\n\n//# sourceURL=webpack:///./images/galery/krasn_list_ris_korot.jpg?");
+
+/***/ }),
+
+/***/ "./images/galery/krasn_pedicure.jpg":
 /*!******************************************!*\
-  !*** ./images/galery/galery-photo10.jpg ***!
+  !*** ./images/galery/krasn_pedicure.jpg ***!
   \******************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/galery-photo10.jpg\");\n\n//# sourceURL=webpack:///./images/galery/galery-photo10.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/krasn_pedicure.jpg\");\n\n//# sourceURL=webpack:///./images/galery/krasn_pedicure.jpg?");
 
 /***/ }),
 
-/***/ "./images/galery/galery-photo2.jpg":
+/***/ "./images/galery/krasn_zoloto_ton_korot.jpg":
+/*!**************************************************!*\
+  !*** ./images/galery/krasn_zoloto_ton_korot.jpg ***!
+  \**************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/krasn_zoloto_ton_korot.jpg\");\n\n//# sourceURL=webpack:///./images/galery/krasn_zoloto_ton_korot.jpg?");
+
+/***/ }),
+
+/***/ "./images/galery/krasnii_ris.jpg":
+/*!***************************************!*\
+  !*** ./images/galery/krasnii_ris.jpg ***!
+  \***************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/krasnii_ris.jpg\");\n\n//# sourceURL=webpack:///./images/galery/krasnii_ris.jpg?");
+
+/***/ }),
+
+/***/ "./images/galery/morskie_ris_dlin.jpg":
+/*!********************************************!*\
+  !*** ./images/galery/morskie_ris_dlin.jpg ***!
+  \********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/morskie_ris_dlin.jpg\");\n\n//# sourceURL=webpack:///./images/galery/morskie_ris_dlin.jpg?");
+
+/***/ }),
+
+/***/ "./images/galery/orange_korot_ris.jpg":
+/*!********************************************!*\
+  !*** ./images/galery/orange_korot_ris.jpg ***!
+  \********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/orange_korot_ris.jpg\");\n\n//# sourceURL=webpack:///./images/galery/orange_korot_ris.jpg?");
+
+/***/ }),
+
+/***/ "./images/galery/orange_pedicure.jpg":
+/*!*******************************************!*\
+  !*** ./images/galery/orange_pedicure.jpg ***!
+  \*******************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/orange_pedicure.jpg\");\n\n//# sourceURL=webpack:///./images/galery/orange_pedicure.jpg?");
+
+/***/ }),
+
+/***/ "./images/galery/rozov_dlin_ris.jpg":
+/*!******************************************!*\
+  !*** ./images/galery/rozov_dlin_ris.jpg ***!
+  \******************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/rozov_dlin_ris.jpg\");\n\n//# sourceURL=webpack:///./images/galery/rozov_dlin_ris.jpg?");
+
+/***/ }),
+
+/***/ "./images/galery/rozov_ris_dlin.jpg":
+/*!******************************************!*\
+  !*** ./images/galery/rozov_ris_dlin.jpg ***!
+  \******************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/rozov_ris_dlin.jpg\");\n\n//# sourceURL=webpack:///./images/galery/rozov_ris_dlin.jpg?");
+
+/***/ }),
+
+/***/ "./images/galery/ser_blesk_ton_korot.jpg":
+/*!***********************************************!*\
+  !*** ./images/galery/ser_blesk_ton_korot.jpg ***!
+  \***********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/ser_blesk_ton_korot.jpg\");\n\n//# sourceURL=webpack:///./images/galery/ser_blesk_ton_korot.jpg?");
+
+/***/ }),
+
+/***/ "./images/galery/siren_pedicure.jpg":
+/*!******************************************!*\
+  !*** ./images/galery/siren_pedicure.jpg ***!
+  \******************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/siren_pedicure.jpg\");\n\n//# sourceURL=webpack:///./images/galery/siren_pedicure.jpg?");
+
+/***/ }),
+
+/***/ "./images/galery/temn_sinii_ris_korot.jpg":
+/*!************************************************!*\
+  !*** ./images/galery/temn_sinii_ris_korot.jpg ***!
+  \************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/temn_sinii_ris_korot.jpg\");\n\n//# sourceURL=webpack:///./images/galery/temn_sinii_ris_korot.jpg?");
+
+/***/ }),
+
+/***/ "./images/galery/temn_zel_ton_dlin.jpg":
+/*!*********************************************!*\
+  !*** ./images/galery/temn_zel_ton_dlin.jpg ***!
+  \*********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/temn_zel_ton_dlin.jpg\");\n\n//# sourceURL=webpack:///./images/galery/temn_zel_ton_dlin.jpg?");
+
+/***/ }),
+
+/***/ "./images/galery/temno_krasn_ton_korot.jpg":
+/*!*************************************************!*\
+  !*** ./images/galery/temno_krasn_ton_korot.jpg ***!
+  \*************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/temno_krasn_ton_korot.jpg\");\n\n//# sourceURL=webpack:///./images/galery/temno_krasn_ton_korot.jpg?");
+
+/***/ }),
+
+/***/ "./images/galery/white_pedicure.jpg":
+/*!******************************************!*\
+  !*** ./images/galery/white_pedicure.jpg ***!
+  \******************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/white_pedicure.jpg\");\n\n//# sourceURL=webpack:///./images/galery/white_pedicure.jpg?");
+
+/***/ }),
+
+/***/ "./images/galery/white_ton_ris.jpg":
 /*!*****************************************!*\
-  !*** ./images/galery/galery-photo2.jpg ***!
+  !*** ./images/galery/white_ton_ris.jpg ***!
   \*****************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/galery-photo2.jpg\");\n\n//# sourceURL=webpack:///./images/galery/galery-photo2.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/white_ton_ris.jpg\");\n\n//# sourceURL=webpack:///./images/galery/white_ton_ris.jpg?");
 
 /***/ }),
 
-/***/ "./images/galery/galery-photo3.jpg":
-/*!*****************************************!*\
-  !*** ./images/galery/galery-photo3.jpg ***!
-  \*****************************************/
+/***/ "./images/galery/white_ton_ris_dlin.jpg":
+/*!**********************************************!*\
+  !*** ./images/galery/white_ton_ris_dlin.jpg ***!
+  \**********************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/galery-photo3.jpg\");\n\n//# sourceURL=webpack:///./images/galery/galery-photo3.jpg?");
-
-/***/ }),
-
-/***/ "./images/galery/galery-photo4.jpg":
-/*!*****************************************!*\
-  !*** ./images/galery/galery-photo4.jpg ***!
-  \*****************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/galery-photo4.jpg\");\n\n//# sourceURL=webpack:///./images/galery/galery-photo4.jpg?");
-
-/***/ }),
-
-/***/ "./images/galery/galery-photo5.jpg":
-/*!*****************************************!*\
-  !*** ./images/galery/galery-photo5.jpg ***!
-  \*****************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/galery-photo5.jpg\");\n\n//# sourceURL=webpack:///./images/galery/galery-photo5.jpg?");
-
-/***/ }),
-
-/***/ "./images/galery/galery-photo6.jpg":
-/*!*****************************************!*\
-  !*** ./images/galery/galery-photo6.jpg ***!
-  \*****************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/galery-photo6.jpg\");\n\n//# sourceURL=webpack:///./images/galery/galery-photo6.jpg?");
-
-/***/ }),
-
-/***/ "./images/galery/galery-photo7.jpg":
-/*!*****************************************!*\
-  !*** ./images/galery/galery-photo7.jpg ***!
-  \*****************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/galery-photo7.jpg\");\n\n//# sourceURL=webpack:///./images/galery/galery-photo7.jpg?");
-
-/***/ }),
-
-/***/ "./images/galery/galery-photo8.jpg":
-/*!*****************************************!*\
-  !*** ./images/galery/galery-photo8.jpg ***!
-  \*****************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/galery-photo8.jpg\");\n\n//# sourceURL=webpack:///./images/galery/galery-photo8.jpg?");
-
-/***/ }),
-
-/***/ "./images/galery/galery-photo9.jpg":
-/*!*****************************************!*\
-  !*** ./images/galery/galery-photo9.jpg ***!
-  \*****************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/galery-photo9.jpg\");\n\n//# sourceURL=webpack:///./images/galery/galery-photo9.jpg?");
-
-/***/ }),
-
-/***/ "./images/galery/insta5.jpg":
-/*!**********************************!*\
-  !*** ./images/galery/insta5.jpg ***!
-  \**********************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/insta5.jpg\");\n\n//# sourceURL=webpack:///./images/galery/insta5.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/galery/white_ton_ris_dlin.jpg\");\n\n//# sourceURL=webpack:///./images/galery/white_ton_ris_dlin.jpg?");
 
 /***/ }),
 
@@ -608,7 +718,7 @@ eval("var map = {\n\t\"./avatar-comment.jpg\": \"./images/blog/avatar-comment.jp
   \*****************************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./1.jpg\": \"./images/galery/1.jpg\",\n\t\"./2.jpg\": \"./images/galery/2.jpg\",\n\t\"./galery-photo1.jpg\": \"./images/galery/galery-photo1.jpg\",\n\t\"./galery-photo10.jpg\": \"./images/galery/galery-photo10.jpg\",\n\t\"./galery-photo2.jpg\": \"./images/galery/galery-photo2.jpg\",\n\t\"./galery-photo3.jpg\": \"./images/galery/galery-photo3.jpg\",\n\t\"./galery-photo4.jpg\": \"./images/galery/galery-photo4.jpg\",\n\t\"./galery-photo5.jpg\": \"./images/galery/galery-photo5.jpg\",\n\t\"./galery-photo6.jpg\": \"./images/galery/galery-photo6.jpg\",\n\t\"./galery-photo7.jpg\": \"./images/galery/galery-photo7.jpg\",\n\t\"./galery-photo8.jpg\": \"./images/galery/galery-photo8.jpg\",\n\t\"./galery-photo9.jpg\": \"./images/galery/galery-photo9.jpg\",\n\t\"./insta5.jpg\": \"./images/galery/insta5.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/galery sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/galery/_sync_nonrecursive_\\.(png%7Cjpe?");
+eval("var map = {\n\t\"./belii_blesk_ris.jpg\": \"./images/galery/belii_blesk_ris.jpg\",\n\t\"./blesk_linii_ris_korot.jpg\": \"./images/galery/blesk_linii_ris_korot.jpg\",\n\t\"./chern_ton_korot.jpg\": \"./images/galery/chern_ton_korot.jpg\",\n\t\"./colorfull_ris_korot.jpg\": \"./images/galery/colorfull_ris_korot.jpg\",\n\t\"./fiolet_ton_korot.jpg\": \"./images/galery/fiolet_ton_korot.jpg\",\n\t\"./krasn_list_ris_korot.jpg\": \"./images/galery/krasn_list_ris_korot.jpg\",\n\t\"./krasn_pedicure.jpg\": \"./images/galery/krasn_pedicure.jpg\",\n\t\"./krasn_zoloto_ton_korot.jpg\": \"./images/galery/krasn_zoloto_ton_korot.jpg\",\n\t\"./krasnii_ris.jpg\": \"./images/galery/krasnii_ris.jpg\",\n\t\"./morskie_ris_dlin.jpg\": \"./images/galery/morskie_ris_dlin.jpg\",\n\t\"./orange_korot_ris.jpg\": \"./images/galery/orange_korot_ris.jpg\",\n\t\"./orange_pedicure.jpg\": \"./images/galery/orange_pedicure.jpg\",\n\t\"./rozov_dlin_ris.jpg\": \"./images/galery/rozov_dlin_ris.jpg\",\n\t\"./rozov_ris_dlin.jpg\": \"./images/galery/rozov_ris_dlin.jpg\",\n\t\"./ser_blesk_ton_korot.jpg\": \"./images/galery/ser_blesk_ton_korot.jpg\",\n\t\"./siren_pedicure.jpg\": \"./images/galery/siren_pedicure.jpg\",\n\t\"./temn_sinii_ris_korot.jpg\": \"./images/galery/temn_sinii_ris_korot.jpg\",\n\t\"./temn_zel_ton_dlin.jpg\": \"./images/galery/temn_zel_ton_dlin.jpg\",\n\t\"./temno_krasn_ton_korot.jpg\": \"./images/galery/temno_krasn_ton_korot.jpg\",\n\t\"./white_pedicure.jpg\": \"./images/galery/white_pedicure.jpg\",\n\t\"./white_ton_ris.jpg\": \"./images/galery/white_ton_ris.jpg\",\n\t\"./white_ton_ris_dlin.jpg\": \"./images/galery/white_ton_ris_dlin.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/galery sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/galery/_sync_nonrecursive_\\.(png%7Cjpe?");
 
 /***/ }),
 
@@ -744,6 +854,18 @@ eval("module.exports = JSON.parse('{\"pedicure\":[{\"title\":\"Эстетиче�
 /******/ 				}
 /******/ 			}
 /******/ 			return result;
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
 /******/ 		};
 /******/ 	}();
 /******/ 	

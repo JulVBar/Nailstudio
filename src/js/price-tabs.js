@@ -48,10 +48,10 @@ function priceTabs() {
 
         details.innerHTML = "";
         details.innerHTML = `
-            <div class="services__image"><img src=${object.src} alt=${object.alt} loading="lazy"></div>
-            <div class="price__list__name services__details__name">${object.title}</div>
-            <div class="price__list__cost services__details__cost">от <span>${object.price}</span> <i class="fas fa-ruble-sign"></i></div>
-            <div class="services__details__descr">${object.description}.</div>`;
+            <div class="services__image fadeIn"><img src=${object.src} alt=${object.alt} loading="lazy"></div>
+            <div class="price__list__name services__details__name fadeIn">${object.title}</div>
+            <div class="price__list__cost services__details__cost fadeIn">от <span>${object.price}</span> <i class="fas fa-ruble-sign"></i></div>
+            <div class="services__details__descr fadeIn">${object.description}.</div>`;
     }
 
 
@@ -102,6 +102,8 @@ function priceTabs() {
         });
     }
 
+    
+
 if (document.querySelector('#homepage')) {
     if (JSON.stringify(priceList) !== '{}') { // проверить объект на пустоту, можно еще через перебор own property
 
@@ -113,9 +115,21 @@ if (document.querySelector('#homepage')) {
 
         priceListItemsArr[0].classList.add('active');
         showDetails(priceItemsClassArr[0]);
-        
+
+        document.querySelectorAll('.btn__gold--read').forEach(btn => {
+            btn.addEventListener('click', () => {
+                window.scrollBy({
+                    top: document.querySelector('#services').getBoundingClientRect().top - document.querySelector('.header').offsetHeight,
+                    behavior: 'smooth'
+                });
+            });
+        });
     } else {
         document.querySelector('#services').style.display = 'none';
+
+        document.querySelectorAll('[href="#services"]').forEach(item => {
+            item.style.display = 'none';
+        });
     }
 }
 }
