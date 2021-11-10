@@ -504,47 +504,69 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
-/***/ "./images/services/brovi.jpg":
-/*!***********************************!*\
-  !*** ./images/services/brovi.jpg ***!
-  \***********************************/
+/***/ "./images/services/manicure-bez-pokrit.jpg":
+/*!*************************************************!*\
+  !*** ./images/services/manicure-bez-pokrit.jpg ***!
+  \*************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/services/brovi.jpg\");\n\n//# sourceURL=webpack:///./images/services/brovi.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/services/manicure-bez-pokrit.jpg\");\n\n//# sourceURL=webpack:///./images/services/manicure-bez-pokrit.jpg?");
 
 /***/ }),
 
-/***/ "./images/services/manicure-bez-pokritia.jpg":
-/*!***************************************************!*\
-  !*** ./images/services/manicure-bez-pokritia.jpg ***!
-  \***************************************************/
+/***/ "./images/services/manicure-s-pokrit.jpg":
+/*!***********************************************!*\
+  !*** ./images/services/manicure-s-pokrit.jpg ***!
+  \***********************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/services/manicure-bez-pokritia.jpg\");\n\n//# sourceURL=webpack:///./images/services/manicure-bez-pokritia.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/services/manicure-s-pokrit.jpg\");\n\n//# sourceURL=webpack:///./images/services/manicure-s-pokrit.jpg?");
 
 /***/ }),
 
-/***/ "./images/services/pedicure-estet.jpg":
-/*!********************************************!*\
-  !*** ./images/services/pedicure-estet.jpg ***!
-  \********************************************/
+/***/ "./images/services/med-pedicure.jpg":
+/*!******************************************!*\
+  !*** ./images/services/med-pedicure.jpg ***!
+  \******************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/services/pedicure-estet.jpg\");\n\n//# sourceURL=webpack:///./images/services/pedicure-estet.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/services/med-pedicure.jpg\");\n\n//# sourceURL=webpack:///./images/services/med-pedicure.jpg?");
 
 /***/ }),
 
-/***/ "./images/services/pedicure-s-gel-lak.jpg":
-/*!************************************************!*\
-  !*** ./images/services/pedicure-s-gel-lak.jpg ***!
-  \************************************************/
+/***/ "./images/services/pedicure-bez-pokrit.jpg":
+/*!*************************************************!*\
+  !*** ./images/services/pedicure-bez-pokrit.jpg ***!
+  \*************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/services/pedicure-s-gel-lak.jpg\");\n\n//# sourceURL=webpack:///./images/services/pedicure-s-gel-lak.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/services/pedicure-bez-pokrit.jpg\");\n\n//# sourceURL=webpack:///./images/services/pedicure-bez-pokrit.jpg?");
+
+/***/ }),
+
+/***/ "./images/services/pedicure-problem.jpg":
+/*!**********************************************!*\
+  !*** ./images/services/pedicure-problem.jpg ***!
+  \**********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/services/pedicure-problem.jpg\");\n\n//# sourceURL=webpack:///./images/services/pedicure-problem.jpg?");
+
+/***/ }),
+
+/***/ "./images/services/pedicure-s-pokrit.jpg":
+/*!***********************************************!*\
+  !*** ./images/services/pedicure-s-pokrit.jpg ***!
+  \***********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/services/pedicure-s-pokrit.jpg\");\n\n//# sourceURL=webpack:///./images/services/pedicure-s-pokrit.jpg?");
 
 /***/ }),
 
@@ -636,7 +658,7 @@ eval("var map = {\n\t\"./reviews-bg.jpg\": \"./images/reviews/reviews-bg.jpg\",\
   \*******************************************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./brovi.jpg\": \"./images/services/brovi.jpg\",\n\t\"./manicure-bez-pokritia.jpg\": \"./images/services/manicure-bez-pokritia.jpg\",\n\t\"./pedicure-estet.jpg\": \"./images/services/pedicure-estet.jpg\",\n\t\"./pedicure-s-gel-lak.jpg\": \"./images/services/pedicure-s-gel-lak.jpg\",\n\t\"./services-background.png\": \"./images/services/services-background.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/services sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/services/_sync_nonrecursive_\\.(png%7Cjpe?");
+eval("var map = {\n\t\"./manicure-bez-pokrit.jpg\": \"./images/services/manicure-bez-pokrit.jpg\",\n\t\"./manicure-s-pokrit.jpg\": \"./images/services/manicure-s-pokrit.jpg\",\n\t\"./med-pedicure.jpg\": \"./images/services/med-pedicure.jpg\",\n\t\"./pedicure-bez-pokrit.jpg\": \"./images/services/pedicure-bez-pokrit.jpg\",\n\t\"./pedicure-problem.jpg\": \"./images/services/pedicure-problem.jpg\",\n\t\"./pedicure-s-pokrit.jpg\": \"./images/services/pedicure-s-pokrit.jpg\",\n\t\"./services-background.png\": \"./images/services/services-background.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images/services sync \\\\.(png|jpe?g|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/services/_sync_nonrecursive_\\.(png%7Cjpe?");
 
 /***/ }),
 
@@ -657,7 +679,7 @@ eval("var map = {\n\t\"./burger-menu-bg.jpg\": \"./images/burger-menu-bg.jpg\",\
 /***/ (function(module) {
 
 "use strict";
-eval("module.exports = JSON.parse('{\"pedicure\":[{\"title\":\"Эстетический педикюр\",\"price\":\"3 000\",\"description\":\"Комбинированный педикюр –самый популярных видов педикюра. Отличительная особенность комбинированного педикюра в совмещении двух техник: аппаратный и классический педикюр. Для обработки ногтевой пластины и околоногтевого пространства используется механическая фреза, а также ножницы и кусачки.\",\"src\":\"images/services/pedicure-estet.jpg\",\"alt\":\"медицинский эстетический педикюр маникюр\",\"id\":\"1\"},{\"title\":\"Эстетический педикюр с покрытием гель-лаком\",\"price\":\"3 500\",\"description\":\"Комбинированный педикюр –самый популярных видов педикюра.\",\"src\":\"images/services/pedicure-s-gel-lak.jpg\",\"alt\":\"медицинский эстетический педикюр маникюр\",\"id\":\"2\"}],\"manicure\":[{\"title\":\"Маникюр\",\"price\":\"2 000\",\"description\":\"Комбинированный педикюр –самый популярных видов педикюра. Отличительная особенность комбинированного педикюра в совмещении двух техник.\",\"src\":\"images/services/manicure-bez-pokritia.jpg\",\"alt\":\"медицинский маникюр\",\"id\":\"3\"}]}');\n\n//# sourceURL=webpack:///./price-list.json?");
+eval("module.exports = JSON.parse('{\"pedicure\":[{\"title\":\"Эстетический педикюр\",\"price\":\"3 000\",\"description\":\"Комбинированный педикюр –самый популярных видов педикюра. Отличительная особенность комбинированного педикюра в совмещении двух техник: аппаратный и классический педикюр. Для обработки ногтевой пластины и околоногтевого пространства используется механическая фреза, а также ножницы и кусачки.\",\"src\":\"images/services/pedicure-bez-pokrit.jpg\",\"alt\":\"медицинский эстетический педикюр маникюр\"},{\"title\":\"Эстетический педикюр с покрытием гель-лаком\",\"price\":\"3 200\",\"description\":\"При выполнении классического педикюра мастер обработает стопы, придаст ногтям нужную форму, обработает ногти и околоногтевое пространство. Подготовка к покрытию.\",\"src\":\"images/services/pedicure-s-pokrit.jpg\",\"alt\":\"эстетический педикюр покрытие гель лак\"},{\"title\":\"Эстетический педикюр с проблемами\",\"price\":\"3 300\",\"description\":\"Эстетический педикюр с проблемами: трещинки, не большие натоптыши, сухость кожи, межпальцевые мозоли, подногтевые мозоли.\",\"src\":\"images/services/pedicure-problem.jpg\",\"alt\":\"медицинский эстетический педикюр проблемы\"},{\"title\":\"Медицинский педикюр\",\"price\":\"3 500\",\"description\":\"Медицинский педикюр разной степени сложности.\",\"src\":\"images/services/med-pedicure.jpg\",\"alt\":\"медицинский педикюр категория сложности\"}],\"manicure\":[{\"title\":\"Маникюр без покрытия\",\"price\":\"2 000\",\"description\":\"Маникюр с использованием любых техник по желанию клиента.\",\"src\":\"images/services/manicure-bez-pokrit.jpg\",\"alt\":\"маникюр без покрытия\"},{\"title\":\"Маникюр с покрытием гель-лаком\",\"price\":\"2 400\",\"description\":\"Маникюр с использованием любых техник по желанию клиента, подготовка к покрытию, покрытие гель-лаком.\",\"src\":\"images/services/manicure-s-pokrit.jpg\",\"alt\":\"маникюр покрытие гель лак\"}]}');\n\n//# sourceURL=webpack:///./price-list.json?");
 
 /***/ })
 
