@@ -1058,7 +1058,8 @@ h4 {
 
 .services__inner {
   display: flex;
-  overflow: hidden; }
+  overflow: hidden;
+  min-height: 700px; }
   @media (max-width: 820px) {
     .services__inner {
       flex-direction: column; } }
