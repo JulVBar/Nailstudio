@@ -7,6 +7,7 @@ import navigation from './js/navigation';
 import modal from './js/modal';
 import priceTabs from './js/price-tabs';
 import galeryFilters from './js/galery-filters';
+import slider from './js/slider';
 
 
 window.addEventListener('DOMContentLoaded', function() {
@@ -17,6 +18,7 @@ window.addEventListener('DOMContentLoaded', function() {
     preloader();
     priceTabs();
     galeryFilters();
+    slider();
 });
 
 // load all images

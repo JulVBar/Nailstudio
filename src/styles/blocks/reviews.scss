@@ -55,7 +55,7 @@
     @include breakpoint($mobile-bp) {
         font-size: 20px;
         position: absolute;
-        right: 0;
+        right: 25px;
     }
 
     @include breakpoint(450px) {
@@ -69,65 +69,53 @@
 }
 
 .reviews__slider {
+    overflow: hidden;
     position: absolute;
     top: 300px;
     right: 0;
-    display: flex;
-
-    width: 1350px;
-    overflow: hidden;
+    width: 900px;
 
     &:hover .slider__arrow {
         opacity: .8;
     }
 
-    @include breakpoint(1600px) {
-        width: 900px;
-    }
-
-    @include breakpoint(1250px) {
-        width: 450px;
-    }
-
-    @include breakpoint($tablet-bp) {
-        width: 900px;
-    }
-
-    @include breakpoint(900px) {
-        width: 450px;
+    @include breakpoint(1150px) {
+        width: 740px;
     }
 
     @include breakpoint($mobile-bp) {
-        top: 220px;
+        width: 575px;
+        top: 230px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @include breakpoint($mobile-bp-small) {
+        width: 450px;
     }
 
     @include breakpoint(450px) {
-        width: 100%;
+        width: 375px;
     }
 
-    @include breakpointHeight(450px) {
-        top: 170px;
+    @include breakpoint(375px) {
+        width: 325px;
     }
+}
+
+.reviews__slider__inner {
+    display: flex;
 }
 
 .reviews__slider__item {
     background: $secondary-opacity;
-    min-width: 450px;
     height: 375px;
-    padding: 50px;
-    padding-right: 100px;
+    padding: 50px 100px;
 
-    @include breakpoint(450px) {
-        min-width: 100%;
-        padding: 20px;
-        padding-right: 80px;
+    @include breakpoint($mobile-bp-small) {
+        padding: 30px 50px;
     }
 
-    @include breakpointHeight(450px) {
-        height: 290px;
-        padding: 5px 15px;
-        padding-right: 80px;
-    }
 }
 
 .reviews__header {
@@ -173,6 +161,10 @@
     line-height: 20px;
 
     margin-top: 30px;
+
+    @include breakpoint($mobile-bp) {
+        text-align: center;
+    }
 }
 
 .reviews__slider__arrow {
@@ -183,23 +175,35 @@
     justify-content: center;
     align-items: center;
 
+    cursor: pointer;
+    transition: all .8s ease;
+}
+
+.arrow-right {
     position: absolute;
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
 
-    cursor: pointer;
-    transition: all .8s ease;
-
-    &:hover {
-        background-color: $primary-modal;
+    @include breakpoint($mobile-bp-small) {
+        right: 1px;
     }
-    
+}
+
+.arrow-left {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include breakpoint($mobile-bp-small) {
+        left: 1px;
+    }
 }
 
 .slider__arrow {
     font-size: 35px;
     color: $bodybackground;
-    opacity: 0;
+    // opacity: 0;
     transition: all .5s ease;
 }
